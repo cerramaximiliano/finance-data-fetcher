@@ -39,6 +39,7 @@ const fetchEconomicCalendar = async () => {
 const fetchEarningCalendar = async () => {
   const startOfDay = getUnixStartOfDay();
   const endOfDay = getUnixEndOfDay();
+  console.log(startOfDay, endOfDay)
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-earning-calendar",
