@@ -1,14 +1,19 @@
-const { fetchEconomicCalendar, fetchEarningCalendar, fetchDayWath } = require("./server/controllers/controllersAPIs");
-
+const dotenv = require("dotenv");
+dotenv.config();
+const {
+  fetchEconomicCalendar,
+  fetchEarningCalendar,
+  fetchDayWath,
+} = require("./server/controllers/controllersAPIs");
 
 (async () => {
   try {
-    //const economicCalendar = await fetchEconomicCalendar();
-    //console.log(economicCalendar);
-    //const earningCalendar = await fetchEarningCalendar();
-    //console.log(earningCalendar.data)
+    const economicCalendar = await fetchEconomicCalendar();
+    console.log(economicCalendar);
+    const earningCalendar = await fetchEarningCalendar();
+    console.log(earningCalendar.data)
     const dayWatch = await fetchDayWath();
-    console.log(dayWatch)
+    console.log(dayWatch);
   } catch (error) {
     console.error(error.message);
   }

@@ -7,7 +7,6 @@ const {
   getUnixEndOfDay,
 } = require("../utils/dates");
 const { rapidApiKey, rapidApiTradingViewHost, rapidApiSeekingAlphaHost } = require("../config/configAPIs");
-console.log(rapidApiKey)
 // Tradign View
 const fetchEconomicCalendar = async () => {
   const today = getToday();
