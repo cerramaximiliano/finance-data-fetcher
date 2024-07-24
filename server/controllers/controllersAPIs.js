@@ -7,7 +7,7 @@ const {
   getUnixEndOfDay,
 } = require("../utils/dates");
 const { rapidApiKey, rapidApiTradingViewHost, rapidApiSeekingAlphaHost } = require("../config/configAPIs");
-
+console.log(rapidApiKey)
 // Tradign View
 const fetchEconomicCalendar = async () => {
   const today = getToday();
@@ -69,7 +69,7 @@ const fetchDayWath = async () => {
         method: 'GET',
         url: 'https://seeking-alpha.p.rapidapi.com/market/get-day-watch',
         headers: {
-          'x-rapidapi-key': '39e1a575femsh942d5e7c3d32c79p190977jsnc12056c7c582',
+          'x-rapidapi-key': rapidApiKey,
           'x-rapidapi-host': rapidApiSeekingAlphaHost
         }
       };
@@ -86,7 +86,7 @@ const marketOpen = async () => {
         method: 'GET',
         url: 'https://seeking-alpha.p.rapidapi.com/market/get-market-open',
         headers: {
-          'x-rapidapi-key': '39e1a575femsh942d5e7c3d32c79p190977jsnc12056c7c582',
+          'x-rapidapi-key': rapidApiKey,
           'x-rapidapi-host': rapidApiSeekingAlphaHost
         }
       };
