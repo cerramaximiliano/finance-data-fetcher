@@ -1,0 +1,190 @@
+{
+  "data": {
+    "id": "0",
+    "type": "day_watch",
+    "attributes": {
+      "top_gainers": [
+        {
+          "id": 609565,
+          "slug": "RGC",
+          "name": "Regencell Bioscience Holdings Ltd"
+        },
+        { "id": 606302, "slug": "KORE", "name": "Kore Group Holdings Inc" },
+        { "id": 607089, "slug": "PRG", "name": "PROG Holdings Inc" },
+        { "id": 34878, "slug": "ENPH", "name": "Enphase Energy Inc" },
+        { "id": 10036, "slug": "MANH", "name": "Manhattan Associates, Inc." },
+        { "id": 579292, "slug": "QTTB", "name": "Q32 Bio Inc." },
+        { "id": 1748, "slug": "MAT", "name": "Mattel, Inc." },
+        { "id": 4666, "slug": "ALKS", "name": "Alkermes plc" },
+        {
+          "id": 569074,
+          "slug": "PTGX",
+          "name": "Protagonist Therapeutics Inc"
+        },
+        { "id": 3405, "slug": "CSGP", "name": "Costar Group, Inc." }
+      ],
+      "top_losers": [
+        { "id": 571204, "slug": "LW", "name": "Lamb Weston Holdings Inc" },
+        { "id": 4768, "slug": "BHC", "name": "Bausch Health Companies Inc" },
+        { "id": 157323, "slug": "SAGE", "name": "Sage Therapeutics Inc" },
+        { "id": 463185, "slug": "JAGX", "name": "Jaguar Health Inc" },
+        { "id": 1850, "slug": "SFL", "name": "SFL Corporation Ltd" },
+        { "id": 16123, "slug": "TSLA", "name": "Tesla Inc" },
+        { "id": 609489, "slug": "KARO", "name": "Karooooo Ltd" },
+        { "id": 584095, "slug": "VRT", "name": "Vertiv Holdings Co - Class A" },
+        { "id": 765860, "slug": "ALAB", "name": "Astera Labs Inc." },
+        { "id": 608519, "slug": "RUM", "name": "Rumble Inc - Class A" }
+      ],
+      "cryptocurrencies": [
+        { "id": 581328, "slug": "BTC-USD", "name": "Bitcoin USD" },
+        { "id": 579496, "slug": "ETH-USD", "name": "Ethereum USD" },
+        { "id": 580755, "slug": "BNB-USD", "name": "Binance Coin USD" },
+        { "id": 581347, "slug": "XRP-USD", "name": "Ripple USD" },
+        { "id": 581371, "slug": "ADA-USD", "name": "Cardano USD" }
+      ],
+      "most_active": [
+        { "id": 1150, "slug": "NVDA", "name": "NVIDIA Corp" },
+        { "id": 16123, "slug": "TSLA", "name": "Tesla Inc" },
+        { "id": 4768, "slug": "BHC", "name": "Bausch Health Companies Inc" },
+        { "id": 691, "slug": "F", "name": "Ford Motor Co." },
+        { "id": 685, "slug": "T", "name": "AT&T, Inc." }
+      ],
+      "in_the_news": [
+        { "id": 35634, "slug": "yelp", "name": "Yelp Inc." },
+        { "id": 36222, "slug": "meta", "name": "Meta Platforms, Inc." },
+        { "id": 538626, "slug": "snap", "name": "Snap Inc." },
+        { "id": 554446, "slug": "pins", "name": "Pinterest, Inc." },
+        { "id": 7564, "slug": "iep", "name": "Icahn Enterprises L.P." }
+      ],
+      "faang_stocks": [
+        { "id": 36222, "slug": "META", "name": "Meta Platforms, Inc." },
+        { "id": 562, "slug": "AMZN", "name": "Amazon.com, Inc." },
+        { "id": 146, "slug": "AAPL", "name": "Apple Inc." },
+        { "id": 575, "slug": "MSFT", "name": "Microsoft Corporation" },
+        { "id": 544, "slug": "GOOG", "name": "Alphabet Inc." }
+      ],
+      "sp500_gainers": [
+        { "id": 34878, "slug": "ENPH", "name": "Enphase Energy, Inc." },
+        { "id": 3405, "slug": "CSGP", "name": "CoStar Group, Inc." },
+        { "id": 685, "slug": "T", "name": "AT&T Inc." },
+        { "id": 8012, "slug": "TEL", "name": "TE Connectivity Ltd." },
+        { "id": 777939, "slug": "SOLV", "name": "Solventum Corporation" },
+        {
+          "id": 1022,
+          "slug": "STX",
+          "name": "Seagate Technology Holdings plc"
+        },
+        { "id": 185, "slug": "ES", "name": "Eversource Energy" },
+        {
+          "id": 4155,
+          "slug": "TDY",
+          "name": "Teledyne Technologies Incorporated"
+        },
+        { "id": 5074, "slug": "TMO", "name": "Thermo Fisher Scientific Inc." },
+        { "id": 16241, "slug": "NEE", "name": "NextEra Energy, Inc." }
+      ],
+      "sp500_losers": [
+        { "id": 571204, "slug": "LW", "name": "Lamb Weston Holdings, Inc." },
+        { "id": 16123, "slug": "TSLA", "name": "Tesla, Inc." },
+        { "id": 7930, "slug": "ROP", "name": "Roper Technologies, Inc." },
+        { "id": 7098, "slug": "SMCI", "name": "Super Micro Computer, Inc." },
+        { "id": 568977, "slug": "FTV", "name": "Fortive Corporation" },
+        {
+          "id": 160,
+          "slug": "CEG",
+          "name": "Constellation Energy Corporation"
+        },
+        { "id": 3104, "slug": "APH", "name": "Amphenol Corporation" },
+        { "id": 9110, "slug": "ULTA", "name": "Ulta Beauty, Inc." },
+        { "id": 3537, "slug": "OTIS", "name": "Otis Worldwide Corporation" },
+        { "id": 1168, "slug": "QCOM", "name": "QUALCOMM Incorporated" }
+      ],
+      "cap400_gainers": [
+        { "id": 10036, "slug": "MANH", "name": "Manhattan Associates, Inc." },
+        { "id": 1748, "slug": "MAT", "name": "Mattel, Inc." },
+        { "id": 1191, "slug": "QDEL", "name": "QuidelOrtho Corporation" },
+        { "id": 4044, "slug": "THC", "name": "Tenet Healthcare Corporation" },
+        { "id": 9006, "slug": "SF", "name": "Stifel Financial Corp." },
+        { "id": 568851, "slug": "MEDP", "name": "Medpace Holdings, Inc." },
+        { "id": 6791, "slug": "BRKR", "name": "Bruker Corporation" },
+        { "id": 4014, "slug": "PB", "name": "Prosperity Bancshares, Inc." },
+        { "id": 6332, "slug": "EWBC", "name": "East West Bancorp, Inc." },
+        {
+          "id": 4951,
+          "slug": "POR",
+          "name": "Portland General Electric Company"
+        }
+      ],
+      "cap400_losers": [
+        { "id": 606246, "slug": "ALGM", "name": "Allegro MicroSystems, Inc." },
+        { "id": 1908, "slug": "WFRD", "name": "Weatherford International plc" },
+        { "id": 608624, "slug": "TNL", "name": "Travel + Leisure Co." },
+        {
+          "id": 39341,
+          "slug": "VAC",
+          "name": "Marriott Vacations Worldwide Corporation"
+        },
+        { "id": 601173, "slug": "WMG", "name": "Warner Music Group Corp." },
+        { "id": 572169, "slug": "HGV", "name": "Hilton Grand Vacations Inc." },
+        {
+          "id": 4252,
+          "slug": "PFGC",
+          "name": "Performance Food Group Company"
+        },
+        { "id": 1634, "slug": "WOLF", "name": "Wolfspeed, Inc." },
+        { "id": 1290, "slug": "GME", "name": "GameStop Corp." },
+        { "id": 1725, "slug": "RMBS", "name": "Rambus Inc." }
+      ],
+      "cap600_gainers": [
+        { "id": 607089, "slug": "PRG", "name": "PROG Holdings, Inc." },
+        { "id": 848, "slug": "SPWR", "name": "SunPower Corporation" },
+        { "id": 1906, "slug": "NBR", "name": "Nabors Industries Ltd." },
+        { "id": 4666, "slug": "ALKS", "name": "Alkermes plc" },
+        { "id": 2096, "slug": "GPI", "name": "Group 1 Automotive, Inc." },
+        {
+          "id": 494396,
+          "slug": "SEDG",
+          "name": "SolarEdge Technologies, Inc."
+        },
+        { "id": 4468, "slug": "AMN", "name": "AMN Healthcare Services, Inc." },
+        { "id": 465175, "slug": "ENVA", "name": "Enova International, Inc." },
+        { "id": 8306, "slug": "CALM", "name": "Cal-Maine Foods, Inc." },
+        { "id": 521085, "slug": "RUN", "name": "Sunrun Inc." }
+      ],
+      "cap600_losers": [
+        {
+          "id": 6055,
+          "slug": "BXMT",
+          "name": "Blackstone Mortgage Trust, Inc."
+        },
+        { "id": 1872, "slug": "WNC", "name": "Wabash National Corporation" },
+        {
+          "id": 10021,
+          "slug": "HCSG",
+          "name": "Healthcare Services Group, Inc."
+        },
+        { "id": 155263, "slug": "RILY", "name": "B. Riley Financial, Inc." },
+        { "id": 157313, "slug": "TRUP", "name": "Trupanion, Inc." },
+        {
+          "id": 14514,
+          "slug": "PMT",
+          "name": "PennyMac Mortgage Investment Trust"
+        },
+        { "id": 1995, "slug": "ACLS", "name": "Axcelis Technologies, Inc." },
+        { "id": 15622, "slug": "MXL", "name": "MaxLinear, Inc." },
+        {
+          "id": 2556,
+          "slug": "CBRL",
+          "name": "Cracker Barrel Old Country Store, Inc."
+        },
+        {
+          "id": 1136,
+          "slug": "PLAY",
+          "name": "Dave & Buster's Entertainment, Inc."
+        }
+      ]
+    }
+  }
+}
+
+
