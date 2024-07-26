@@ -1,0 +1,190 @@
+{
+  "data": [
+    {
+      "Company": "Rosebank Industries Plc (ROSE)",
+      "Exchange": "London",
+      "IPO Listing": "Jul 11, 2024",
+      "IPO Price": "-",
+      "IPO Value": null,
+      "Last": "709.98"
+    },
+    {
+      "Company": "Launch One Acq Corp (LPAAU)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 12, 2024",
+      "IPO Price": "10.00",
+      "IPO Value": "200.0M",
+      "Last": "9.96"
+    },
+    {
+      "Company": "Florida Canyon Gold Inc (FCGV)",
+      "Exchange": "TSXV",
+      "IPO Listing": "Jul 16, 2024",
+      "IPO Price": "-",
+      "IPO Value": null,
+      "Last": "0.61"
+    },
+    {
+      "Company": "Ardent Health Partners Inc (ARDT)",
+      "Exchange": "NYSE",
+      "IPO Listing": "Jul 18, 2024",
+      "IPO Price": "16.00",
+      "IPO Value": "228.8M",
+      "Last": "16.85"
+    },
+    {
+      "Company": "Twfg Inc (TWFG)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 18, 2024",
+      "IPO Price": "17.00",
+      "IPO Value": "187.0M",
+      "Last": "22.65"
+    },
+    {
+      "Company": "Qmmm Holdings Ltd (QMMM)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 19, 2024",
+      "IPO Price": "4.00",
+      "IPO Value": "8.5M",
+      "Last": "4.00"
+    },
+    {
+      "Company": "Artiva Biotherapeutics Inc (ARTV)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 19, 2024",
+      "IPO Price": "12.00",
+      "IPO Value": "104.4M",
+      "Last": "11.80"
+    },
+    {
+      "Company": "Xxl Asa (0R3P)",
+      "Exchange": "London",
+      "IPO Listing": "Jul 22, 2024",
+      "IPO Price": "-",
+      "IPO Value": null,
+      "Last": "81.65"
+    },
+    {
+      "Company": "Primega Group Holding Ltd (PGHL)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 23, 2024",
+      "IPO Price": "4.00",
+      "IPO Value": "7.0M",
+      "Last": "4.18"
+    },
+    {
+      "Company": "Nova Minerals Inc (NVA)",
+      "Exchange": "NYSE",
+      "IPO Listing": "Jul 24, 2024",
+      "IPO Price": "6.92",
+      "IPO Value": "3.3M",
+      "Last": "4.72"
+    },
+    {
+      "Company": "Bloomz Inc (BLMZ)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 24, 2024",
+      "IPO Price": "4.30",
+      "IPO Value": "5.4M",
+      "Last": "3.13"
+    },
+    {
+      "Company": "Onestream Inc (OS)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 24, 2024",
+      "IPO Price": "20.00",
+      "IPO Value": "490.0M",
+      "Last": "25.60"
+    },
+    {
+      "Company": "DT Cloud Star Acq Ltd (DTSQU)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 25, 2024",
+      "IPO Price": "10.00",
+      "IPO Value": "60.0M",
+      "Last": "-"
+    },
+    {
+      "Company": "Concentra Group Holdings Inc (CON)",
+      "Exchange": "NYSE",
+      "IPO Listing": "Jul 25, 2024",
+      "IPO Price": "23.50",
+      "IPO Value": "528.8M",
+      "Last": "-"
+    },
+    {
+      "Company": "Lineage Inc (LINE)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 25, 2024",
+      "IPO Price": "78.00",
+      "IPO Value": "3.7B",
+      "Last": "-"
+    },
+    {
+      "Company": "Latam Airlines Group (LTM)",
+      "Exchange": "NYSE",
+      "IPO Listing": "Jul 25, 2024",
+      "IPO Price": "28.06",
+      "IPO Value": "533.1M",
+      "Last": "0.05"
+    },
+    {
+      "Company": "Orangekloud Tech Inc (ORKT)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 25, 2024",
+      "IPO Price": "4.75",
+      "IPO Value": "13.1M",
+      "Last": "-"
+    },
+    {
+      "Company": "Actuate Therapeutics Inc (ACTU)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 26, 2024",
+      "IPO Price": "8.00-10.00",
+      "IPO Value": "55.6M",
+      "Last": "-"
+    },
+    {
+      "Company": "M3 Brigade Acquisition V Inc (MBAVU)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Jul 26, 2024",
+      "IPO Price": "10.00",
+      "IPO Value": "250.0M",
+      "Last": "-"
+    },
+    {
+      "Company": "Autozi Internet Technology Inc (AZI)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Aug 01, 2024",
+      "IPO Price": "4.00-5.00",
+      "IPO Value": "12.5M",
+      "Last": "-"
+    },
+    {
+      "Company": "Ming Shing Group Holdings Ltd (MSW)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Aug 01, 2024",
+      "IPO Price": "5.50-7.50",
+      "IPO Value": "11.3M",
+      "Last": "-"
+    },
+    {
+      "Company": "NIP Group Ltd (NIPG)",
+      "Exchange": "NASDAQ",
+      "IPO Listing": "Aug 01, 2024",
+      "IPO Price": "9.00-11.00",
+      "IPO Value": "24.8M",
+      "Last": "-"
+    },
+    {
+      "Company": "Pershing Square USA Inc (PSUS)",
+      "Exchange": "NYSE",
+      "IPO Listing": "Aug 01, 2024",
+      "IPO Price": "50.00",
+      "IPO Value": null,
+      "Last": "-"
+    }
+  ],
+  "message": "Success!",
+  "status": 200
+}
