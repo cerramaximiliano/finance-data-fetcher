@@ -1,4 +1,6 @@
 const moment = require("moment");
+const fs = require("fs");
+const path = require("path");
 
 const {
   fetchEconomicCalendar,
@@ -9,43 +11,52 @@ const {
   fetchMarketCap,
 } = require("../controllers/controllersAPIs");
 const bot = require("./commands");
-const { formatData, formatDataEarnings } = require("../utils/formatData");
+const {
+  formatData,
+  formatDataEarnings,
+  formatMarketData,
+} = require("../utils/formatData");
+const {
+  delay,
+  fetchStockPriceWithDelay,
+  fetchAllStockPrices,
+} = require("../utils/delay");
+
 
 const openSymbols = [
-    { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
-    { description: "Futuros Soja", symbol: "ZS=F" },
-    { description: "Futuros Oro", symbol: "GC=F" },
-    { description: "Futuros Plata", symbol: "SI=F" },
-    { description: "Futuros Petróleo", symbol: "CL=F" },
-    { description: "Futuros S&P 500", symbol: "ES=F" },
-    { description: "Futuros NASDAQ 100", symbol: "NQ=F" },
-    { description: "Futuros Dow Jones", symbol: "YM=F" },
-    { description: "Futuros Russell 2000", symbol: "RTY=F" },
-    { description: "Futuros Dólar Îndex", symbol: "DX=F" },
-    { description: "Bitcoin/USD", symbol: "BTC-USD" },
-    { description: "Etherum/USD", symbol: "ETH-USD" },
-  ];
+  { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
+  { description: "Futuros Soja", symbol: "ZS=F" },
+  { description: "Futuros Oro", symbol: "GC=F" },
+  { description: "Futuros Plata", symbol: "SI=F" },
+  { description: "Futuros Petróleo", symbol: "CL=F" },
+  { description: "Futuros S&P 500", symbol: "ES=F" },
+  { description: "Futuros NASDAQ 100", symbol: "NQ=F" },
+  { description: "Futuros Dow Jones", symbol: "YM=F" },
+  { description: "Futuros Russell 2000", symbol: "RTY=F" },
+  { description: "Futuros Dólar Îndex", symbol: "DX=F" },
+  { description: "Bitcoin/USD", symbol: "BTC-USD" },
+  { description: "Etherum/USD", symbol: "ETH-USD" },
+];
 
-  const closeSymbols = [
-    { description: "S&P 500", symbol: "^SPX" },
-    { description: "Nasdaq", symbol: "^IXIC" },
-    { description: "Dow Jones", symbol: "^DJI" },
-    { description: "Russell 2000", symbol: "^RUT" },
-    { description: "Tasa Bonos US 10 años ", symbol: "^TNX" },
-    { description: "DAX", symbol: "^GDAXI", country: "Germany" },
-    { description: "SSE", symbol: "000001.SS", country: "China" },
-    { description: "Nikkei", symbol: "^N225" },
-    { description: "Bovespa", symbol: "^BVSP" },
-    { description: "Merval", symbol: "^MERV" },
-    { description: "US Dólar Index", symbol: "DX-Y.NYB" },
-    { description: "Futuros Soja", symbol: "ZS=F" },
-    { description: "Futuros Oro", symbol: "GC=F" },
-    { description: "Futuros Plata", symbol: "SI=F" },
-    { description: "Futuros Petróleo", symbol: "CL=F" },
-    { description: "Bitcoin/USD", symbol: "BTC-USD" },
-    { description: "Etherum/USD", symbol: "ETH-USD" },
-  ];
-
+const closeSymbols = [
+  { description: "S&P 500", symbol: "^SPX" },
+  { description: "Nasdaq", symbol: "^IXIC" },
+  { description: "Dow Jones", symbol: "^DJI" },
+  { description: "Russell 2000", symbol: "^RUT" },
+  { description: "Tasa Bonos US 10 años ", symbol: "^TNX" },
+  { description: "DAX", symbol: "^GDAXI", country: "Germany" },
+  { description: "SSE", symbol: "000001.SS", country: "China" },
+  { description: "Nikkei", symbol: "^N225" },
+  { description: "Bovespa", symbol: "^BVSP" },
+  { description: "Merval", symbol: "^MERV" },
+  { description: "US Dólar Index", symbol: "DX-Y.NYB" },
+  { description: "Futuros Soja", symbol: "ZS=F" },
+  { description: "Futuros Oro", symbol: "GC=F" },
+  { description: "Futuros Plata", symbol: "SI=F" },
+  { description: "Futuros Petróleo", symbol: "CL=F" },
+  { description: "Bitcoin/USD", symbol: "BTC-USD" },
+  { description: "Etherum/USD", symbol: "ETH-USD" },
+];
 
 function sendMainMenu(chatId, messageId, topicId) {
   const options = {
@@ -141,13 +152,11 @@ bot.on("callback_query", async (callbackQuery) => {
   try {
     switch (data) {
       case "option1":
-        const openMarketPromises = openSymbols.map((symbols) => {
-            return fetchStockPrice(symbols.symbol);
-          });
-          const openMarketResults = await Promise.all(openMarketPromises);
-          const openMarketData = openMarketResults.map((result) => result.data);
-
-          console.log(openMarketData)
+        console.log("apertura");
+        const delayTime = 1000; // 1 segundo de retraso entre las solicitudes
+        const openMarketData = await fetchAllStockPrices(fetchStockPrice, openSymbols, delayTime);
+        const formattedMarketData = formatMarketData(openMarketData, openSymbols);
+        console.log(formattedMarketData);
         sendSubMenu(
           message.chat.id,
           message.message_id,
@@ -226,24 +235,24 @@ bot.on("callback_query", async (callbackQuery) => {
         break;
       default:
         await sendTemporaryMessage(
-            message.chat.id,
-            "Opción no reconocida. Vuelve a intentarlo más tarde.",
-            {
-              ...(topicId && { message_thread_id: topicId }),
-            },
-            5000
-          );
+          message.chat.id,
+          "Opción no reconocida. Vuelve a intentarlo más tarde.",
+          {
+            ...(topicId && { message_thread_id: topicId }),
+          },
+          5000
+        );
     }
   } catch (err) {
     console.log(err);
     await sendTemporaryMessage(
-        message.chat.id,
-        "Opción no reconocida. Vuelve a intentarlo más tarde.",
-        {
-          ...(topicId && { message_thread_id: topicId }),
-        },
-        5000
-      );
+      message.chat.id,
+      "Opción no reconocida. Vuelve a intentarlo más tarde.",
+      {
+        ...(topicId && { message_thread_id: topicId }),
+      },
+      5000
+    );
   }
   bot.answerCallbackQuery(callbackQuery.id); // Finaliza el callback query
 });

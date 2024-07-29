@@ -11,4 +11,13 @@ const formatDataEarnings = (data) => {
   }).join('\n');
 };
 
-module.exports = { formatData, formatDataEarnings };
+const formatMarketData = (data, symbols) => {
+  return data.map(item => {
+    const matchingSymbol = symbols.find(sym => sym.symbol === item.symbol);
+    const description = matchingSymbol ? matchingSymbol.description : 'N/A';
+    const price = item.regularMarketPrice || item.regularMarketPreviousClose;
+    return `Description: ${description}\nPrice: ${price}\n`;
+  }).join('\n');
+};
+
+module.exports = { formatData, formatDataEarnings, formatMarketData };

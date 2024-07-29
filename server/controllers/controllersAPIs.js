@@ -206,7 +206,7 @@ const fetchStockPrice = async (symbol) => {
     method: "POST",
     url: "https://yahoo-finance160.p.rapidapi.com/info",
     headers: {
-      "x-rapidapi-key": "621ed88709msh98d154a956d1ac8p1048b4jsn33f22e7820db",
+      "x-rapidapi-key": rapidApiKey,
       "x-rapidapi-host": rapidApiYahooFinance,
       "Content-Type": "application/json",
     },
