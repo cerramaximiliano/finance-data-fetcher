@@ -1,0 +1,2510 @@
+[
+  {
+    "id": "company_details",
+    "label": "Company Details",
+    "filters": [
+      {
+        "type": "dropdown",
+        "id": "country_id",
+        "label": "Country",
+        "values": [
+          {
+            "id": 1,
+            "name": "Afghanistan"
+          },
+          {
+            "id": 2,
+            "name": "Albania"
+          },
+          {
+            "id": 3,
+            "name": "Algeria"
+          },
+          {
+            "id": 5,
+            "name": "Andorra"
+          },
+          {
+            "id": 6,
+            "name": "Angola"
+          },
+          {
+            "id": 7,
+            "name": "Anguilla"
+          },
+          {
+            "id": 8,
+            "name": "Antarctica"
+          },
+          {
+            "id": 9,
+            "name": "Antigua & Barbuda"
+          },
+          {
+            "id": 10,
+            "name": "Argentina"
+          },
+          {
+            "id": 11,
+            "name": "Armenia"
+          },
+          {
+            "id": 12,
+            "name": "Aruba"
+          },
+          {
+            "id": 13,
+            "name": "Australia"
+          },
+          {
+            "id": 14,
+            "name": "Austria"
+          },
+          {
+            "id": 15,
+            "name": "Azerbaijan"
+          },
+          {
+            "id": 16,
+            "name": "Bahamas"
+          },
+          {
+            "id": 17,
+            "name": "Bahrain"
+          },
+          {
+            "id": 18,
+            "name": "Bangladesh"
+          },
+          {
+            "id": 19,
+            "name": "Barbados"
+          },
+          {
+            "id": 20,
+            "name": "Belarus"
+          },
+          {
+            "id": 21,
+            "name": "Belgium"
+          },
+          {
+            "id": 22,
+            "name": "Belize"
+          },
+          {
+            "id": 23,
+            "name": "Benin"
+          },
+          {
+            "id": 24,
+            "name": "Bermuda"
+          },
+          {
+            "id": 25,
+            "name": "Bhutan"
+          },
+          {
+            "id": 26,
+            "name": "Bolivia"
+          },
+          {
+            "id": 27,
+            "name": "Bosnia-Herzegovina"
+          },
+          {
+            "id": 28,
+            "name": "Botswana"
+          },
+          {
+            "id": 30,
+            "name": "Brazil"
+          },
+          {
+            "id": 31,
+            "name": "Brunei"
+          },
+          {
+            "id": 32,
+            "name": "Bulgaria"
+          },
+          {
+            "id": 33,
+            "name": "Burkina Faso"
+          },
+          {
+            "id": 34,
+            "name": "Burundi"
+          },
+          {
+            "id": 35,
+            "name": "Cambodia"
+          },
+          {
+            "id": 36,
+            "name": "Cameroon"
+          },
+          {
+            "id": 37,
+            "name": "Canada"
+          },
+          {
+            "id": 38,
+            "name": "Cape Verde"
+          },
+          {
+            "id": 39,
+            "name": "Cayman Islands"
+          },
+          {
+            "id": 40,
+            "name": "Central African Republic"
+          },
+          {
+            "id": 41,
+            "name": "Chad"
+          },
+          {
+            "id": 42,
+            "name": "Chile"
+          },
+          {
+            "id": 43,
+            "name": "China"
+          },
+          {
+            "id": 46,
+            "name": "Colombia"
+          },
+          {
+            "id": 47,
+            "name": "Comoros"
+          },
+          {
+            "id": 48,
+            "name": "Republic of the Congo"
+          },
+          {
+            "id": 49,
+            "name": "Cook Islands"
+          },
+          {
+            "id": 50,
+            "name": "Costa Rica"
+          },
+          {
+            "id": 51,
+            "name": "Croatia"
+          },
+          {
+            "id": 52,
+            "name": "Cuba"
+          },
+          {
+            "id": 53,
+            "name": "Cyprus"
+          },
+          {
+            "id": 54,
+            "name": "Czech Republic"
+          },
+          {
+            "id": 55,
+            "name": "Denmark"
+          },
+          {
+            "id": 56,
+            "name": "Djibouti"
+          },
+          {
+            "id": 57,
+            "name": "Dominica"
+          },
+          {
+            "id": 58,
+            "name": "Dominican Republic"
+          },
+          {
+            "id": 60,
+            "name": "Ecuador"
+          },
+          {
+            "id": 61,
+            "name": "Egypt"
+          },
+          {
+            "id": 62,
+            "name": "El Salvador"
+          },
+          {
+            "id": 63,
+            "name": "Equatorial Guinea"
+          },
+          {
+            "id": 64,
+            "name": "Estonia"
+          },
+          {
+            "id": 65,
+            "name": "Ethiopia"
+          },
+          {
+            "id": 66,
+            "name": "Falkland Islands"
+          },
+          {
+            "id": 68,
+            "name": "Fiji"
+          },
+          {
+            "id": 69,
+            "name": "Finland"
+          },
+          {
+            "id": 71,
+            "name": "France"
+          },
+          {
+            "id": 72,
+            "name": "French Guiana"
+          },
+          {
+            "id": 73,
+            "name": "Gabon"
+          },
+          {
+            "id": 74,
+            "name": "Gambia"
+          },
+          {
+            "id": 75,
+            "name": "Georgia"
+          },
+          {
+            "id": 76,
+            "name": "Germany"
+          },
+          {
+            "id": 77,
+            "name": "Ghana"
+          },
+          {
+            "id": 78,
+            "name": "Gibraltar"
+          },
+          {
+            "id": 79,
+            "name": "Greece"
+          },
+          {
+            "id": 80,
+            "name": "Greenland"
+          },
+          {
+            "id": 81,
+            "name": "Grenada"
+          },
+          {
+            "id": 82,
+            "name": "Guadeloupe"
+          },
+          {
+            "id": 84,
+            "name": "Guatemala"
+          },
+          {
+            "id": 85,
+            "name": "Guinea"
+          },
+          {
+            "id": 86,
+            "name": "Guinea-Bissau"
+          },
+          {
+            "id": 87,
+            "name": "Guyana"
+          },
+          {
+            "id": 88,
+            "name": "Haiti"
+          },
+          {
+            "id": 89,
+            "name": "Honduras"
+          },
+          {
+            "id": 90,
+            "name": "Hong Kong"
+          },
+          {
+            "id": 91,
+            "name": "Hungary"
+          },
+          {
+            "id": 92,
+            "name": "Iceland"
+          },
+          {
+            "id": 93,
+            "name": "India"
+          },
+          {
+            "id": 94,
+            "name": "Indonesia"
+          },
+          {
+            "id": 95,
+            "name": "Iran"
+          },
+          {
+            "id": 96,
+            "name": "Iraq"
+          },
+          {
+            "id": 97,
+            "name": "Ireland"
+          },
+          {
+            "id": 98,
+            "name": "Israel"
+          },
+          {
+            "id": 99,
+            "name": "Italy"
+          },
+          {
+            "id": 100,
+            "name": "Ivory Coast"
+          },
+          {
+            "id": 101,
+            "name": "Jamaica"
+          },
+          {
+            "id": 102,
+            "name": "Japan"
+          },
+          {
+            "id": 103,
+            "name": "Jordan"
+          },
+          {
+            "id": 104,
+            "name": "Kazakhstan"
+          },
+          {
+            "id": 105,
+            "name": "Kenya"
+          },
+          {
+            "id": 106,
+            "name": "Kiribati"
+          },
+          {
+            "id": 107,
+            "name": "Kuwait"
+          },
+          {
+            "id": 108,
+            "name": "Kyrgyzstan"
+          },
+          {
+            "id": 109,
+            "name": "Laos"
+          },
+          {
+            "id": 110,
+            "name": "Latvia"
+          },
+          {
+            "id": 111,
+            "name": "Lebanon"
+          },
+          {
+            "id": 112,
+            "name": "Lesotho"
+          },
+          {
+            "id": 113,
+            "name": "Liberia"
+          },
+          {
+            "id": 114,
+            "name": "Libya"
+          },
+          {
+            "id": 115,
+            "name": "Liechtenstein"
+          },
+          {
+            "id": 116,
+            "name": "Lithuania"
+          },
+          {
+            "id": 117,
+            "name": "Luxembourg"
+          },
+          {
+            "id": 118,
+            "name": "Macau"
+          },
+          {
+            "id": 119,
+            "name": "Macedonia"
+          },
+          {
+            "id": 120,
+            "name": "Madagascar"
+          },
+          {
+            "id": 121,
+            "name": "Malawi"
+          },
+          {
+            "id": 122,
+            "name": "Malaysia"
+          },
+          {
+            "id": 123,
+            "name": "Maldives"
+          },
+          {
+            "id": 124,
+            "name": "Mali"
+          },
+          {
+            "id": 125,
+            "name": "Malta"
+          },
+          {
+            "id": 126,
+            "name": "Marshall Islands"
+          },
+          {
+            "id": 127,
+            "name": "Martinique"
+          },
+          {
+            "id": 128,
+            "name": "Mauritania"
+          },
+          {
+            "id": 129,
+            "name": "Mauritius"
+          },
+          {
+            "id": 131,
+            "name": "Mexico"
+          },
+          {
+            "id": 133,
+            "name": "Moldova"
+          },
+          {
+            "id": 134,
+            "name": "Monaco"
+          },
+          {
+            "id": 135,
+            "name": "Mongolia"
+          },
+          {
+            "id": 136,
+            "name": "Montserrat"
+          },
+          {
+            "id": 137,
+            "name": "Morocco"
+          },
+          {
+            "id": 138,
+            "name": "Mozambique"
+          },
+          {
+            "id": 139,
+            "name": "Myanmar"
+          },
+          {
+            "id": 140,
+            "name": "Namibia"
+          },
+          {
+            "id": 141,
+            "name": "Nauru"
+          },
+          {
+            "id": 142,
+            "name": "Nepal"
+          },
+          {
+            "id": 143,
+            "name": "Netherlands"
+          },
+          {
+            "id": 144,
+            "name": "Netherlands Antilles"
+          },
+          {
+            "id": 146,
+            "name": "New Caledonia"
+          },
+          {
+            "id": 147,
+            "name": "New Zealand"
+          },
+          {
+            "id": 148,
+            "name": "Nicaragua"
+          },
+          {
+            "id": 149,
+            "name": "Niger"
+          },
+          {
+            "id": 150,
+            "name": "Nigeria"
+          },
+          {
+            "id": 153,
+            "name": "North Korea"
+          },
+          {
+            "id": 154,
+            "name": "Norway"
+          },
+          {
+            "id": 155,
+            "name": "Oman"
+          },
+          {
+            "id": 156,
+            "name": "Pakistan"
+          },
+          {
+            "id": 158,
+            "name": "Panama"
+          },
+          {
+            "id": 159,
+            "name": "Papua New Guinea"
+          },
+          {
+            "id": 160,
+            "name": "Paraguay"
+          },
+          {
+            "id": 161,
+            "name": "Peru"
+          },
+          {
+            "id": 162,
+            "name": "Philippines"
+          },
+          {
+            "id": 164,
+            "name": "Poland"
+          },
+          {
+            "id": 166,
+            "name": "Portugal"
+          },
+          {
+            "id": 168,
+            "name": "Qatar"
+          },
+          {
+            "id": 169,
+            "name": "Reunion"
+          },
+          {
+            "id": 170,
+            "name": "Romania"
+          },
+          {
+            "id": 171,
+            "name": "Russia"
+          },
+          {
+            "id": 172,
+            "name": "Rwanda"
+          },
+          {
+            "id": 174,
+            "name": "Saint Lucia"
+          },
+          {
+            "id": 175,
+            "name": "Saint Vincent & Grenadines"
+          },
+          {
+            "id": 176,
+            "name": "Samoa"
+          },
+          {
+            "id": 177,
+            "name": "San Marino"
+          },
+          {
+            "id": 178,
+            "name": "Saudi Arabia"
+          },
+          {
+            "id": 179,
+            "name": "Senegal"
+          },
+          {
+            "id": 180,
+            "name": "Seychelles"
+          },
+          {
+            "id": 181,
+            "name": "Sierra Leone"
+          },
+          {
+            "id": 182,
+            "name": "Singapore"
+          },
+          {
+            "id": 183,
+            "name": "Slovakia"
+          },
+          {
+            "id": 184,
+            "name": "Slovenia"
+          },
+          {
+            "id": 185,
+            "name": "Solomon Islands"
+          },
+          {
+            "id": 186,
+            "name": "Somalia"
+          },
+          {
+            "id": 187,
+            "name": "South Africa"
+          },
+          {
+            "id": 188,
+            "name": "South Korea"
+          },
+          {
+            "id": 189,
+            "name": "Spain"
+          },
+          {
+            "id": 190,
+            "name": "Sri Lanka"
+          },
+          {
+            "id": 191,
+            "name": "Sudan"
+          },
+          {
+            "id": 192,
+            "name": "Suriname"
+          },
+          {
+            "id": 193,
+            "name": "Swaziland"
+          },
+          {
+            "id": 194,
+            "name": "Sweden"
+          },
+          {
+            "id": 195,
+            "name": "Switzerland"
+          },
+          {
+            "id": 196,
+            "name": "Syria"
+          },
+          {
+            "id": 197,
+            "name": "Tajikistan"
+          },
+          {
+            "id": 198,
+            "name": "Taiwan"
+          },
+          {
+            "id": 199,
+            "name": "Tanzania"
+          },
+          {
+            "id": 200,
+            "name": "Thailand"
+          },
+          {
+            "id": 201,
+            "name": "Togo"
+          },
+          {
+            "id": 203,
+            "name": "Tonga"
+          },
+          {
+            "id": 204,
+            "name": "Trinidad & Tobago"
+          },
+          {
+            "id": 205,
+            "name": "Tunisia"
+          },
+          {
+            "id": 206,
+            "name": "Turkey"
+          },
+          {
+            "id": 207,
+            "name": "Turkmenistan"
+          },
+          {
+            "id": 208,
+            "name": "Tuvalu"
+          },
+          {
+            "id": 209,
+            "name": "Uganda"
+          },
+          {
+            "id": 210,
+            "name": "Ukraine"
+          },
+          {
+            "id": 211,
+            "name": "United Arab Emirates"
+          },
+          {
+            "id": 212,
+            "name": "United Kingdom"
+          },
+          {
+            "id": 213,
+            "name": "United States"
+          },
+          {
+            "id": 214,
+            "name": "Uruguay"
+          },
+          {
+            "id": 215,
+            "name": "Uzbekistan"
+          },
+          {
+            "id": 216,
+            "name": "Vanuatu"
+          },
+          {
+            "id": 217,
+            "name": "Vatican City"
+          },
+          {
+            "id": 218,
+            "name": "Venezuela"
+          },
+          {
+            "id": 219,
+            "name": "Vietnam"
+          },
+          {
+            "id": 220,
+            "name": "British Virgin Islands"
+          },
+          {
+            "id": 224,
+            "name": "Yemen"
+          },
+          {
+            "id": 225,
+            "name": "Yugoslavia"
+          },
+          {
+            "id": 227,
+            "name": "Zambia"
+          },
+          {
+            "id": 228,
+            "name": "Zimbabwe"
+          },
+          {
+            "id": 230,
+            "name": "Channel Islands"
+          },
+          {
+            "id": 231,
+            "name": "Democratic Republic of the Congo"
+          },
+          {
+            "id": 232,
+            "name": "Eritrea"
+          },
+          {
+            "id": 233,
+            "name": "French Polynesia"
+          },
+          {
+            "id": 234,
+            "name": "Saint Kitts & Nevis"
+          },
+          {
+            "id": 235,
+            "name": "Turks & Caicos Islands"
+          },
+          {
+            "id": 236,
+            "name": "Serbia"
+          },
+          {
+            "id": 237,
+            "name": "Timor-Leste"
+          },
+          {
+            "id": 238,
+            "name": "Montenegro"
+          },
+          {
+            "id": 239,
+            "name": "Isle of Man"
+          },
+          {
+            "id": 240,
+            "name": "Palestinian Authority"
+          },
+          {
+            "id": 241,
+            "name": "Kosovo"
+          },
+          {
+            "id": 242,
+            "name": "Curaçao"
+          },
+          {
+            "id": 243,
+            "name": "Other"
+          },
+          {
+            "id": 244,
+            "name": "Guernsey"
+          },
+          {
+            "id": 245,
+            "name": "Jersey"
+          }
+        ],
+        "default": true,
+        "options": ["exclude"]
+      },
+      {
+        "type": "dropdown",
+        "id": "industry_id",
+        "label": "Sector & Industry",
+        "values": [
+          {
+            "id": 10,
+            "name": "Energy",
+            "values": [
+              {
+                "id": 10101010,
+                "name": "Oil and Gas Drilling"
+              },
+              {
+                "id": 10101020,
+                "name": "Oil and Gas Equipment and Services"
+              },
+              {
+                "id": 10102010,
+                "name": "Integrated Oil and Gas"
+              },
+              {
+                "id": 10102020,
+                "name": "Oil and Gas Exploration and Production"
+              },
+              {
+                "id": 10102030,
+                "name": "Oil and Gas Refining and Marketing"
+              },
+              {
+                "id": 10102040,
+                "name": "Oil and Gas Storage and Transportation"
+              },
+              {
+                "id": 10102050,
+                "name": "Coal and Consumable Fuels"
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "name": "Materials",
+            "values": [
+              {
+                "id": 15101010,
+                "name": "Commodity Chemicals"
+              },
+              {
+                "id": 15101020,
+                "name": "Diversified Chemicals"
+              },
+              {
+                "id": 15101030,
+                "name": "Fertilizers and Agricultural Chemicals"
+              },
+              {
+                "id": 15101040,
+                "name": "Industrial Gases"
+              },
+              {
+                "id": 15101050,
+                "name": "Specialty Chemicals"
+              },
+              {
+                "id": 15102010,
+                "name": "Construction Materials"
+              },
+              {
+                "id": 15103010,
+                "name": "Metal and Glass Containers"
+              },
+              {
+                "id": 15103020,
+                "name": "Paper Packaging"
+              },
+              {
+                "id": 15104010,
+                "name": "Aluminum"
+              },
+              {
+                "id": 15104020,
+                "name": "Diversified Metals and Mining"
+              },
+              {
+                "id": 15104025,
+                "name": "Copper"
+              },
+              {
+                "id": 15104030,
+                "name": "Gold"
+              },
+              {
+                "id": 15104040,
+                "name": "Precious Metals and Minerals"
+              },
+              {
+                "id": 15104045,
+                "name": "Silver"
+              },
+              {
+                "id": 15104050,
+                "name": "Steel"
+              },
+              {
+                "id": 15105010,
+                "name": "Forest Products"
+              },
+              {
+                "id": 15105020,
+                "name": "Paper Products"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Industrials",
+            "values": [
+              {
+                "id": 20101010,
+                "name": "Aerospace and Defense"
+              },
+              {
+                "id": 20102010,
+                "name": "Building Products"
+              },
+              {
+                "id": 20103010,
+                "name": "Construction and Engineering"
+              },
+              {
+                "id": 20104010,
+                "name": "Electrical Components and Equipment"
+              },
+              {
+                "id": 20104020,
+                "name": "Heavy Electrical Equipment"
+              },
+              {
+                "id": 20105010,
+                "name": "Industrial Conglomerates"
+              },
+              {
+                "id": 20106010,
+                "name": "Construction Machinery and Heavy Trucks"
+              },
+              {
+                "id": 20106015,
+                "name": "Agricultural and Farm Machinery"
+              },
+              {
+                "id": 20106020,
+                "name": "Industrial Machinery"
+              },
+              {
+                "id": 20107010,
+                "name": "Trading Companies and Distributors"
+              },
+              {
+                "id": 20201010,
+                "name": "Commercial Printing"
+              },
+              {
+                "id": 20201050,
+                "name": "Environmental and Facilities Services"
+              },
+              {
+                "id": 20201060,
+                "name": "Office Services and Supplies"
+              },
+              {
+                "id": 20201070,
+                "name": "Diversified Support Services"
+              },
+              {
+                "id": 20201080,
+                "name": "Security and Alarm Services"
+              },
+              {
+                "id": 20202010,
+                "name": "Human Resource and Employment Services"
+              },
+              {
+                "id": 20202020,
+                "name": "Research and Consulting Services"
+              },
+              {
+                "id": 20301010,
+                "name": "Air Freight and Logistics"
+              },
+              {
+                "id": 20302010,
+                "name": "Airlines"
+              },
+              {
+                "id": 20303010,
+                "name": "Marine"
+              },
+              {
+                "id": 20304010,
+                "name": "Railroads"
+              },
+              {
+                "id": 20304020,
+                "name": "Trucking"
+              },
+              {
+                "id": 20305010,
+                "name": "Airport Services"
+              },
+              {
+                "id": 20305020,
+                "name": "Highways and Railtracks"
+              },
+              {
+                "id": 20305030,
+                "name": "Marine Ports and Services"
+              }
+            ]
+          },
+          {
+            "id": 25,
+            "name": "Consumer Discretionary",
+            "values": [
+              {
+                "id": 25101010,
+                "name": "Auto Parts and Equipment"
+              },
+              {
+                "id": 25101020,
+                "name": "Tires and Rubber"
+              },
+              {
+                "id": 25102010,
+                "name": "Automobile Manufacturers"
+              },
+              {
+                "id": 25102020,
+                "name": "Motorcycle Manufacturers"
+              },
+              {
+                "id": 25201010,
+                "name": "Consumer Electronics"
+              },
+              {
+                "id": 25201020,
+                "name": "Home Furnishings"
+              },
+              {
+                "id": 25201030,
+                "name": "Homebuilding"
+              },
+              {
+                "id": 25201040,
+                "name": "Household Appliances"
+              },
+              {
+                "id": 25201050,
+                "name": "Housewares and Specialties"
+              },
+              {
+                "id": 25202010,
+                "name": "Leisure Products"
+              },
+              {
+                "id": 25203010,
+                "name": "Apparel, Accessories and Luxury Goods"
+              },
+              {
+                "id": 25203020,
+                "name": "Footwear"
+              },
+              {
+                "id": 25203030,
+                "name": "Textiles"
+              },
+              {
+                "id": 25301010,
+                "name": "Casinos and Gaming"
+              },
+              {
+                "id": 25301020,
+                "name": "Hotels, Resorts and Cruise Lines"
+              },
+              {
+                "id": 25301030,
+                "name": "Leisure Facilities"
+              },
+              {
+                "id": 25301040,
+                "name": "Restaurants"
+              },
+              {
+                "id": 25302010,
+                "name": "Education Services"
+              },
+              {
+                "id": 25302020,
+                "name": "Specialized Consumer Services"
+              },
+              {
+                "id": 25501010,
+                "name": "Distributors"
+              },
+              {
+                "id": 25502020,
+                "name": "Internet and Direct Marketing Retail"
+              },
+              {
+                "id": 25503010,
+                "name": "Department Stores"
+              },
+              {
+                "id": 25503020,
+                "name": "General Merchandise Stores"
+              },
+              {
+                "id": 25504010,
+                "name": "Apparel Retail"
+              },
+              {
+                "id": 25504020,
+                "name": "Computer and Electronics Retail"
+              },
+              {
+                "id": 25504030,
+                "name": "Home Improvement Retail"
+              },
+              {
+                "id": 25504040,
+                "name": "Specialty Stores"
+              },
+              {
+                "id": 25504050,
+                "name": "Automotive Retail"
+              },
+              {
+                "id": 25504060,
+                "name": "Homefurnishing Retail"
+              }
+            ]
+          },
+          {
+            "id": 30,
+            "name": "Consumer Staples",
+            "values": [
+              {
+                "id": 30101010,
+                "name": "Drug Retail"
+              },
+              {
+                "id": 30101020,
+                "name": "Food Distributors"
+              },
+              {
+                "id": 30101030,
+                "name": "Food Retail"
+              },
+              {
+                "id": 30101040,
+                "name": "Hypermarkets and Super Centers"
+              },
+              {
+                "id": 30201010,
+                "name": "Brewers"
+              },
+              {
+                "id": 30201020,
+                "name": "Distillers and Vintners"
+              },
+              {
+                "id": 30201030,
+                "name": "Soft Drinks"
+              },
+              {
+                "id": 30202010,
+                "name": "Agricultural Products"
+              },
+              {
+                "id": 30202030,
+                "name": "Packaged Foods and Meats"
+              },
+              {
+                "id": 30203010,
+                "name": "Tobacco"
+              },
+              {
+                "id": 30301010,
+                "name": "Household Products"
+              },
+              {
+                "id": 30302010,
+                "name": "Personal Products"
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "name": "Health Care",
+            "values": [
+              {
+                "id": 35101010,
+                "name": "Health Care Equipment"
+              },
+              {
+                "id": 35101020,
+                "name": "Health Care Supplies"
+              },
+              {
+                "id": 35102010,
+                "name": "Health Care Distributors"
+              },
+              {
+                "id": 35102015,
+                "name": "Health Care Services"
+              },
+              {
+                "id": 35102020,
+                "name": "Health Care Facilities"
+              },
+              {
+                "id": 35102030,
+                "name": "Managed Health Care"
+              },
+              {
+                "id": 35103010,
+                "name": "Health Care Technology"
+              },
+              {
+                "id": 35201010,
+                "name": "Biotechnology"
+              },
+              {
+                "id": 35202010,
+                "name": "Pharmaceuticals"
+              },
+              {
+                "id": 35203010,
+                "name": "Life Sciences Tools and Services"
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "name": "Financials",
+            "values": [
+              {
+                "id": 40101010,
+                "name": "Diversified Banks"
+              },
+              {
+                "id": 40101015,
+                "name": "Regional Banks"
+              },
+              {
+                "id": 40102010,
+                "name": "Thrifts and Mortgage Finance"
+              },
+              {
+                "id": 40201020,
+                "name": "Other Diversified Financial Services"
+              },
+              {
+                "id": 40201030,
+                "name": "Multi-Sector Holdings"
+              },
+              {
+                "id": 40201040,
+                "name": "Specialized Finance"
+              },
+              {
+                "id": 40202010,
+                "name": "Consumer Finance"
+              },
+              {
+                "id": 40203010,
+                "name": "Asset Management and Custody Banks"
+              },
+              {
+                "id": 40203020,
+                "name": "Investment Banking and Brokerage"
+              },
+              {
+                "id": 40203030,
+                "name": "Diversified Capital Markets"
+              },
+              {
+                "id": 40203040,
+                "name": "Financial Exchanges and Data"
+              },
+              {
+                "id": 40204010,
+                "name": "Mortgage REITs"
+              },
+              {
+                "id": 40301010,
+                "name": "Insurance Brokers"
+              },
+              {
+                "id": 40301020,
+                "name": "Life and Health Insurance"
+              },
+              {
+                "id": 40301030,
+                "name": "Multi-line Insurance"
+              },
+              {
+                "id": 40301040,
+                "name": "Property and Casualty Insurance"
+              },
+              {
+                "id": 40301050,
+                "name": "Reinsurance"
+              }
+            ]
+          },
+          {
+            "id": 45,
+            "name": "Information Technology",
+            "values": [
+              {
+                "id": 45102010,
+                "name": "IT Consulting and Other Services"
+              },
+              {
+                "id": 45102020,
+                "name": "Data Processing and Outsourced Services"
+              },
+              {
+                "id": 45102030,
+                "name": "Internet Services and Infrastructure"
+              },
+              {
+                "id": 45103010,
+                "name": "Application Software"
+              },
+              {
+                "id": 45103020,
+                "name": "Systems Software"
+              },
+              {
+                "id": 45201020,
+                "name": "Communications Equipment"
+              },
+              {
+                "id": 45202030,
+                "name": "Technology Hardware, Storage and Peripherals"
+              },
+              {
+                "id": 45203010,
+                "name": "Electronic Equipment and Instruments"
+              },
+              {
+                "id": 45203015,
+                "name": "Electronic Components"
+              },
+              {
+                "id": 45203020,
+                "name": "Electronic Manufacturing Services"
+              },
+              {
+                "id": 45203030,
+                "name": "Technology Distributors"
+              },
+              {
+                "id": 45301010,
+                "name": "Semiconductor Equipment"
+              },
+              {
+                "id": 45301020,
+                "name": "Semiconductors"
+              }
+            ]
+          },
+          {
+            "id": 50,
+            "name": "Communication Services",
+            "values": [
+              {
+                "id": 50101010,
+                "name": "Alternative Carriers"
+              },
+              {
+                "id": 50101020,
+                "name": "Integrated Telecommunication Services"
+              },
+              {
+                "id": 50102010,
+                "name": "Wireless Telecommunication Services"
+              },
+              {
+                "id": 50201010,
+                "name": "Advertising"
+              },
+              {
+                "id": 50201020,
+                "name": "Broadcasting"
+              },
+              {
+                "id": 50201030,
+                "name": "Cable and Satellite"
+              },
+              {
+                "id": 50201040,
+                "name": "Publishing"
+              },
+              {
+                "id": 50202010,
+                "name": "Movies and Entertainment"
+              },
+              {
+                "id": 50202020,
+                "name": "Interactive Home Entertainment"
+              },
+              {
+                "id": 50203010,
+                "name": "Interactive Media and Services"
+              }
+            ]
+          },
+          {
+            "id": 55,
+            "name": "Utilities",
+            "values": [
+              {
+                "id": 55101010,
+                "name": "Electric Utilities"
+              },
+              {
+                "id": 55102010,
+                "name": "Gas Utilities"
+              },
+              {
+                "id": 55103010,
+                "name": "Multi-Utilities"
+              },
+              {
+                "id": 55104010,
+                "name": "Water Utilities"
+              },
+              {
+                "id": 55105010,
+                "name": "Independent Power Producers and Energy Traders"
+              },
+              {
+                "id": 55105020,
+                "name": "Renewable Electricity"
+              }
+            ]
+          },
+          {
+            "id": 60,
+            "name": "Real Estate",
+            "values": [
+              {
+                "id": 60101010,
+                "name": "Diversified REITs"
+              },
+              {
+                "id": 60101020,
+                "name": "Industrial REITs"
+              },
+              {
+                "id": 60101030,
+                "name": "Hotel and Resort REITs"
+              },
+              {
+                "id": 60101040,
+                "name": "Office REITs"
+              },
+              {
+                "id": 60101050,
+                "name": "Health Care REITs"
+              },
+              {
+                "id": 60101060,
+                "name": "Residential REITs"
+              },
+              {
+                "id": 60101070,
+                "name": "Retail REITs"
+              },
+              {
+                "id": 60101080,
+                "name": "Specialized REITs"
+              },
+              {
+                "id": 60102010,
+                "name": "Diversified Real Estate Activities"
+              },
+              {
+                "id": 60102020,
+                "name": "Real Estate Operating Companies"
+              },
+              {
+                "id": 60102030,
+                "name": "Real Estate Development"
+              },
+              {
+                "id": 60102040,
+                "name": "Real Estate Services"
+              }
+            ]
+          }
+        ],
+        "default": true
+      },
+      {
+        "type": "slider",
+        "id": "marketcap_display",
+        "label": "Market Cap",
+        "min": 25000000,
+        "max": 10000000000
+      },
+      {
+        "type": "slider",
+        "id": "tev",
+        "label": "Enterprise Value",
+        "min": 25000000,
+        "max": 10000000000
+      }
+    ]
+  },
+  {
+    "id": "ratings",
+    "label": "Ratings",
+    "filters": [
+      {
+        "type": "ratings_slider",
+        "id": "quant_rating",
+        "label": "Quant Rating",
+        "options": ["disable"],
+        "default": true,
+        "min": null,
+        "max": null
+      },
+      {
+        "type": "ratings_slider",
+        "id": "authors_rating_pro",
+        "label": "SA Authors Rating",
+        "options": ["disable"],
+        "default": true
+      },
+      {
+        "type": "ratings_slider",
+        "id": "sell_side_rating",
+        "label": "Wall St. Analysts Rating",
+        "options": ["disable"],
+        "default": true
+      }
+    ]
+  },
+  {
+    "id": "grades",
+    "label": "Quant Factor Grades",
+    "filters": [
+      {
+        "type": "grades_slider",
+        "id": "value_category",
+        "label": "Valuation"
+      },
+      {
+        "type": "grades_slider",
+        "id": "growth_category",
+        "label": "Growth"
+      },
+      {
+        "type": "grades_slider",
+        "id": "profitability_category",
+        "label": "Profitability"
+      },
+      {
+        "type": "grades_slider",
+        "id": "momentum_category",
+        "label": "Momentum"
+      },
+      {
+        "type": "grades_slider",
+        "id": "eps_revisions_category",
+        "label": "EPS Revisions"
+      }
+    ]
+  },
+  {
+    "id": "trading",
+    "label": "Trading",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "close",
+        "label": "Last Close Price",
+        "min": 0,
+        "max": 50
+      },
+      {
+        "type": "slider",
+        "id": "price_return_1d",
+        "label": "Yesterday's % Change",
+        "min": -10,
+        "max": 50,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "dividend_grades",
+    "label": "Dividend Grades",
+    "filters": [
+      {
+        "type": "grades_slider",
+        "id": "div_safety_category",
+        "label": "Dividend Safety"
+      },
+      {
+        "type": "grades_slider",
+        "id": "div_growth_category",
+        "label": "Dividend Growth"
+      },
+      {
+        "type": "grades_slider",
+        "id": "div_yield_category",
+        "label": "Dividend Yield"
+      },
+      {
+        "type": "grades_slider",
+        "id": "div_consistency_category",
+        "label": "Dividend Consistency"
+      }
+    ]
+  },
+  {
+    "id": "dividends",
+    "label": "Dividends",
+    "filters": [
+      {
+        "type": "date_dropdown",
+        "id": "last_div_date",
+        "label": "Ex-Dividend Date",
+        "min": null,
+        "max": null
+      },
+      {
+        "type": "date_dropdown",
+        "id": "div_pay_date",
+        "label": "Dividend Payout Date",
+        "min": null,
+        "max": null
+      },
+      {
+        "type": "slider",
+        "id": "dividend_yield",
+        "label": "Dividend Yield (TTM)",
+        "min": 0,
+        "max": 8,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "div_yield_fwd",
+        "label": "Dividend Yield (FWD)",
+        "min": 0,
+        "max": 8,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "div_yield_4y",
+        "label": "4Y Average Yield",
+        "min": 0,
+        "max": 10,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "div_rate_ttm",
+        "label": "Dividend Rate (TTM)",
+        "min": 0,
+        "max": 3
+      },
+      {
+        "type": "slider",
+        "id": "div_rate_fwd",
+        "label": "Dividend Rate (FWD)",
+        "min": 0,
+        "max": 3
+      },
+      {
+        "type": "slider",
+        "id": "payout_ratio",
+        "label": "Payout Ratio",
+        "min": -40,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "payout_ratio_4y",
+        "label": "4Y Average Payout Ratio",
+        "min": -0.4,
+        "max": 10,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "div_grow_rate3",
+        "label": "Dividend Growth 3Y",
+        "min": -25,
+        "max": 20,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "div_grow_rate5",
+        "label": "Dividend Growth 5Y",
+        "min": -25,
+        "max": 20,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "dividend_growth",
+        "label": "Years of Growth",
+        "min": 0,
+        "max": 20
+      }
+    ]
+  },
+  {
+    "id": "earnings",
+    "label": "Earnings",
+    "filters": [
+      {
+        "type": "date_dropdown",
+        "id": "earning_announce_date",
+        "label": "Earnings Announce Date Range",
+        "min": null,
+        "max": null
+      },
+      {
+        "type": "slider",
+        "id": "eps_surprise",
+        "label": "EPS Surprise",
+        "min": -0.6,
+        "max": 0.6
+      },
+      {
+        "type": "slider",
+        "id": "revenue_surprise",
+        "label": "Revenue Surprise",
+        "min": -100000000,
+        "max": 100000000
+      }
+    ]
+  },
+  {
+    "id": "value",
+    "label": "Valuation",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "pe_ratio",
+        "label": "P/E GAAP (TTM)",
+        "min": 0,
+        "max": 200
+      },
+      {
+        "type": "slider",
+        "id": "pe_nongaap_fy1",
+        "label": "P/E Non-GAAP (FWD)",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "type": "slider",
+        "id": "peg_gaap",
+        "label": "PEG GAAP (TTM)",
+        "min": 0,
+        "max": 3
+      },
+      {
+        "type": "slider",
+        "id": "peg_nongaap_fy1",
+        "label": "PEG Non-GAAP (FWD)",
+        "min": 0,
+        "max": 7
+      },
+      {
+        "type": "slider",
+        "id": "ps_ratio",
+        "label": "Price / Sales (TTM)",
+        "min": 0,
+        "max": 10
+      },
+      {
+        "type": "slider",
+        "id": "ev_12m_sales_ratio",
+        "label": "EV / Sales (TTM)",
+        "min": 0,
+        "max": 20
+      },
+      {
+        "type": "slider",
+        "id": "ev_ebitda",
+        "label": "EV / EBITDA (TTM)",
+        "min": 0,
+        "max": 30
+      },
+      {
+        "type": "slider",
+        "id": "pb_ratio",
+        "label": "Price / Book (TTM)",
+        "min": 0,
+        "max": 10
+      },
+      {
+        "type": "slider",
+        "id": "price_cf_ratio",
+        "label": "Price / Cash Flow (TTM)",
+        "min": 0,
+        "max": 30
+      }
+    ]
+  },
+  {
+    "id": "growth",
+    "label": "Growth",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "revenue_growth",
+        "label": "Revenue (YoY)",
+        "min": -40,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "revenue_change_display",
+        "label": "Revenue (FWD)",
+        "min": -20,
+        "max": 40,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "revenue_growth3",
+        "label": "Revenue 3Y",
+        "min": -20,
+        "max": 40,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "revenue_growth5",
+        "label": "Revenue 5Y",
+        "min": -20,
+        "max": 40,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "ebitda_yoy",
+        "label": "EBITDA (YoY)",
+        "min": -100,
+        "max": 100,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "ebitda_change_display",
+        "label": "EBITDA (FWD)",
+        "min": -20,
+        "max": 40,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "ebitda_3y_cagr",
+        "label": "EBITDA 3Y",
+        "min": -40,
+        "max": 40,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "net_income_3y_cagr",
+        "label": "Net Income 3Y",
+        "min": -40,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "diluted_eps_growth",
+        "label": "EPS (YoY)",
+        "min": -40,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "eps_change_display",
+        "label": "EPS (FWD)",
+        "min": -40,
+        "max": 70,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "earnings_growth_3y_cagr",
+        "label": "EPS 3Y",
+        "min": -40,
+        "max": 70,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "tangible_book_value_3y_cagr",
+        "label": "Tangible Book 3Y",
+        "min": -40,
+        "max": 70,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "total_assets_3y_cagr",
+        "label": "Total Assets 3Y",
+        "min": -20,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "levered_free_cash_flow_3y_cagr",
+        "label": "FCF 3Y",
+        "min": -50,
+        "max": 70,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "levered_free_cash_flow_yoy",
+        "label": "Levered FCF Growth (YoY)",
+        "min": -100,
+        "max": 200,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "capex_change",
+        "label": "CAPEX Growth (YoY)",
+        "min": -100,
+        "max": 200,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "roe_yoy",
+        "label": "ROE Growth (YoY)",
+        "min": -100,
+        "max": 200,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "roe_change_display",
+        "label": "ROE Growth (FWD)",
+        "min": -100,
+        "max": 200,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "performance",
+    "label": "Performance",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "price_high_52w",
+        "label": "52W Range (% of 52W High)",
+        "min": 1,
+        "max": 100,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "total_return_5d",
+        "label": "5D Performance",
+        "min": -6,
+        "max": 20,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_1m",
+        "label": "1M Performance",
+        "min": -20,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_6m",
+        "label": "6M Performance",
+        "min": -50,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_ytd",
+        "label": "YTD Performance",
+        "min": -10,
+        "max": 20,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_1y",
+        "label": "1Y Performance",
+        "min": -60,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_3y",
+        "label": "3Y Performance",
+        "min": -100,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "total_return_3y",
+        "label": "3Y Total Return",
+        "min": -100,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_5y",
+        "label": "5Y Performance",
+        "min": -100,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "total_return_5y",
+        "label": "5Y Total Return",
+        "min": -100,
+        "max": 300,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "price_return_10y",
+        "label": "10Y Performance",
+        "min": -100,
+        "max": 500,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "total_return_10y",
+        "label": "10Y Total Return",
+        "min": -100,
+        "max": 500,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "momentum",
+    "label": "Momentum",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "last_price_vs_sma_10d",
+        "label": "Last Price vs. 10D SMA",
+        "min": -10,
+        "max": 10,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "last_price_vs_sma_50d",
+        "label": "Last Price vs. 50D SMA",
+        "min": -20,
+        "max": 20,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "last_price_vs_sma_100d",
+        "label": "Last Price vs. 100D SMA",
+        "min": -30,
+        "max": 30,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "last_price_vs_sma_200d",
+        "label": "Last Price vs. 200D SMA",
+        "min": -50,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "p_week_vol_shares",
+        "label": "Weekly Volume/Shares",
+        "min": 0,
+        "max": 5,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "profitability",
+    "label": "Profitability",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "total_revenue",
+        "label": "Revenue (TTM)",
+        "min": 0,
+        "max": 6000000000
+      },
+      {
+        "type": "slider",
+        "id": "net_income",
+        "label": "Net Income (TTM)",
+        "min": -1000000000,
+        "max": 5000000000
+      },
+      {
+        "type": "slider",
+        "id": "cash_from_operations_as_reported",
+        "label": "Cash From Operations (TTM)",
+        "min": -1000000000,
+        "max": 3000000000
+      },
+      {
+        "type": "slider",
+        "id": "gross_margin",
+        "label": "Gross Profit Margin (TTM)",
+        "min": -10,
+        "max": 90,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "ebit_margin",
+        "label": "EBIT Margin (TTM)",
+        "min": -30,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "ebitda_margin",
+        "label": "EBITDA Margin (TTM)",
+        "min": -30,
+        "max": 70,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "net_margin",
+        "label": "Net Income Margin (TTM)",
+        "min": -40,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "levered_fcf_margin",
+        "label": "Levered FCF Margin (TTM)",
+        "min": -40,
+        "max": 60,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "rtn_on_common_equity",
+        "label": "Return on Common Equity (TTM)",
+        "min": -50,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "return_on_avg_tot_assets",
+        "label": "Return on Total Assets (TTM)",
+        "min": -60,
+        "max": 30,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "return_on_total_capital",
+        "label": "Return on Total Capital (TTM)",
+        "min": -50,
+        "max": 30,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "assets_turnover",
+        "label": "Asset Turnover Ratio (TTM)",
+        "min": 0,
+        "max": 3
+      },
+      {
+        "type": "slider",
+        "id": "net_inc_per_employee",
+        "label": "Net Income Per Employee (TTM)",
+        "min": -400000,
+        "max": 500000
+      },
+      {
+        "type": "slider",
+        "id": "capex_to_sales",
+        "label": "CAPEX / Sales (TTM)",
+        "min": 0,
+        "max": 20,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "risk",
+    "label": "Risk",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "short_interest_percent_of_float",
+        "label": "Short Interest (% of Float)",
+        "min": 0,
+        "max": 10,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "last_closing_shares_short",
+        "label": "Shares Short",
+        "min": 0,
+        "max": 6000000
+      },
+      {
+        "type": "slider",
+        "id": "short_interest_coverage_ratio",
+        "label": "Days to Cover",
+        "min": 0,
+        "max": 10
+      },
+      {
+        "type": "slider",
+        "id": "beta24",
+        "label": "24M Beta",
+        "min": -2,
+        "max": 2
+      },
+      {
+        "type": "slider",
+        "id": "beta60",
+        "label": "60M Beta",
+        "min": -2,
+        "max": 2
+      },
+      {
+        "type": "slider",
+        "id": "altman_z_score",
+        "label": "Altman Z Score",
+        "min": -10,
+        "max": 10
+      }
+    ]
+  },
+  {
+    "id": "ownership",
+    "label": "Ownership",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "shares",
+        "label": "Shares Outstanding",
+        "min": 10000000,
+        "max": 1000000000
+      },
+      {
+        "type": "slider",
+        "id": "float_percent",
+        "label": "Float % Ownership",
+        "min": 0,
+        "max": 100,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "insiders_shares",
+        "label": "Insider Shares",
+        "min": 0,
+        "max": 10000000
+      },
+      {
+        "type": "slider",
+        "id": "insiders_share_percent",
+        "label": "Insider %",
+        "min": 0,
+        "max": 50,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "institutions_shares",
+        "label": "Institutional Shares",
+        "min": 0,
+        "max": 100000
+      },
+      {
+        "type": "slider",
+        "id": "institutions_share_percent",
+        "label": "Institutional %",
+        "min": 0,
+        "max": 100,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "debt",
+    "label": "Debt",
+    "filters": [
+      {
+        "type": "slider",
+        "id": "total_debt",
+        "label": "Total Debt",
+        "min": 0,
+        "max": 5000000000
+      },
+      {
+        "type": "slider",
+        "id": "debt_short_term",
+        "label": "ST Debt",
+        "min": 0,
+        "max": 1000000000
+      },
+      {
+        "type": "slider",
+        "id": "debt_long_term",
+        "label": "LT Debt",
+        "min": 0,
+        "max": 5000000000
+      },
+      {
+        "type": "slider",
+        "id": "total_cash",
+        "label": "Total Cash",
+        "min": 0,
+        "max": 1000000000
+      },
+      {
+        "type": "slider",
+        "id": "debt_fcf",
+        "label": "Debt to FCF",
+        "min": -10,
+        "max": 10
+      },
+      {
+        "type": "slider",
+        "id": "current_ratio",
+        "label": "Current Ratio",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "type": "slider",
+        "id": "quick_ratio",
+        "label": "Quick Ratio",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "type": "slider",
+        "id": "interest_coverage_ratio",
+        "label": "Covered Ratio",
+        "min": 0,
+        "max": 30
+      },
+      {
+        "type": "slider",
+        "id": "debt_eq",
+        "label": "Debt to Equity",
+        "min": 0,
+        "max": 500,
+        "unit": "percent"
+      },
+      {
+        "type": "slider",
+        "id": "long_term_debt_per_capital",
+        "label": "LT Debt to Total Capital",
+        "min": 0,
+        "max": 100,
+        "unit": "percent"
+      }
+    ]
+  }
+]

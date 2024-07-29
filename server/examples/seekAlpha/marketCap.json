@@ -1,0 +1,1605 @@
+{
+  "data": [
+    {
+      "id": "146",
+      "type": "ticker",
+      "attributes": {
+        "slug": "aapl",
+        "name": "AAPL",
+        "company": "Apple Inc.",
+        "companyName": "Apple Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/aapl/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AAPL",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AAPL"
+      }
+    },
+    {
+      "id": "575",
+      "type": "ticker",
+      "attributes": {
+        "slug": "msft",
+        "name": "MSFT",
+        "company": "Microsoft Corporation",
+        "companyName": "Microsoft Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/msft/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MSFT",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MSFT"
+      }
+    },
+    {
+      "id": "1150",
+      "type": "ticker",
+      "attributes": {
+        "slug": "nvda",
+        "name": "NVDA",
+        "company": "NVIDIA Corporation",
+        "companyName": "NVIDIA Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/nvda/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/NVDA",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/NVDA"
+      }
+    },
+    {
+      "id": "544",
+      "type": "ticker",
+      "attributes": {
+        "slug": "goog",
+        "name": "GOOG",
+        "company": "Alphabet Inc.",
+        "companyName": "Alphabet Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/goog/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GOOG",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GOOG"
+      }
+    },
+    {
+      "id": "148893",
+      "type": "ticker",
+      "attributes": {
+        "slug": "googl",
+        "name": "GOOGL",
+        "company": "Alphabet Inc.",
+        "companyName": "Alphabet Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/googl/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GOOGL",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GOOGL"
+      }
+    },
+    {
+      "id": "562",
+      "type": "ticker",
+      "attributes": {
+        "slug": "amzn",
+        "name": "AMZN",
+        "company": "Amazon.com, Inc.",
+        "companyName": "Amazon.com, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/amzn/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AMZN",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AMZN"
+      }
+    },
+    {
+      "id": "36222",
+      "type": "ticker",
+      "attributes": {
+        "slug": "meta",
+        "name": "META",
+        "company": "Meta Platforms, Inc.",
+        "companyName": "Meta Platforms, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/meta/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/META",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/META"
+      }
+    },
+    {
+      "id": "4721",
+      "type": "ticker",
+      "attributes": {
+        "slug": "brk.a",
+        "name": "BRK.A",
+        "company": "Berkshire Hathaway Inc.",
+        "companyName": "Berkshire Hathaway Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/brk.a/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BRK.A",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BRK.A"
+      }
+    },
+    {
+      "id": "6699",
+      "type": "ticker",
+      "attributes": {
+        "slug": "brk.b",
+        "name": "BRK.B",
+        "company": "Berkshire Hathaway Inc.",
+        "companyName": "Berkshire Hathaway Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/brk.b/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BRK.B",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BRK.B"
+      }
+    },
+    {
+      "id": "1421",
+      "type": "ticker",
+      "attributes": {
+        "slug": "lly",
+        "name": "LLY",
+        "company": "Eli Lilly and Company",
+        "companyName": "Eli Lilly and Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/lly/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/LLY",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/LLY"
+      }
+    },
+    {
+      "id": "14539",
+      "type": "ticker",
+      "attributes": {
+        "slug": "avgo",
+        "name": "AVGO",
+        "company": "Broadcom Inc.",
+        "companyName": "Broadcom Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/avgo/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AVGO",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AVGO"
+      }
+    },
+    {
+      "id": "16123",
+      "type": "ticker",
+      "attributes": {
+        "slug": "tsla",
+        "name": "TSLA",
+        "company": "Tesla, Inc.",
+        "companyName": "Tesla, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/tsla/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/TSLA",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/TSLA"
+      }
+    },
+    {
+      "id": "907",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm",
+        "name": "JPM",
+        "company": "JPMorgan Chase & Co.",
+        "companyName": "JPMorgan Chase & Co."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM"
+      }
+    },
+    {
+      "id": "587006",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.c",
+        "name": "JPM.PR.C",
+        "company": "JPMorgan Chase & Co. 6 DEP NCM PFD EE",
+        "companyName": "JPMorgan Chase & Co. 6 DEP NCM PFD EE"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-c/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.C",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.C"
+      }
+    },
+    {
+      "id": "598192",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.d",
+        "name": "JPM.PR.D",
+        "company": "JPMorgan Chase & Co. 5.75% SHS PFD DD",
+        "companyName": "JPMorgan Chase & Co. 5.75% SHS PFD DD"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-d/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.D",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.D"
+      }
+    },
+    {
+      "id": "615294",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.j",
+        "name": "JPM.PR.J",
+        "company": "JPMorgan Chase & Co. 4.75% DP SH GG",
+        "companyName": "JPMorgan Chase & Co. 4.75% DP SH GG"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-j/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.J",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.J"
+      }
+    },
+    {
+      "id": "612124",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.k",
+        "name": "JPM.PR.K",
+        "company": "JPMorgan Chase & Co. 4.55 DEP PFD JJ",
+        "companyName": "JPMorgan Chase & Co. 4.55 DEP PFD JJ"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-k/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.K",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.K"
+      }
+    },
+    {
+      "id": "609122",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.l",
+        "name": "JPM.PR.L",
+        "company": "JPMorgan Chase & Co. 4.625 DEP PFD LL",
+        "companyName": "JPMorgan Chase & Co. 4.625 DEP PFD LL"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-l/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.L",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.L"
+      }
+    },
+    {
+      "id": "614292",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jpm.pr.m",
+        "name": "JPM.PR.M",
+        "company": "JPMorgan Chase & Co. 4.20% DP PFD MM",
+        "companyName": "JPMorgan Chase & Co. 4.20% DP PFD MM"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jpm-m/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JPM.PR.M",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JPM.PR.M"
+      }
+    },
+    {
+      "id": "56",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wmt",
+        "name": "WMT",
+        "company": "Walmart Inc.",
+        "companyName": "Walmart Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wmt/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WMT",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WMT"
+      }
+    },
+    {
+      "id": "1719",
+      "type": "ticker",
+      "attributes": {
+        "slug": "unh",
+        "name": "UNH",
+        "company": "UnitedHealth Group Incorporated",
+        "companyName": "UnitedHealth Group Incorporated"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/unh/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/UNH",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/UNH"
+      }
+    },
+    {
+      "id": "9691",
+      "type": "ticker",
+      "attributes": {
+        "slug": "v",
+        "name": "V",
+        "company": "Visa Inc.",
+        "companyName": "Visa Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/v/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/V",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/V"
+      }
+    },
+    {
+      "id": "1198",
+      "type": "ticker",
+      "attributes": {
+        "slug": "xom",
+        "name": "XOM",
+        "company": "Exxon Mobil Corporation",
+        "companyName": "Exxon Mobil Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/xom/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/XOM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/XOM"
+      }
+    },
+    {
+      "id": "903",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ma",
+        "name": "MA",
+        "company": "Mastercard Incorporated",
+        "companyName": "Mastercard Incorporated"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ma/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MA",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MA"
+      }
+    },
+    {
+      "id": "891",
+      "type": "ticker",
+      "attributes": {
+        "slug": "pg",
+        "name": "PG",
+        "company": "The Procter & Gamble Company",
+        "companyName": "The Procter & Gamble Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/pg/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/PG",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/PG"
+      }
+    },
+    {
+      "id": "1135",
+      "type": "ticker",
+      "attributes": {
+        "slug": "jnj",
+        "name": "JNJ",
+        "company": "Johnson & Johnson",
+        "companyName": "Johnson & Johnson"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/jnj/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/JNJ",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/JNJ"
+      }
+    },
+    {
+      "id": "663",
+      "type": "ticker",
+      "attributes": {
+        "slug": "orcl",
+        "name": "ORCL",
+        "company": "Oracle Corporation",
+        "companyName": "Oracle Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/orcl/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/ORCL",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/ORCL"
+      }
+    },
+    {
+      "id": "58",
+      "type": "ticker",
+      "attributes": {
+        "slug": "cost",
+        "name": "COST",
+        "company": "Costco Wholesale Corporation",
+        "companyName": "Costco Wholesale Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/cost/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/COST",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/COST"
+      }
+    },
+    {
+      "id": "799",
+      "type": "ticker",
+      "attributes": {
+        "slug": "hd",
+        "name": "HD",
+        "company": "The Home Depot, Inc.",
+        "companyName": "The Home Depot, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/hd/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/HD",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/HD"
+      }
+    },
+    {
+      "id": "92371",
+      "type": "ticker",
+      "attributes": {
+        "slug": "abbv",
+        "name": "ABBV",
+        "company": "AbbVie Inc.",
+        "companyName": "AbbVie Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/abbv/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/ABBV",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/ABBV"
+      }
+    },
+    {
+      "id": "906",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac",
+        "name": "BAC",
+        "company": "Bank of America Corporation",
+        "companyName": "Bank of America Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC"
+      }
+    },
+    {
+      "id": "599612",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.b",
+        "name": "BAC.PR.B",
+        "company": "Bank of America Corporation 6 NCUM PFD SR GG",
+        "companyName": "Bank of America Corporation 6 NCUM PFD SR GG"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-b/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.B",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.B"
+      }
+    },
+    {
+      "id": "581995",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.e",
+        "name": "BAC.PR.E",
+        "company": "Bank of America Corporation PFD PER1/1000E",
+        "companyName": "Bank of America Corporation PFD PER1/1000E"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-e/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.E",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.E"
+      }
+    },
+    {
+      "id": "584385",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.k",
+        "name": "BAC.PR.K",
+        "company": "Bank of America Corporation 5.875 NCM PFD HH",
+        "companyName": "Bank of America Corporation 5.875 NCM PFD HH"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-k/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.K",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.K"
+      }
+    },
+    {
+      "id": "13216",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.l",
+        "name": "BAC.PR.L",
+        "company": "Bank of America Corporation 7.25%CNV PFD L",
+        "companyName": "Bank of America Corporation 7.25%CNV PFD L"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-l/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.L",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.L"
+      }
+    },
+    {
+      "id": "599775",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.m",
+        "name": "BAC.PR.M",
+        "company": "Bank of America Corporation 5.375 DP PFD KK",
+        "companyName": "Bank of America Corporation 5.375 DP PFD KK"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-m/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.M",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.M"
+      }
+    },
+    {
+      "id": "603648",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.n",
+        "name": "BAC.PR.N",
+        "company": "Bank of America Corporation 5% NCUM PFD LL",
+        "companyName": "Bank of America Corporation 5% NCUM PFD LL"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-n/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.N",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.N"
+      }
+    },
+    {
+      "id": "612122",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.o",
+        "name": "BAC.PR.O",
+        "company": "Bank of America Corporation DP SH NCUM NN",
+        "companyName": "Bank of America Corporation DP SH NCUM NN"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-o/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.O",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.O"
+      }
+    },
+    {
+      "id": "653600",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.p",
+        "name": "BAC.PR.P",
+        "company": "Bank of America Corporation 4.125% DP PFD PP",
+        "companyName": "Bank of America Corporation 4.125% DP PFD PP"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-p/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.P",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.P"
+      }
+    },
+    {
+      "id": "607936",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.q",
+        "name": "BAC.PR.Q",
+        "company": "Bank of America Corporation 4.250% DP PFD QQ",
+        "companyName": "Bank of America Corporation 4.250% DP PFD QQ"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-q/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.Q",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.Q"
+      }
+    },
+    {
+      "id": "15493",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bac.pr.s",
+        "name": "BAC.PR.S",
+        "company": "Bank of America Corporation 4.750% DP PFD SS",
+        "companyName": "Bank of America Corporation 4.750% DP PFD SS"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bac-s/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BAC.PR.S",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BAC.PR.S"
+      }
+    },
+    {
+      "id": "584203",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bacrp",
+        "name": "BACRP",
+        "company": "Bank of America Corporation PFD SER B 7%",
+        "companyName": "Bank of America Corporation PFD SER B 7%"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bacrp/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BACRP",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BACRP"
+      }
+    },
+    {
+      "id": "582025",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bml.pr.g",
+        "name": "BML.PR.G",
+        "company": "Bank of America Corporation PFD1/1200 SR1",
+        "companyName": "Bank of America Corporation PFD1/1200 SR1"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bml-g/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BML.PR.G",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BML.PR.G"
+      }
+    },
+    {
+      "id": "582026",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bml.pr.h",
+        "name": "BML.PR.H",
+        "company": "Bank of America Corporation PFD 1/1200SER2",
+        "companyName": "Bank of America Corporation PFD 1/1200SER2"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bml-h/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BML.PR.H",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BML.PR.H"
+      }
+    },
+    {
+      "id": "582028",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bml.pr.j",
+        "name": "BML.PR.J",
+        "company": "Bank of America Corporation PFD DP1/1200 4",
+        "companyName": "Bank of America Corporation PFD DP1/1200 4"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bml-j/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BML.PR.J",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BML.PR.J"
+      }
+    },
+    {
+      "id": "582029",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bml.pr.l",
+        "name": "BML.PR.L",
+        "company": "Bank of America Corporation PFD 1/1200SER5",
+        "companyName": "Bank of America Corporation PFD 1/1200SER5"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bml-l/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BML.PR.L",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BML.PR.L"
+      }
+    },
+    {
+      "id": "762376",
+      "type": "ticker",
+      "attributes": {
+        "slug": "mer.pr.k",
+        "name": "MER.PR.K",
+        "company": "Bank of America Corporation INCM CP OBG NT",
+        "companyName": "Bank of America Corporation INCM CP OBG NT"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/mer-k/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MER.PR.K",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MER.PR.K"
+      }
+    },
+    {
+      "id": "1422",
+      "type": "ticker",
+      "attributes": {
+        "slug": "mrk",
+        "name": "MRK",
+        "company": "Merck & Co., Inc.",
+        "companyName": "Merck & Co., Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/mrk/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MRK",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MRK"
+      }
+    },
+    {
+      "id": "1627",
+      "type": "ticker",
+      "attributes": {
+        "slug": "cvx",
+        "name": "CVX",
+        "company": "Chevron Corporation",
+        "companyName": "Chevron Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/cvx/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/CVX",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/CVX"
+      }
+    },
+    {
+      "id": "791",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ko",
+        "name": "KO",
+        "company": "The Coca-Cola Company",
+        "companyName": "The Coca-Cola Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ko/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/KO",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/KO"
+      }
+    },
+    {
+      "id": "97",
+      "type": "ticker",
+      "attributes": {
+        "slug": "nflx",
+        "name": "NFLX",
+        "company": "Netflix, Inc.",
+        "companyName": "Netflix, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/nflx/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/NFLX",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/NFLX"
+      }
+    },
+    {
+      "id": "1273",
+      "type": "ticker",
+      "attributes": {
+        "slug": "crm",
+        "name": "CRM",
+        "company": "Salesforce, Inc.",
+        "companyName": "Salesforce, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/crm/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/CRM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/CRM"
+      }
+    },
+    {
+      "id": "1312",
+      "type": "ticker",
+      "attributes": {
+        "slug": "adbe",
+        "name": "ADBE",
+        "company": "Adobe Inc.",
+        "companyName": "Adobe Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/adbe/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/ADBE",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/ADBE"
+      }
+    },
+    {
+      "id": "1032",
+      "type": "ticker",
+      "attributes": {
+        "slug": "pep",
+        "name": "PEP",
+        "company": "PepsiCo, Inc.",
+        "companyName": "PepsiCo, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/pep/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/PEP",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/PEP"
+      }
+    },
+    {
+      "id": "5074",
+      "type": "ticker",
+      "attributes": {
+        "slug": "tmo",
+        "name": "TMO",
+        "company": "Thermo Fisher Scientific Inc.",
+        "companyName": "Thermo Fisher Scientific Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/tmo/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/TMO",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/TMO"
+      }
+    },
+    {
+      "id": "1016",
+      "type": "ticker",
+      "attributes": {
+        "slug": "amd",
+        "name": "AMD",
+        "company": "Advanced Micro Devices, Inc.",
+        "companyName": "Advanced Micro Devices, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/amd/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AMD",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AMD"
+      }
+    },
+    {
+      "id": "7332",
+      "type": "ticker",
+      "attributes": {
+        "slug": "tmus",
+        "name": "TMUS",
+        "company": "T-Mobile US, Inc.",
+        "companyName": "T-Mobile US, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/tmus/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/TMUS",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/TMUS"
+      }
+    },
+    {
+      "id": "2256",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc",
+        "name": "WFC",
+        "company": "Wells Fargo & Company",
+        "companyName": "Wells Fargo & Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC"
+      }
+    },
+    {
+      "id": "609286",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.a",
+        "name": "WFC.PR.A",
+        "company": "Wells Fargo & Company DEP SH PFD CL A",
+        "companyName": "Wells Fargo & Company DEP SH PFD CL A"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-a/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.A",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.A"
+      }
+    },
+    {
+      "id": "609287",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.c",
+        "name": "WFC.PR.C",
+        "company": "Wells Fargo & Company 4.37 DP A PFD CC",
+        "companyName": "Wells Fargo & Company 4.37 DP A PFD CC"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-c/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.C",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.C"
+      }
+    },
+    {
+      "id": "612121",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.d",
+        "name": "WFC.PR.D",
+        "company": "Wells Fargo & Company DEP CL A PFD DD",
+        "companyName": "Wells Fargo & Company DEP CL A PFD DD"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-d/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.D",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.D"
+      }
+    },
+    {
+      "id": "582730",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.l",
+        "name": "WFC.PR.L",
+        "company": "Wells Fargo & Company PERP PFD CNV A",
+        "companyName": "Wells Fargo & Company PERP PFD CNV A"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-l/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.L",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.L"
+      }
+    },
+    {
+      "id": "582740",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.y",
+        "name": "WFC.PR.Y",
+        "company": "Wells Fargo & Company NON CUM PFD Y",
+        "companyName": "Wells Fargo & Company NON CUM PFD Y"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-y/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.Y",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.Y"
+      }
+    },
+    {
+      "id": "608845",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfc.pr.z",
+        "name": "WFC.PR.Z",
+        "company": "Wells Fargo & Company DEP REP 1/1000TH PR INT NON CM PR PFD A",
+        "companyName": "Wells Fargo & Company DEP REP 1/1000TH PR INT NON CM PR PFD A"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfc-z/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFC.PR.Z",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFC.PR.Z"
+      }
+    },
+    {
+      "id": "584261",
+      "type": "ticker",
+      "attributes": {
+        "slug": "wfcnp",
+        "name": "WFCNP",
+        "company": "Wells Fargo & Company PFD DIV EQUALIZ",
+        "companyName": "Wells Fargo & Company PFD DIV EQUALIZ"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/wfcnp/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/WFCNP",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/WFCNP"
+      }
+    },
+    {
+      "id": "1168",
+      "type": "ticker",
+      "attributes": {
+        "slug": "qcom",
+        "name": "QCOM",
+        "company": "QUALCOMM Incorporated",
+        "companyName": "QUALCOMM Incorporated"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/qcom/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/QCOM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/QCOM"
+      }
+    },
+    {
+      "id": "1213",
+      "type": "ticker",
+      "attributes": {
+        "slug": "dhr",
+        "name": "DHR",
+        "company": "Danaher Corporation",
+        "companyName": "Danaher Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/dhr/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/DHR",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/DHR"
+      }
+    },
+    {
+      "id": "670",
+      "type": "ticker",
+      "attributes": {
+        "slug": "csco",
+        "name": "CSCO",
+        "company": "Cisco Systems, Inc.",
+        "companyName": "Cisco Systems, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/csco/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/CSCO",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/CSCO"
+      }
+    },
+    {
+      "id": "1051",
+      "type": "ticker",
+      "attributes": {
+        "slug": "txn",
+        "name": "TXN",
+        "company": "Texas Instruments Incorporated",
+        "companyName": "Texas Instruments Incorporated"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/txn/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/TXN",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/TXN"
+      }
+    },
+    {
+      "id": "101",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ge",
+        "name": "GE",
+        "company": "General Electric Company",
+        "companyName": "General Electric Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ge/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GE",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GE"
+      }
+    },
+    {
+      "id": "1200",
+      "type": "ticker",
+      "attributes": {
+        "slug": "abt",
+        "name": "ABT",
+        "company": "Abbott Laboratories",
+        "companyName": "Abbott Laboratories"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/abt/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/ABT",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/ABT"
+      }
+    },
+    {
+      "id": "781",
+      "type": "ticker",
+      "attributes": {
+        "slug": "mcd",
+        "name": "MCD",
+        "company": "McDonald's Corporation",
+        "companyName": "McDonald's Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/mcd/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MCD",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MCD"
+      }
+    },
+    {
+      "id": "1081",
+      "type": "ticker",
+      "attributes": {
+        "slug": "amgn",
+        "name": "AMGN",
+        "company": "Amgen Inc.",
+        "companyName": "Amgen Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/amgn/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AMGN",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AMGN"
+      }
+    },
+    {
+      "id": "2186",
+      "type": "ticker",
+      "attributes": {
+        "slug": "intu",
+        "name": "INTU",
+        "company": "Intuit Inc.",
+        "companyName": "Intuit Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/intu/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/INTU",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/INTU"
+      }
+    },
+    {
+      "id": "11074",
+      "type": "ticker",
+      "attributes": {
+        "slug": "pm",
+        "name": "PM",
+        "company": "Philip Morris International Inc.",
+        "companyName": "Philip Morris International Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/pm/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/PM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/PM"
+      }
+    },
+    {
+      "id": "539",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ibm",
+        "name": "IBM",
+        "company": "International Business Machines Corporation",
+        "companyName": "International Business Machines Corporation"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ibm/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/IBM",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/IBM"
+      }
+    },
+    {
+      "id": "904",
+      "type": "ticker",
+      "attributes": {
+        "slug": "axp",
+        "name": "AXP",
+        "company": "American Express Company",
+        "companyName": "American Express Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/axp/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AXP",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AXP"
+      }
+    },
+    {
+      "id": "1216",
+      "type": "ticker",
+      "attributes": {
+        "slug": "pfe",
+        "name": "PFE",
+        "company": "Pfizer Inc.",
+        "companyName": "Pfizer Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/pfe/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/PFE",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/PFE"
+      }
+    },
+    {
+      "id": "7088",
+      "type": "ticker",
+      "attributes": {
+        "slug": "bx",
+        "name": "BX",
+        "company": "Blackstone Inc.",
+        "companyName": "Blackstone Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/bx/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/BX",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/BX"
+      }
+    },
+    {
+      "id": "1186",
+      "type": "ticker",
+      "attributes": {
+        "slug": "cat",
+        "name": "CAT",
+        "company": "Caterpillar Inc.",
+        "companyName": "Caterpillar Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/cat/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/CAT",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/CAT"
+      }
+    },
+    {
+      "id": "1132",
+      "type": "ticker",
+      "attributes": {
+        "slug": "amat",
+        "name": "AMAT",
+        "company": "Applied Materials, Inc.",
+        "companyName": "Applied Materials, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/amat/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/AMAT",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/AMAT"
+      }
+    },
+    {
+      "id": "44151",
+      "type": "ticker",
+      "attributes": {
+        "slug": "now",
+        "name": "NOW",
+        "company": "ServiceNow, Inc.",
+        "companyName": "ServiceNow, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/now/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/NOW",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/NOW"
+      }
+    },
+    {
+      "id": "935",
+      "type": "ticker",
+      "attributes": {
+        "slug": "gs",
+        "name": "GS",
+        "company": "The Goldman Sachs Group, Inc.",
+        "companyName": "The Goldman Sachs Group, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/gs/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GS",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GS"
+      }
+    },
+    {
+      "id": "582281",
+      "type": "ticker",
+      "attributes": {
+        "slug": "gs.pr.a",
+        "name": "GS.PR.A",
+        "company": "The Goldman Sachs Group, Inc. PFD A 1/1000",
+        "companyName": "The Goldman Sachs Group, Inc. PFD A 1/1000"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/gs-a/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GS.PR.A",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GS.PR.A"
+      }
+    },
+    {
+      "id": "582283",
+      "type": "ticker",
+      "attributes": {
+        "slug": "gs.pr.c",
+        "name": "GS.PR.C",
+        "company": "The Goldman Sachs Group, Inc. PFD 1/1000 C",
+        "companyName": "The Goldman Sachs Group, Inc. PFD 1/1000 C"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/gs-c/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GS.PR.C",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GS.PR.C"
+      }
+    },
+    {
+      "id": "586286",
+      "type": "ticker",
+      "attributes": {
+        "slug": "gs.pr.d",
+        "name": "GS.PR.D",
+        "company": "The Goldman Sachs Group, Inc. SHS D 1/1000",
+        "companyName": "The Goldman Sachs Group, Inc. SHS D 1/1000"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/gs-d/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/GS.PR.D",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/GS.PR.D"
+      }
+    },
+    {
+      "id": "693",
+      "type": "ticker",
+      "attributes": {
+        "slug": "vz",
+        "name": "VZ",
+        "company": "Verizon Communications Inc.",
+        "companyName": "Verizon Communications Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/vz/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/VZ",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/VZ"
+      }
+    },
+    {
+      "id": "2110",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms",
+        "name": "MS",
+        "company": "Morgan Stanley",
+        "companyName": "Morgan Stanley"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS"
+      }
+    },
+    {
+      "id": "582433",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.a",
+        "name": "MS.PR.A",
+        "company": "Morgan Stanley PFD A 1/1000",
+        "companyName": "Morgan Stanley PFD A 1/1000"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-a/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.A",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.A"
+      }
+    },
+    {
+      "id": "601363",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.e",
+        "name": "MS.PR.E",
+        "company": "Morgan Stanley DEP SHS 1/1000 E",
+        "companyName": "Morgan Stanley DEP SHS 1/1000 E"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-e/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.E",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.E"
+      }
+    },
+    {
+      "id": "601364",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.f",
+        "name": "MS.PR.F",
+        "company": "Morgan Stanley DEP SHS 1/1000TH",
+        "companyName": "Morgan Stanley DEP SHS 1/1000TH"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-f/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.F",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.F"
+      }
+    },
+    {
+      "id": "601365",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.i",
+        "name": "MS.PR.I",
+        "company": "Morgan Stanley DEP FIX/FLT",
+        "companyName": "Morgan Stanley DEP FIX/FLT"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-i/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.I",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.I"
+      }
+    },
+    {
+      "id": "582438",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.k",
+        "name": "MS.PR.K",
+        "company": "Morgan Stanley SH NONCM PFD K",
+        "companyName": "Morgan Stanley SH NONCM PFD K"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-k/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.K",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.K"
+      }
+    },
+    {
+      "id": "601366",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.l",
+        "name": "MS.PR.L",
+        "company": "Morgan Stanley 4.875 DP SH PF L",
+        "companyName": "Morgan Stanley 4.875 DP SH PF L"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-l/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.L",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.L"
+      }
+    },
+    {
+      "id": "613598",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.o",
+        "name": "MS.PR.O",
+        "company": "Morgan Stanley 4.250% DP PFD O",
+        "companyName": "Morgan Stanley 4.250% DP PFD O"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-o/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.O",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.O"
+      }
+    },
+    {
+      "id": "629177",
+      "type": "ticker",
+      "attributes": {
+        "slug": "ms.pr.p",
+        "name": "MS.PR.P",
+        "company": "Morgan Stanley 6.5% DP SH PFD P",
+        "companyName": "Morgan Stanley 6.5% DP SH PFD P"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/ms-p/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MS.PR.P",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MS.PR.P"
+      }
+    },
+    {
+      "id": "779637",
+      "type": "ticker",
+      "attributes": {
+        "slug": "mspql",
+        "name": "MSPQL",
+        "company": "Morgan Stanley 6.625 PFD SER Q",
+        "companyName": "Morgan Stanley 6.625 PFD SER Q"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/MSPQV/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MSPQL",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MSPQL"
+      }
+    },
+    {
+      "id": "762408",
+      "type": "ticker",
+      "attributes": {
+        "slug": "mstlw",
+        "name": "MSTLW",
+        "company": "Morgan Stanley WT EXP 012026",
+        "companyName": "Morgan Stanley WT EXP 012026"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/MSTLW/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/MSTLW",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/MSTLW"
+      }
+    },
+    {
+      "id": "86",
+      "type": "ticker",
+      "attributes": {
+        "slug": "dis",
+        "name": "DIS",
+        "company": "The Walt Disney Company",
+        "companyName": "The Walt Disney Company"
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/dis/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/DIS",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/DIS"
+      }
+    },
+    {
+      "id": "2479",
+      "type": "ticker",
+      "attributes": {
+        "slug": "isrg",
+        "name": "ISRG",
+        "company": "Intuitive Surgical, Inc.",
+        "companyName": "Intuitive Surgical, Inc."
+      },
+      "relationships": {},
+      "meta": {
+        "companyLogoUrl": "https://static.seekingalpha.com/cdn/iex/stable/stock/isrg/logo?asImage=true",
+        "companyLogoUrlLight": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_light/ISRG",
+        "companyLogoUrlDark": "https://static.seekingalpha.com/cdn/s3/company_logos/mark_vector_dark/ISRG"
+      }
+    }
+  ],
+  "meta": { "count": 148 }
+}

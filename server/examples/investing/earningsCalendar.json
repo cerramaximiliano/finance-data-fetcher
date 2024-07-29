@@ -1,1 +1,946 @@
-{"data":[{"Company":"AbbVie\u00a0(ABBV)","EPS":"2.65","EPS Forecast":"2.7","Market Cap":"322.62B","Revenue":"14.46B","Revenue Forecast":"14.02B","Time":null},{"Company":"Nestle ADR\u00a0(NSRGY)","EPS":"2.7","EPS Forecast":"--","Market Cap":"266.48B","Revenue":"25.97B","Revenue Forecast":"25.58B","Time":null},{"Company":"AstraZeneca ADR\u00a0(AZN)","EPS":"1.98","EPS Forecast":"0.99","Market Cap":"237.80B","Revenue":"12.94B","Revenue Forecast":"12.65B","Time":null},{"Company":"Hermes International SA\u00a0(HESAY)","EPS":"--","EPS Forecast":"--","Market Cap":"229.46B","Revenue":"--","Revenue Forecast":"3.96B","Time":null},{"Company":"TotalEnergies SE ADR\u00a0(TTE)","EPS":"1.98","EPS Forecast":"2.13","Market Cap":"154.51B","Revenue":"49.18B","Revenue Forecast":"53.47B","Time":null},{"Company":"Rtx Corp\u00a0(RTX)","EPS":"1.41","EPS Forecast":"1.29","Market Cap":"150.80B","Revenue":"19.8B","Revenue Forecast":"19.28B","Time":null},{"Company":"Union Pacific\u00a0(UNP)","EPS":"2.74","EPS Forecast":"2.71","Market Cap":"145.17B","Revenue":"6B","Revenue Forecast":"6.06B","Time":null},{"Company":"Unilever ADR\u00a0(UL)","EPS":"1.53","EPS Forecast":"--","Market Cap":"141.25B","Revenue":"16.09B","Revenue Forecast":"17.22B","Time":null},{"Company":"Sanofi ADR\u00a0(SNY)","EPS":"1.73","EPS Forecast":"0.89","Market Cap":"132.26B","Revenue":"10.74B","Revenue Forecast":"11.68B","Time":null},{"Company":"Honeywell\u00a0(HON)","EPS":"2.49","EPS Forecast":"2.42","Market Cap":"130.89B","Revenue":"9.58B","Revenue Forecast":"9.41B","Time":null},{"Company":"Essilor International SA\u00a0(ESLOY)","EPS":"--","EPS Forecast":"--","Market Cap":"95.14B","Revenue":"--","Revenue Forecast":"7.58B","Time":null},{"Company":"Relx ADR\u00a0(RELX)","EPS":"--","EPS Forecast":"--","Market Cap":"85.99B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Iberdrola SA\u00a0(IBDRY)","EPS":"0.9117","EPS Forecast":"0.8227","Market Cap":"82.52B","Revenue":"10.81B","Revenue Forecast":"10.35B","Time":null},{"Company":"BNP Paribas ADR\u00a0(BNPQY)","EPS":"1.7","EPS Forecast":"1.31","Market Cap":"78.60B","Revenue":"13.32B","Revenue Forecast":"12.9B","Time":null},{"Company":"British American Tobacco ADR\u00a0(BTI)","EPS":"200.3","EPS Forecast":"--","Market Cap":"76.83B","Revenue":"12.34B","Revenue Forecast":"--","Time":null},{"Company":"Santander ADR\u00a0(SAN)","EPS":"0.2171","EPS Forecast":"0.2129","Market Cap":"76.39B","Revenue":"17.01B","Revenue Forecast":"16.74B","Time":null},{"Company":"ENEL Societa per Azioni\u00a0(ENLAY)","EPS":"--","EPS Forecast":"0.2011","Market Cap":"73.61B","Revenue":"--","Revenue Forecast":"25.55B","Time":null},{"Company":"Northrop Grumman\u00a0(NOC)","EPS":"6.36","EPS Forecast":"5.93","Market Cap":"68.74B","Revenue":"10.22B","Revenue Forecast":"10.02B","Time":null},{"Company":"Stellantis NV\u00a0(STLA)","EPS":"2.4","EPS Forecast":"1.95","Market Cap":"68.39B","Revenue":"48.87B","Revenue Forecast":"49.33B","Time":null},{"Company":"Vinci ADR\u00a0(VCISY)","EPS":"--","EPS Forecast":"--","Market Cap":"63.99B","Revenue":"--","Revenue Forecast":"19.67B","Time":null},{"Company":"Arthur J Gallagher\u00a0(AJG)","EPS":"--","EPS Forecast":"2.24","Market Cap":"60.40B","Revenue":"--","Revenue Forecast":"2.77B","Time":null},{"Company":"Roper Technologies\u00a0(ROP)","EPS":"4.48","EPS Forecast":"4.46","Market Cap":"58.11B","Revenue":"1.72B","Revenue Forecast":"1.73B","Time":null},{"Company":"Carrier Global\u00a0(CARR)","EPS":"0.87","EPS Forecast":"0.85","Market Cap":"57.35B","Revenue":"6.7B","Revenue Forecast":"7.05B","Time":null},{"Company":"Norfolk Southern\u00a0(NSC)","EPS":"--","EPS Forecast":"2.87","Market Cap":"50.63B","Revenue":"--","Revenue Forecast":"3.04B","Time":null},{"Company":"Compass Group ADR\u00a0(CMPGY)","EPS":"--","EPS Forecast":"--","Market Cap":"50.54B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Digital\u00a0(DLR)","EPS":"--","EPS Forecast":"0.2795","Market Cap":"50.04B","Revenue":"--","Revenue Forecast":"1.38B","Time":null},{"Company":"Valero Energy\u00a0(VLO)","EPS":"2.71","EPS Forecast":"2.99","Market Cap":"48.53B","Revenue":"34.49B","Revenue Forecast":"32.85B","Time":null},{"Company":"Lloyds Banking ADR\u00a0(LYG)","EPS":"0.0878","EPS Forecast":"0.0647","Market Cap":"48.14B","Revenue":"5.88B","Revenue Forecast":"5.31B","Time":null},{"Company":"Dassault Systemes SA\u00a0(DASTY)","EPS":"0.3256","EPS Forecast":"0.3254","Market Cap":"47.76B","Revenue":"1.62B","Revenue Forecast":"1.64B","Time":null},{"Company":"Lonza Group AG\u00a0(LZAGY)","EPS":"--","EPS Forecast":"1.05","Market Cap":"47.05B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Keurig Dr Pepper\u00a0(KDP)","EPS":"0.45","EPS Forecast":"0.45","Market Cap":"46.73B","Revenue":"3.93B","Revenue Forecast":"3.92B","Time":null},{"Company":"L3Harris Technologies\u00a0(LHX)","EPS":"--","EPS Forecast":"3.17","Market Cap":"46.02B","Revenue":"--","Revenue Forecast":"5.3B","Time":null},{"Company":"Vale ADR\u00a0(VALE)","EPS":"--","EPS Forecast":"0.4324","Market Cap":"45.84B","Revenue":"--","Revenue Forecast":"10.04B","Time":null},{"Company":"DexCom\u00a0(DXCM)","EPS":"--","EPS Forecast":"0.3869","Market Cap":"44.40B","Revenue":"--","Revenue Forecast":"1.04B","Time":null},{"Company":"Compagnie Saint-Gobain ADR\u00a0(CODYY)","EPS":"--","EPS Forecast":"--","Market Cap":"41.27B","Revenue":"--","Revenue Forecast":"13.06B","Time":null},{"Company":"Royal Caribbean Cruises\u00a0(RCL)","EPS":"3.21","EPS Forecast":"2.75","Market Cap":"40.39B","Revenue":"4.1B","Revenue Forecast":"4.04B","Time":null},{"Company":"Reckitt Benckiser ADR\u00a0(RBGLY)","EPS":"--","EPS Forecast":"--","Market Cap":"39.54B","Revenue":"4.43B","Revenue Forecast":"4.35B","Time":null},{"Company":"PG E\u00a0(PCG)","EPS":"0.31","EPS Forecast":"0.3","Market Cap":"39.15B","Revenue":"5.99B","Revenue Forecast":"5.81B","Time":null},{"Company":"Nasdaq Inc\u00a0(NDAQ)","EPS":"0.69","EPS Forecast":"0.64","Market Cap":"37.98B","Revenue":"1.16B","Revenue Forecast":"1.13B","Time":null},{"Company":"Bank Mandiri Persero ADR\u00a0(PPERY)","EPS":"--","EPS Forecast":"0.1802","Market Cap":"37.70B","Revenue":"--","Revenue Forecast":"2.17B","Time":null},{"Company":"DSV ADR\u00a0(DSDVY)","EPS":"0.9698","EPS Forecast":"0.949","Market Cap":"37.35B","Revenue":"5.99B","Revenue Forecast":"5.65B","Time":null},{"Company":"Banco Santander Brasil ADR\u00a0(BSBR)","EPS":"0.1584","EPS Forecast":"0.1608","Market Cap":"37.07B","Revenue":"3.55B","Revenue Forecast":"3.74B","Time":null},{"Company":"Dow\u00a0(DOW)","EPS":"0.68","EPS Forecast":"0.71","Market Cap":"36.30B","Revenue":"10.92B","Revenue Forecast":"11.01B","Time":null},{"Company":"Cenovus Energy Inc\u00a0(CVE)","EPS":"--","EPS Forecast":"0.5028","Market Cap":"36.01B","Revenue":"--","Revenue Forecast":"11B","Time":null},{"Company":"Anglo American ADR\u00a0(NGLOY)","EPS":"--","EPS Forecast":"--","Market Cap":"35.11B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Baker Hughes\u00a0(BKR)","EPS":"--","EPS Forecast":"0.4903","Market Cap":"34.83B","Revenue":"--","Revenue Forecast":"6.81B","Time":null},{"Company":"CBRE A\u00a0(CBRE)","EPS":"0.81","EPS Forecast":"0.7","Market Cap":"32.47B","Revenue":"8.39B","Revenue Forecast":"8.31B","Time":null},{"Company":"STMicroelectronics ADR\u00a0(STM)","EPS":"0.38","EPS Forecast":"0.36","Market Cap":"31.34B","Revenue":"3.23B","Revenue Forecast":"3.23B","Time":null},{"Company":"UCB ADR\u00a0(UCBJY)","EPS":"--","EPS Forecast":"--","Market Cap":"30.57B","Revenue":"--","Revenue Forecast":"1.93B","Time":null},{"Company":"Hartford\u00a0(HIG)","EPS":"--","EPS Forecast":"2.24","Market Cap":"30.52B","Revenue":"--","Revenue Forecast":"6.02B","Time":null},{"Company":"Renesas Electronics ADR\u00a0(RNECY)","EPS":"0.1089","EPS Forecast":"0.165","Market Cap":"29.66B","Revenue":"2.34B","Revenue Forecast":"2.25B","Time":null},{"Company":"Edison\u00a0(EIX)","EPS":"--","EPS Forecast":"1.05","Market Cap":"29.52B","Revenue":"--","Revenue Forecast":"4.09B","Time":null},{"Company":"Orange ADR\u00a0(ORAN)","EPS":"0.1406","EPS Forecast":"0.1282","Market Cap":"29.50B","Revenue":"10.84B","Revenue Forecast":"10.87B","Time":null},{"Company":"Fujitsu ADR\u00a0(FJTSY)","EPS":"--","EPS Forecast":"0.0306","Market Cap":"29.17B","Revenue":"--","Revenue Forecast":"5.13B","Time":null},{"Company":"argenx ADR\u00a0(ARGX)","EPS":"0.45","EPS Forecast":"-0.9","Market Cap":"29.15B","Revenue":"477.64M","Revenue Forecast":"439.03M","Time":null},{"Company":"First Citizens BancShares\u00a0(FCNCA)","EPS":"50.87","EPS Forecast":"44.56","Market Cap":"28.72B","Revenue":"2.3B","Revenue Forecast":"2.26B","Time":null},{"Company":"Willis Towers Watson\u00a0(WTW)","EPS":"2.55","EPS Forecast":"2.32","Market Cap":"28.50B","Revenue":"2.3B","Revenue Forecast":"2.27B","Time":null},{"Company":"Tractor Supply\u00a0(TSCO)","EPS":"3.93","EPS Forecast":"3.92","Market Cap":"28.05B","Revenue":"4.25B","Revenue Forecast":"4.28B","Time":null},{"Company":"Verbund ADR\u00a0(OEZVY)","EPS":"0.2518","EPS Forecast":"--","Market Cap":"27.96B","Revenue":"2.05B","Revenue Forecast":"--","Time":null},{"Company":"Canon ADR\u00a0(CAJPY)","EPS":"--","EPS Forecast":"0.4196","Market Cap":"27.57B","Revenue":"--","Revenue Forecast":"6.74B","Time":null},{"Company":"Dover\u00a0(DOV)","EPS":"2.36","EPS Forecast":"2.21","Market Cap":"25.37B","Revenue":"2.18B","Revenue Forecast":"2.15B","Time":null},{"Company":"Tradeweb Markets\u00a0(TW)","EPS":"0.7","EPS Forecast":"0.69","Market Cap":"24.85B","Revenue":"405M","Revenue Forecast":"403.83M","Time":null},{"Company":"DTE Energy\u00a0(DTE)","EPS":"1.55","EPS Forecast":"1.19","Market Cap":"24.80B","Revenue":"2.29B","Revenue Forecast":"2.39B","Time":null},{"Company":"Veralto\u00a0(VLTO)","EPS":"--","EPS Forecast":"0.81","Market Cap":"24.51B","Revenue":"--","Revenue Forecast":"1,292M","Time":null},{"Company":"Vodafone Group ADR\u00a0(VOD)","EPS":"--","EPS Forecast":"--","Market Cap":"24.42B","Revenue":"9.81B","Revenue Forecast":"--","Time":null},{"Company":"KB Financial\u00a0(KB)","EPS":"2.95","EPS Forecast":"2.83","Market Cap":"22.84B","Revenue":"3.21B","Revenue Forecast":"3.11B","Time":null},{"Company":"ASE Industrial ADR\u00a0(ASX)","EPS":"0.1066","EPS Forecast":"0.0968","Market Cap":"22.76B","Revenue":"4.27B","Revenue Forecast":"4.22B","Time":null},{"Company":"Weyerhaeuser\u00a0(WY)","EPS":"--","EPS Forecast":"0.2326","Market Cap":"22.00B","Revenue":"--","Revenue Forecast":"2.01B","Time":null},{"Company":"Deckers Outdoor\u00a0(DECK)","EPS":"--","EPS Forecast":"3.43","Market Cap":"21.29B","Revenue":"--","Revenue Forecast":"805.07M","Time":null},{"Company":"SGS SA\u00a0(SGSOY)","EPS":"--","EPS Forecast":"--","Market Cap":"20.17B","Revenue":"1.91B","Revenue Forecast":"1.92B","Time":null},{"Company":"Shinhan\u00a0(SHG)","EPS":"--","EPS Forecast":"1.91","Market Cap":"20.16B","Revenue":"--","Revenue Forecast":"2.74B","Time":null},{"Company":"Erie Indemnity\u00a0(ERIE)","EPS":"--","EPS Forecast":"2.55","Market Cap":"20.08B","Revenue":"--","Revenue Forecast":"933.96M","Time":null},{"Company":"Principal Financial\u00a0(PFG)","EPS":"--","EPS Forecast":"1.84","Market Cap":"19.84B","Revenue":"--","Revenue Forecast":"3.8B","Time":null},{"Company":"West Pharmaceutical Services\u00a0(WST)","EPS":"1.52","EPS Forecast":"1.74","Market Cap":"19.82B","Revenue":"702.1M","Revenue Forecast":"729.36M","Time":null},{"Company":"Cincinnati Financial\u00a0(CINF)","EPS":"--","EPS Forecast":"1.01","Market Cap":"18.92B","Revenue":"--","Revenue Forecast":"2.21B","Time":null},{"Company":"POSCO\u00a0(PKX)","EPS":"--","EPS Forecast":"0.9392","Market Cap":"18.9B","Revenue":"--","Revenue Forecast":"13.53B","Time":null},{"Company":"CMS Energy\u00a0(CMS)","EPS":"0.65","EPS Forecast":"0.62","Market Cap":"18.89B","Revenue":"1.61B","Revenue Forecast":"1.7B","Time":null},{"Company":"LPL Financial\u00a0(LPLA)","EPS":"--","EPS Forecast":"3.73","Market Cap":"17.71B","Revenue":"--","Revenue Forecast":"2.89B","Time":null},{"Company":"Labcorp Holdings\u00a0(LH)","EPS":"--","EPS Forecast":"3.8","Market Cap":"17.68B","Revenue":"--","Revenue Forecast":"3.19B","Time":null},{"Company":"EMCOR\u00a0(EME)","EPS":"5.25","EPS Forecast":"3.76","Market Cap":"17.67B","Revenue":"3.67B","Revenue Forecast":"3.52B","Time":null},{"Company":"VeriSign\u00a0(VRSN)","EPS":"--","EPS Forecast":"1.94","Market Cap":"17.64B","Revenue":"--","Revenue Forecast":"386.81M","Time":null},{"Company":"Reliance Steel&Aluminum\u00a0(RS)","EPS":"4.65","EPS Forecast":"4.74","Market Cap":"17.06B","Revenue":"3.64B","Revenue Forecast":"3.65B","Time":null},{"Company":"Repsol SA\u00a0(REPYY)","EPS":"0.7663","EPS Forecast":"0.6646","Market Cap":"17.06B","Revenue":"16.42B","Revenue Forecast":"16.89B","Time":null},{"Company":"SS&Cs\u00a0(SSNC)","EPS":"--","EPS Forecast":"1.2","Market Cap":"16.80B","Revenue":"--","Revenue Forecast":"1.43B","Time":null},{"Company":"Masco\u00a0(MAS)","EPS":"1.2","EPS Forecast":"1.18","Market Cap":"16.37B","Revenue":"2.09B","Revenue Forecast":"2.1B","Time":null},{"Company":"Carlyle Group\u00a0(CG)","EPS":"--","EPS Forecast":"0.8415","Market Cap":"16.19B","Revenue":"--","Revenue Forecast":"837.12M","Time":null},{"Company":"Southwest Airlines\u00a0(LUV)","EPS":"0.58","EPS Forecast":"0.52","Market Cap":"16.02B","Revenue":"7.35B","Revenue Forecast":"7.32B","Time":null},{"Company":"TransUnion\u00a0(TRU)","EPS":"0.99","EPS Forecast":"0.97","Market Cap":"15.85B","Revenue":"1.04B","Revenue Forecast":"1.02B","Time":null},{"Company":"Koninklijke ADR\u00a0(KKPNY)","EPS":"0.0588","EPS Forecast":"0.0588","Market Cap":"15.68B","Revenue":"1.51B","Revenue Forecast":"1.5B","Time":null},{"Company":"Rentokil Initial ADR\u00a0(RTO)","EPS":"--","EPS Forecast":"--","Market Cap":"15.25B","Revenue":"--","Revenue Forecast":"3,497M","Time":null},{"Company":"Neste\u00a0(NTOIY)","EPS":"-0.0271","EPS Forecast":"0.0337","Market Cap":"15.01B","Revenue":"5.04B","Revenue Forecast":"4.04B","Time":null},{"Company":"Healthpeak Properties\u00a0(DOC)","EPS":"--","EPS Forecast":"0.1001","Market Cap":"14.87B","Revenue":"--","Revenue Forecast":"665.1M","Time":null},{"Company":"RPM\u00a0(RPM)","EPS":"1.56","EPS Forecast":"1.54","Market Cap":"14.70B","Revenue":"2.01B","Revenue Forecast":"2.01B","Time":null},{"Company":"Gaming & Leisure Properties\u00a0(GLPI)","EPS":"--","EPS Forecast":"0.7241","Market Cap":"13.70B","Revenue":"--","Revenue Forecast":"377.76M","Time":null},{"Company":"Pool\u00a0(POOL)","EPS":"4.98","EPS Forecast":"4.91","Market Cap":"13.43B","Revenue":"1.8B","Revenue Forecast":"1.75B","Time":null},{"Company":"TFI Intl\u00a0(TFII)","EPS":"--","EPS Forecast":"1.61","Market Cap":"13.22B","Revenue":"--","Revenue Forecast":"2.28B","Time":null},{"Company":"First Quantum Minerals\u00a0(FQVLF)","EPS":"-0.02","EPS Forecast":"-0.03","Market Cap":"12.63B","Revenue":"1.23B","Revenue Forecast":"1.06B","Time":null},{"Company":"Juniper\u00a0(JNPR)","EPS":"--","EPS Forecast":"0.4448","Market Cap":"12.13B","Revenue":"--","Revenue Forecast":"1.25B","Time":null},{"Company":"TechnipFMC\u00a0(FTI)","EPS":"0.43","EPS Forecast":"0.31","Market Cap":"12.05B","Revenue":"2.33B","Revenue Forecast":"2.23B","Time":null},{"Company":"Nissan Motor ADR\u00a0(NSANY)","EPS":"0.1014","EPS Forecast":"0.4143","Market Cap":"11.71B","Revenue":"19.56B","Revenue Forecast":"19.11B","Time":null},{"Company":"ACS Actividades Construccion ADR\u00a0(ACSAY)","EPS":"--","EPS Forecast":"--","Market Cap":"11.43B","Revenue":"--","Revenue Forecast":"10.51B","Time":null},{"Company":"Eastman Chemical\u00a0(EMN)","EPS":"--","EPS Forecast":"2.02","Market Cap":"11.38B","Revenue":"--","Revenue Forecast":"2.36B","Time":null},{"Company":"Astra Int\u00a0(PTAIY)","EPS":"--","EPS Forecast":"0.2314","Market Cap":"11.17B","Revenue":"--","Revenue Forecast":"4.63B","Time":null},{"Company":"Vivendi SA PK\u00a0(VIVHY)","EPS":"--","EPS Forecast":"--","Market Cap":"11.14B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Julius Baer Group\u00a0(JBAXY)","EPS":"0.525","EPS Forecast":"0.4792","Market Cap":"11.06B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Texas Roadhouse\u00a0(TXRH)","EPS":"--","EPS Forecast":"1.64","Market Cap":"11.05B","Revenue":"--","Revenue Forecast":"1.34B","Time":null},{"Company":"Comfort Systems\u00a0(FIX)","EPS":"--","EPS Forecast":"3.09","Market Cap":"10.94B","Revenue":"--","Revenue Forecast":"1.69B","Time":null},{"Company":"BE Semiconductor ADR\u00a0(BESIY)","EPS":"0.5753","EPS Forecast":"0.5975","Market Cap":"10.37B","Revenue":"164.09M","Revenue Forecast":"170.2M","Time":null},{"Company":"Stora Enso Oyj PK\u00a0(SEOAY)","EPS":"0.076","EPS Forecast":"0.1141","Market Cap":"9.92B","Revenue":"2.5B","Revenue Forecast":"2.57B","Time":null},{"Company":"LKQ\u00a0(LKQ)","EPS":"0.98","EPS Forecast":"1.03","Market Cap":"9.92B","Revenue":"3.7B","Revenue Forecast":"3.87B","Time":null},{"Company":"Skechers\u00a0(SKX)","EPS":"--","EPS Forecast":"0.9456","Market Cap":"9.69B","Revenue":"--","Revenue Forecast":"2.23B","Time":null},{"Company":"AptarGroup\u00a0(ATR)","EPS":"--","EPS Forecast":"1.36","Market Cap":"9.51B","Revenue":"--","Revenue Forecast":"933.17M","Time":null},{"Company":"Accor SA\u00a0(ACCYY)","EPS":"0.1954","EPS Forecast":"--","Market Cap":"9.42B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Appfolio Inc\u00a0(APPF)","EPS":"--","EPS Forecast":"0.9571","Market Cap":"9.37B","Revenue":"--","Revenue Forecast":"190.95M","Time":null},{"Company":"Ipsen ADR\u00a0(IPSEY)","EPS":"--","EPS Forecast":"--","Market Cap":"9.30B","Revenue":"908.48M","Revenue Forecast":"908.1M","Time":null},{"Company":"Fortune Brands\u00a0(FBIN)","EPS":"--","EPS Forecast":"1.12","Market Cap":"9.02B","Revenue":"--","Revenue Forecast":"1.28B","Time":null},{"Company":"Cemex ADR\u00a0(CX)","EPS":"0.17","EPS Forecast":"0.22","Market Cap":"9.01B","Revenue":"4.49B","Revenue Forecast":"4.7B","Time":null},{"Company":"Hasbro\u00a0(HAS)","EPS":"1.22","EPS Forecast":"0.78","Market Cap":"8.86B","Revenue":"995.3M","Revenue Forecast":"941.38M","Time":null},{"Company":"Kinsale Capital\u00a0(KNSL)","EPS":"--","EPS Forecast":"3.52","Market Cap":"8.77B","Revenue":"--","Revenue Forecast":"412.15M","Time":null},{"Company":"Alstom PK\u00a0(ALSMY)","EPS":"--","EPS Forecast":"--","Market Cap":"8.74B","Revenue":"4.76B","Revenue Forecast":"4.74B","Time":null},{"Company":"Weatherford\u00a0(WFRD)","EPS":"1.66","EPS Forecast":"1.74","Market Cap":"8.58B","Revenue":"1.41B","Revenue Forecast":"1.42B","Time":null},{"Company":"Old Republic\u00a0(ORI)","EPS":"0.76","EPS Forecast":"0.64","Market Cap":"8.50B","Revenue":"2.01B","Revenue Forecast":"1.92B","Time":null},{"Company":"Mohawk Industries\u00a0(MHK)","EPS":"--","EPS Forecast":"2.75","Market Cap":"8.26B","Revenue":"--","Revenue Forecast":"2.84B","Time":null},{"Company":"FTI Consulting\u00a0(FCN)","EPS":"2.34","EPS Forecast":"2.02","Market Cap":"8.21B","Revenue":"949.2M","Revenue Forecast":"938.53M","Time":null},{"Company":"The Ensign\u00a0(ENSG)","EPS":"--","EPS Forecast":"1.3","Market Cap":"7.90B","Revenue":"--","Revenue Forecast":"1.02B","Time":null},{"Company":"Woori Financial\u00a0(WF)","EPS":"--","EPS Forecast":"2.14","Market Cap":"7.86B","Revenue":"--","Revenue Forecast":"1.86B","Time":null},{"Company":"Cullen/Frost Bankers\u00a0(CFR)","EPS":"--","EPS Forecast":"2.07","Market Cap":"7.53B","Revenue":"--","Revenue Forecast":"506.8M","Time":null},{"Company":"SPS Commerce\u00a0(SPSC)","EPS":"--","EPS Forecast":"0.7661","Market Cap":"7.52B","Revenue":"--","Revenue Forecast":"151.87M","Time":null},{"Company":"FirstService\u00a0(FSV)","EPS":"1.36","EPS Forecast":"1.26","Market Cap":"7.41B","Revenue":"1.28B","Revenue Forecast":"1.28B","Time":null},{"Company":"Allison Transmission\u00a0(ALSN)","EPS":"--","EPS Forecast":"2.06","Market Cap":"7.29B","Revenue":"--","Revenue Forecast":"799.39M","Time":null},{"Company":"Nov\u00a0(NOV)","EPS":"--","EPS Forecast":"0.3441","Market Cap":"7.22B","Revenue":"--","Revenue Forecast":"2.19B","Time":null},{"Company":"Liberty Global C\u00a0(LBTYK)","EPS":"--","EPS Forecast":"0.39","Market Cap":"7.22B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Wex\u00a0(WEX)","EPS":"3.91","EPS Forecast":"3.81","Market Cap":"7.13B","Revenue":"673M","Revenue Forecast":"679.98M","Time":null},{"Company":"Liberty Global\u00a0(LBTYA)","EPS":"--","EPS Forecast":"0.39","Market Cap":"7.08B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Kumba Iron Ore Ltd PK\u00a0(KIROY)","EPS":"--","EPS Forecast":"--","Market Cap":"7.03B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Liberty Global B\u00a0(LBTYB)","EPS":"--","EPS Forecast":"0.39","Market Cap":"7.02B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"American Airlines\u00a0(AAL)","EPS":"1.09","EPS Forecast":"1.07","Market Cap":"6.94B","Revenue":"14.3B","Revenue Forecast":"14.39B","Time":null},{"Company":"Yandex\u00a0(YNDX)","EPS":"--","EPS Forecast":"--","Market Cap":"6.85B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Lear\u00a0(LEA)","EPS":"3.6","EPS Forecast":"3.41","Market Cap":"6.81B","Revenue":"6B","Revenue Forecast":"6.06B","Time":null},{"Company":"Carpenter Technology\u00a0(CRS)","EPS":"1.82","EPS Forecast":"1.51","Market Cap":"6.54B","Revenue":"798.7M","Revenue Forecast":"763.76M","Time":null},{"Company":"Bombardier Inc\u00a0(BDRBF)","EPS":"1.04","EPS Forecast":"0.7775","Market Cap":"6.51B","Revenue":"2.2B","Revenue Forecast":"1.85B","Time":null},{"Company":"Arcadis NV\u00a0(ARCAY)","EPS":"--","EPS Forecast":"1.48","Market Cap":"6.20B","Revenue":"--","Revenue Forecast":"2.21B","Time":null},{"Company":"Darling Ingredients\u00a0(DAR)","EPS":"0.49","EPS Forecast":"0.43","Market Cap":"6.13B","Revenue":"1.5B","Revenue Forecast":"1.47B","Time":null},{"Company":"Andritz ADR\u00a0(ADRZY)","EPS":"0.2583","EPS Forecast":"0.2653","Market Cap":"6.04B","Revenue":"2.28B","Revenue Forecast":"2.31B","Time":null},{"Company":"Mr. Cooper\u00a0(COOP)","EPS":"3.1","EPS Forecast":"2.36","Market Cap":"5.98B","Revenue":"583M","Revenue Forecast":"552.04M","Time":null},{"Company":"Federal Signal\u00a0(FSS)","EPS":"0.95","EPS Forecast":"0.84","Market Cap":"5.80B","Revenue":"490M","Revenue Forecast":"487.74M","Time":null},{"Company":"Subsea 7 ADR\u00a0(SUBCY)","EPS":"0.2","EPS Forecast":"0.1965","Market Cap":"5.74B","Revenue":"1.74B","Revenue Forecast":"1.69B","Time":null},{"Company":"Ryder System\u00a0(R)","EPS":"3","EPS Forecast":"2.87","Market Cap":"5.62B","Revenue":"3.18B","Revenue Forecast":"3.24B","Time":null},{"Company":"Olin\u00a0(OLN)","EPS":"--","EPS Forecast":"0.71","Market Cap":"5.62B","Revenue":"--","Revenue Forecast":"1.71B","Time":null},{"Company":"Boyd Gaming\u00a0(BYD)","EPS":"--","EPS Forecast":"1.49","Market Cap":"5.51B","Revenue":"--","Revenue Forecast":"909.05M","Time":null},{"Company":"Exponent\u00a0(EXPO)","EPS":"--","EPS Forecast":"0.506","Market Cap":"5.38B","Revenue":"--","Revenue Forecast":"130.83M","Time":null},{"Company":"Brunswick\u00a0(BC)","EPS":"1.8","EPS Forecast":"1.89","Market Cap":"5.26B","Revenue":"1.44B","Revenue Forecast":"1.55B","Time":null},{"Company":"FirstCash\u00a0(FCFS)","EPS":"1.37","EPS Forecast":"1.33","Market Cap":"5.17B","Revenue":"831.01M","Revenue Forecast":"826.07M","Time":null},{"Company":"SSAB ADR\u00a0(SSAAY)","EPS":"0.1129","EPS Forecast":"0.1176","Market Cap":"5.06B","Revenue":"2.63B","Revenue Forecast":"2.62B","Time":null},{"Company":"United Bankshares\u00a0(UBSI)","EPS":"0.71","EPS Forecast":"0.64","Market Cap":"5.06B","Revenue":"255.94M","Revenue Forecast":"255.54M","Time":null},{"Company":"Columbia Banking\u00a0(COLB)","EPS":"--","EPS Forecast":"0.5671","Market Cap":"4.92B","Revenue":"--","Revenue Forecast":"476.01M","Time":null},{"Company":"Harley-Davidson\u00a0(HOG)","EPS":"1.63","EPS Forecast":"1.43","Market Cap":"4.85B","Revenue":"1.62B","Revenue Forecast":"1.29B","Time":null},{"Company":"Phillips Edison Co\u00a0(PECO)","EPS":"--","EPS Forecast":"0.1442","Market Cap":"4.68B","Revenue":"--","Revenue Forecast":"156.29M","Time":null},{"Company":"Veren\u00a0(VRN)","EPS":"--","EPS Forecast":"0.3136","Market Cap":"4.60B","Revenue":"--","Revenue Forecast":"760.78M","Time":null},{"Company":"Columbia Sportswear\u00a0(COLM)","EPS":"--","EPS Forecast":"-0.3395","Market Cap":"4.60B","Revenue":"--","Revenue Forecast":"569.11M","Time":null},{"Company":"TRI Pointe Homes\u00a0(TPH)","EPS":"1.25","EPS Forecast":"1.09","Market Cap":"4.29B","Revenue":"1.14B","Revenue Forecast":"1.07B","Time":null},{"Company":"Lazard\u00a0(LAZ)","EPS":"0.52","EPS Forecast":"0.35","Market Cap":"4.28B","Revenue":"685M","Revenue Forecast":"625.42M","Time":null},{"Company":"Hilton Grand Vacations\u00a0(HGV)","EPS":"--","EPS Forecast":"0.9444","Market Cap":"4.26B","Revenue":"--","Revenue Forecast":"1.33B","Time":null},{"Company":"Ameris\u00a0(ABCB)","EPS":"--","EPS Forecast":"1.14","Market Cap":"4.10B","Revenue":"--","Revenue Forecast":"272.81M","Time":null},{"Company":"Integer Hld\u00a0(ITGR)","EPS":"1.3","EPS Forecast":"1.25","Market Cap":"4.04B","Revenue":"436M","Revenue Forecast":"437M","Time":null},{"Company":"Britvic ADR\u00a0(BTVCY)","EPS":"--","EPS Forecast":"--","Market Cap":"4.02B","Revenue":"--","Revenue Forecast":"633.3M","Time":null},{"Company":"Buenaventura Mining ADR\u00a0(BVN)","EPS":"--","EPS Forecast":"0.2444","Market Cap":"3.97B","Revenue":"--","Revenue Forecast":"257.17M","Time":null},{"Company":"Patterson-UTI Energy\u00a0(PTEN)","EPS":"0.03","EPS Forecast":"0.08","Market Cap":"3.97B","Revenue":"1.35B","Revenue Forecast":"1.41B","Time":null},{"Company":"CNX Resources\u00a0(CNX)","EPS":"-0.12","EPS Forecast":"0.29","Market Cap":"3.85B","Revenue":"321.44M","Revenue Forecast":"375.37M","Time":null},{"Company":"TFS Financial\u00a0(TFSL)","EPS":"--","EPS Forecast":"0.065","Market Cap":"3.84B","Revenue":"--","Revenue Forecast":"76.42M","Time":null},{"Company":"Valley National\u00a0(VLY)","EPS":"0.13","EPS Forecast":"0.2","Market Cap":"3.80B","Revenue":"452.89M","Revenue Forecast":"459.25M","Time":null},{"Company":"Cousins Properties\u00a0(CUZ)","EPS":"--","EPS Forecast":"0.1078","Market Cap":"3.80B","Revenue":"--","Revenue Forecast":"208.18M","Time":null},{"Company":"Johnson Matthey\u00a0(JMPLY)","EPS":"--","EPS Forecast":"--","Market Cap":"3.77B","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Associated Banc-Corp\u00a0(ASB)","EPS":"--","EPS Forecast":"0.5192","Market Cap":"3.55B","Revenue":"--","Revenue Forecast":"330.69M","Time":null},{"Company":"WSFS\u00a0(WSFS)","EPS":"--","EPS Forecast":"1.04","Market Cap":"3.41B","Revenue":"--","Revenue Forecast":"254.48M","Time":null},{"Company":"Aeroportuario del Centro Norte\u00a0(OMAB)","EPS":"--","EPS Forecast":"23.5","Market Cap":"3.40B","Revenue":"--","Revenue Forecast":"3.28B","Time":null},{"Company":"SkyWest\u00a0(SKYW)","EPS":"--","EPS Forecast":"1.77","Market Cap":"3.37B","Revenue":"--","Revenue Forecast":"833.72M","Time":null},{"Company":"First Interstate BancSystem\u00a0(FIBK)","EPS":"--","EPS Forecast":"0.5463","Market Cap":"3.33B","Revenue":"--","Revenue Forecast":"246.07M","Time":null},{"Company":"Eastern Bankshares\u00a0(EBC)","EPS":"--","EPS Forecast":"0.2175","Market Cap":"3.30B","Revenue":"--","Revenue Forecast":"160.11M","Time":null},{"Company":"Eldorado Gold\u00a0(EGO)","EPS":"--","EPS Forecast":"0.2622","Market Cap":"3.23B","Revenue":"--","Revenue Forecast":"309.75M","Time":null},{"Company":"Boston Beer\u00a0(SAM)","EPS":"--","EPS Forecast":"4.99","Market Cap":"3.21B","Revenue":"--","Revenue Forecast":"597.62M","Time":null},{"Company":"Medical Properties\u00a0(MPW)","EPS":"--","EPS Forecast":"0.0648","Market Cap":"3.06B","Revenue":"--","Revenue Forecast":"258.95M","Time":null},{"Company":"Visteon\u00a0(VC)","EPS":"2.54","EPS Forecast":"2.01","Market Cap":"3.05B","Revenue":"1.01B","Revenue Forecast":"1.02B","Time":null},{"Company":"Embotelladora Andina\u00a0(AKOa)","EPS":"--","EPS Forecast":"0.2311","Market Cap":"3.00B","Revenue":"--","Revenue Forecast":"733.72M","Time":null},{"Company":"Embotelladora Andina B ADR\u00a0(AKOb)","EPS":"--","EPS Forecast":"0.2311","Market Cap":"3.00B","Revenue":"--","Revenue Forecast":"733.72M","Time":null},{"Company":"Atlantic Union\u00a0(AUB)","EPS":"0.63","EPS Forecast":"0.61","Market Cap":"2.97B","Revenue":"208.35M","Revenue Forecast":"216.04M","Time":null},{"Company":"Burford\u00a0(BUR)","EPS":"--","EPS Forecast":"0.385","Market Cap":"2.97B","Revenue":"--","Revenue Forecast":"171.05M","Time":null},{"Company":"Federated Investors B\u00a0(FHI)","EPS":"--","EPS Forecast":"0.8861","Market Cap":"2.84B","Revenue":"--","Revenue Forecast":"400.35M","Time":null},{"Company":"Minerals Technologies\u00a0(MTX)","EPS":"--","EPS Forecast":"1.61","Market Cap":"2.83B","Revenue":"--","Revenue Forecast":"562.58M","Time":null},{"Company":"McGrath\u00a0(MGRC)","EPS":"--","EPS Forecast":"1.25","Market Cap":"2.81B","Revenue":"--","Revenue Forecast":"210.23M","Time":null},{"Company":"Baytex Energy Corp\u00a0(BTE)","EPS":"--","EPS Forecast":"0.1332","Market Cap":"2.81B","Revenue":"--","Revenue Forecast":"761.14M","Time":null},{"Company":"Expro Holdings NV\u00a0(XPRO)","EPS":"0.27","EPS Forecast":"0.26","Market Cap":"2.76B","Revenue":"469.64M","Revenue Forecast":"413.71M","Time":null},{"Company":"Peabody Energy\u00a0(BTU)","EPS":"--","EPS Forecast":"0.609","Market Cap":"2.67B","Revenue":"--","Revenue Forecast":"1.03B","Time":null},{"Company":"Perficient\u00a0(PRFT)","EPS":"--","EPS Forecast":"0.9342","Market Cap":"2.64B","Revenue":"--","Revenue Forecast":"224.13M","Time":null},{"Company":"The Bancorp\u00a0(TBBK)","EPS":"--","EPS Forecast":"1.07","Market Cap":"2.60B","Revenue":"--","Revenue Forecast":"127.06M","Time":null},{"Company":"First Financial Bancorp\u00a0(FFBC)","EPS":"--","EPS Forecast":"0.596","Market Cap":"2.55B","Revenue":"--","Revenue Forecast":"202.64M","Time":null},{"Company":"Arch Resources\u00a0(ARCH)","EPS":"0.81","EPS Forecast":"1.47","Market Cap":"2.54B","Revenue":"608.75M","Revenue Forecast":"570.75M","Time":null},{"Company":"Bread Financial Holdings\u00a0(BFH)","EPS":"2.67","EPS Forecast":"1.58","Market Cap":"2.53B","Revenue":"939M","Revenue Forecast":"917.62M","Time":null},{"Company":"Valeo ADR\u00a0(VLEEY)","EPS":"--","EPS Forecast":"--","Market Cap":"2.49B","Revenue":"--","Revenue Forecast":"6.17B","Time":null},{"Company":"Seacoast Banking Florida\u00a0(SBCF)","EPS":"--","EPS Forecast":"0.3367","Market Cap":"2.39B","Revenue":"--","Revenue Forecast":"126.23M","Time":null},{"Company":"Vale Indonesia\u00a0(PTNDF)","EPS":"--","EPS Forecast":"0.003","Market Cap":"2.39B","Revenue":"--","Revenue Forecast":"244.64M","Time":null},{"Company":"HNI\u00a0(HNI)","EPS":"0.79","EPS Forecast":"0.61","Market Cap":"2.39B","Revenue":"623.7M","Revenue Forecast":"637.74M","Time":null},{"Company":"Merchants Bancorp\u00a0(MBIN)","EPS":"--","EPS Forecast":"1.59","Market Cap":"2.38B","Revenue":"--","Revenue Forecast":"160.55M","Time":null},{"Company":"Rogers\u00a0(ROG)","EPS":"--","EPS Forecast":"0.6","Market Cap":"2.35B","Revenue":"--","Revenue Forecast":"216.15M","Time":null},{"Company":"Air France KLM SA\u00a0(AFLYY)","EPS":"--","EPS Forecast":"0.1659","Market Cap":"2.33B","Revenue":"--","Revenue Forecast":"8.53B","Time":null},{"Company":"First Merchants\u00a0(FRME)","EPS":"0.68","EPS Forecast":"0.78","Market Cap":"2.28B","Revenue":"159.91M","Revenue Forecast":"160.56M","Time":null},{"Company":"Ardagh Metal Packaging\u00a0(AMBP)","EPS":"0.06","EPS Forecast":"0.05","Market Cap":"2.28B","Revenue":"1.26B","Revenue Forecast":"1.31B","Time":null},{"Company":"Hilltop\u00a0(HTH)","EPS":"--","EPS Forecast":"0.2575","Market Cap":"2.26B","Revenue":"--","Revenue Forecast":"283.22M","Time":null},{"Company":"Ultra Cleans\u00a0(UCTT)","EPS":"--","EPS Forecast":"0.26","Market Cap":"2.05B","Revenue":"--","Revenue Forecast":"490.05M","Time":null},{"Company":"WesBanco\u00a0(WSBC)","EPS":"--","EPS Forecast":"0.5346","Market Cap":"2.02B","Revenue":"--","Revenue Forecast":"148.26M","Time":null},{"Company":"Customers Bancorp\u00a0(CUBI)","EPS":"--","EPS Forecast":"1.43","Market Cap":"1.98B","Revenue":"--","Revenue Forecast":"184.4M","Time":null},{"Company":"SJW\u00a0(SJW)","EPS":"0.64","EPS Forecast":"0.5741","Market Cap":"1.98B","Revenue":"176.17M","Revenue Forecast":"165.09M","Time":null},{"Company":"Novocure Ltd\u00a0(NVCR)","EPS":"-0.31","EPS Forecast":"-0.4","Market Cap":"1.91B","Revenue":"150.4M","Revenue Forecast":"135.83M","Time":null},{"Company":"Sonic Automotive\u00a0(SAH)","EPS":"--","EPS Forecast":"1.45","Market Cap":"1.91B","Revenue":"--","Revenue Forecast":"3.61B","Time":null},{"Company":"Helix\u00a0(HLX)","EPS":"0.21","EPS Forecast":"0.19","Market Cap":"1.86B","Revenue":"364.8M","Revenue Forecast":"339.36M","Time":null},{"Company":"Garrett Motion\u00a0(GTX)","EPS":"0.28","EPS Forecast":"0.27","Market Cap":"1.78B","Revenue":"890M","Revenue Forecast":"975.5M","Time":null},{"Company":"Lakeland Financial\u00a0(LKFN)","EPS":"0.87","EPS Forecast":"0.8525","Market Cap":"1.72B","Revenue":"68.74M","Revenue Forecast":"60.7M","Time":null},{"Company":"Indivior\u00a0(INDV)","EPS":"0.44","EPS Forecast":"0.4","Market Cap":"1.71B","Revenue":"299M","Revenue Forecast":"300.65M","Time":null},{"Company":"World Fuel Services\u00a0(WKC)","EPS":"--","EPS Forecast":"0.5222","Market Cap":"1.59B","Revenue":"--","Revenue Forecast":"12.06B","Time":null},{"Company":"First Busey\u00a0(BUSE)","EPS":"0.47","EPS Forecast":"0.4867","Market Cap":"1.59B","Revenue":"116.31M","Revenue Forecast":"116.39M","Time":null},{"Company":"TriCo\u00a0(TCBK)","EPS":"0.87","EPS Forecast":"0.79","Market Cap":"1.55B","Revenue":"97.86M","Revenue Forecast":"98.12M","Time":null},{"Company":"LiveWire Group\u00a0(LVWR)","EPS":"-0.12","EPS Forecast":"-0.16","Market Cap":"1.54B","Revenue":"6.45M","Revenue Forecast":"16.09M","Time":null},{"Company":"Ladder Capital A\u00a0(LADR)","EPS":"0.31","EPS Forecast":"0.296","Market Cap":"1.54B","Revenue":"76.73M","Revenue Forecast":"71.98M","Time":null},{"Company":"Hino Motors ADR\u00a0(HINOY)","EPS":"--","EPS Forecast":"0.481","Market Cap":"1.52B","Revenue":"--","Revenue Forecast":"2.34B","Time":null},{"Company":"1st Source\u00a0(SRCE)","EPS":"--","EPS Forecast":"1.22","Market Cap":"1.51B","Revenue":"--","Revenue Forecast":"94.84M","Time":null},{"Company":"NetScout\u00a0(NTCT)","EPS":"0.28","EPS Forecast":"0.38","Market Cap":"1.47B","Revenue":"174.56M","Revenue Forecast":"194.83M","Time":null},{"Company":"Provident\u00a0(PFS)","EPS":"--","EPS Forecast":"0.4325","Market Cap":"1.38B","Revenue":"--","Revenue Forecast":"149.03M","Time":null},{"Company":"RPC\u00a0(RES)","EPS":"0.15","EPS Forecast":"0.14","Market Cap":"1.35B","Revenue":"364.2M","Revenue Forecast":"385.15M","Time":null},{"Company":"Xerox\u00a0(XRX)","EPS":"0.29","EPS Forecast":"0.43","Market Cap":"1.34B","Revenue":"1.58B","Revenue Forecast":"1.6B","Time":null},{"Company":"Alexander&Baldwin\u00a0(ALEX)","EPS":"--","EPS Forecast":"0.12","Market Cap":"1.34B","Revenue":"--","Revenue Forecast":"48.3M","Time":null},{"Company":"Byline Bancorp\u00a0(BY)","EPS":"--","EPS Forecast":"0.63","Market Cap":"1.27B","Revenue":"--","Revenue Forecast":"99.21M","Time":null},{"Company":"Grupo Televisa ADR\u00a0(TV)","EPS":"-0.0891","EPS Forecast":"-0.0855","Market Cap":"1.26B","Revenue":"853.51M","Revenue Forecast":"898.08M","Time":null},{"Company":"US Silica\u00a0(SLCA)","EPS":"--","EPS Forecast":"0.2781","Market Cap":"1.21B","Revenue":"--","Revenue Forecast":"340.27M","Time":null},{"Company":"Advantage Oil&Gas\u00a0(AAVVF)","EPS":"--","EPS Forecast":"-0.007","Market Cap":"1.19B","Revenue":"--","Revenue Forecast":"107.82M","Time":null},{"Company":"Universal Logistics\u00a0(ULH)","EPS":"--","EPS Forecast":"1.14","Market Cap":"1.19B","Revenue":"--","Revenue Forecast":"461.6M","Time":null},{"Company":"Coursera\u00a0(COUR)","EPS":"--","EPS Forecast":"0.0111","Market Cap":"1.17B","Revenue":"--","Revenue Forecast":"164.42M","Time":null},{"Company":"Preferred Bank\u00a0(PFBC)","EPS":"--","EPS Forecast":"2.39","Market Cap":"1.13B","Revenue":"--","Revenue Forecast":"70.37M","Time":null},{"Company":"Imax\u00a0(IMAX)","EPS":"0.18","EPS Forecast":"0.08","Market Cap":"1.04B","Revenue":"89M","Revenue Forecast":"77.41M","Time":null},{"Company":"Southside\u00a0(SBSI)","EPS":"0.81","EPS Forecast":"0.64","Market Cap":"957.30M","Revenue":"67.27M","Revenue Forecast":"64.91M","Time":null},{"Company":"Amalgamated Bank\u00a0(AMAL)","EPS":"0.85","EPS Forecast":"0.79","Market Cap":"947.47M","Revenue":"78.45M","Revenue Forecast":"77.47M","Time":null},{"Company":"First Mid Illinois Bancshares\u00a0(FMBH)","EPS":"--","EPS Forecast":"0.7914","Market Cap":"931.95M","Revenue":"--","Revenue Forecast":"78.32M","Time":null},{"Company":"ConnectOne\u00a0(CNOB)","EPS":"0.46","EPS Forecast":"0.4125","Market Cap":"917.47M","Revenue":"66.86M","Revenue Forecast":"65.45M","Time":null},{"Company":"BJs Restaurants\u00a0(BJRI)","EPS":"--","EPS Forecast":"0.517","Market Cap":"849.04M","Revenue":"--","Revenue Forecast":"349.18M","Time":null},{"Company":"Capitol Federal\u00a0(CFFN)","EPS":"0.07","EPS Forecast":"0.11","Market Cap":"830.14M","Revenue":"45.03M","Revenue Forecast":"47M","Time":null},{"Company":"Heritage Financial Co\u00a0(HFWA)","EPS":"0.41","EPS Forecast":"0.4","Market Cap":"773.24M","Revenue":"56.36M","Revenue Forecast":"58.29M","Time":null},{"Company":"NB Bancorp\u00a0(NBBK)","EPS":"0.24","EPS Forecast":"0.18","Market Cap":"759.31M","Revenue":"41.7M","Revenue Forecast":"--","Time":null},{"Company":"Emergent Biosolutions\u00a0(EBS)","EPS":"--","EPS Forecast":"-0.945","Market Cap":"737.56M","Revenue":"--","Revenue Forecast":"190M","Time":null},{"Company":"Forward Air\u00a0(FWRD)","EPS":"--","EPS Forecast":"-0.1454","Market Cap":"718.33M","Revenue":"--","Revenue Forecast":"661.68M","Time":null},{"Company":"Independent Bank Corp\u00a0(IBCP)","EPS":"0.88","EPS Forecast":"0.7","Market Cap":"712.15M","Revenue":"56.52M","Revenue Forecast":"53.42M","Time":null},{"Company":"MarineMax\u00a0(HZO)","EPS":"1.51","EPS Forecast":"1.4","Market Cap":"706.06M","Revenue":"757.7M","Revenue Forecast":"724.7M","Time":null},{"Company":"Coastal Financial\u00a0(CCB)","EPS":"--","EPS Forecast":"0.8014","Market Cap":"700.09M","Revenue":"--","Revenue Forecast":"166.46M","Time":null},{"Company":"Lendingtree\u00a0(TREE)","EPS":"--","EPS Forecast":"0.2095","Market Cap":"689.66M","Revenue":"--","Revenue Forecast":"187.36M","Time":null},{"Company":"Heritage Commerce\u00a0(HTBK)","EPS":"--","EPS Forecast":"0.18","Market Cap":"639.51M","Revenue":"--","Revenue Forecast":"43.17M","Time":null},{"Company":"Business First\u00a0(BFST)","EPS":"--","EPS Forecast":"0.514","Market Cap":"638.84M","Revenue":"--","Revenue Forecast":"62.8M","Time":null},{"Company":"Mitek\u00a0(MITK)","EPS":"--","EPS Forecast":"0.264","Market Cap":"575.06M","Revenue":"--","Revenue Forecast":"47.97M","Time":null},{"Company":"HarborOne Banc\u00a0(HONE)","EPS":"0.18","EPS Forecast":"0.1667","Market Cap":"571.77M","Revenue":"43.27M","Revenue Forecast":"43.35M","Time":null},{"Company":"Universal Insurance\u00a0(UVE)","EPS":"--","EPS Forecast":"0.9509","Market Cap":"571.73M","Revenue":"--","Revenue Forecast":"569.01M","Time":null},{"Company":"Dril-Quip\u00a0(DRQ)","EPS":"--","EPS Forecast":"0.1742","Market Cap":"564.84M","Revenue":"--","Revenue Forecast":"118.85M","Time":null},{"Company":"Midland States Banc\u00a0(MSBI)","EPS":"--","EPS Forecast":"0.7","Market Cap":"559.60M","Revenue":"--","Revenue Forecast":"74.82M","Time":null},{"Company":"Orchid Island Capital\u00a0(ORC)","EPS":"--","EPS Forecast":"-0.0725","Market Cap":"557.52M","Revenue":"--","Revenue Forecast":"-1.49M","Time":null},{"Company":"ASOS plc PK\u00a0(ASOMY)","EPS":"--","EPS Forecast":"--","Market Cap":"555.51M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Arrow\u00a0(AROW)","EPS":"0.52","EPS Forecast":"0.54","Market Cap":"519.65M","Revenue":"35.01M","Revenue Forecast":"34.68M","Time":null},{"Company":"Macatawa Bank\u00a0(MCBC)","EPS":"--","EPS Forecast":"0.29","Market Cap":"504.77M","Revenue":"--","Revenue Forecast":"26.1M","Time":null},{"Company":"B. Riley Financial\u00a0(RILY)","EPS":"--","EPS Forecast":"--","Market Cap":"487.75M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Donegal A\u00a0(DGICA)","EPS":"0.11","EPS Forecast":"0.0912","Market Cap":"478.53M","Revenue":"247.19M","Revenue Forecast":"239.02M","Time":null},{"Company":"First Foundation Inc\u00a0(FFWM)","EPS":"0.06","EPS Forecast":"0.01","Market Cap":"475.64M","Revenue":"57.49M","Revenue Forecast":"55.03M","Time":null},{"Company":"Shore Bancshares\u00a0(SHBI)","EPS":"0.34","EPS Forecast":"0.33","Market Cap":"471.44M","Revenue":"50.58M","Revenue Forecast":"48.7M","Time":null},{"Company":"Value Line\u00a0(VALU)","EPS":"--","EPS Forecast":"--","Market Cap":"448.53M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"CTO Realty Growth\u00a0(CTO)","EPS":"--","EPS Forecast":"-0.05","Market Cap":"437.59M","Revenue":"--","Revenue Forecast":"27.41M","Time":null},{"Company":"MidWestOne\u00a0(MOFG)","EPS":"--","EPS Forecast":"0.498","Market Cap":"435.32M","Revenue":"--","Revenue Forecast":"47.88M","Time":null},{"Company":"Shyft Group Inc\u00a0(SHYF)","EPS":"0.16","EPS Forecast":"0.08","Market Cap":"433.11M","Revenue":"192.8M","Revenue Forecast":"201.49M","Time":null},{"Company":"Donegal B\u00a0(DGICB)","EPS":"0.11","EPS Forecast":"0.0912","Market Cap":"408.40M","Revenue":"247.19M","Revenue Forecast":"239.02M","Time":null},{"Company":"Carter Bank\u00a0(CARE)","EPS":"0.25","EPS Forecast":"0.21","Market Cap":"387.80M","Revenue":"33.63M","Revenue Forecast":"34.62M","Time":null},{"Company":"Financial Institutions\u00a0(FISI)","EPS":"--","EPS Forecast":"0.6333","Market Cap":"376.29M","Revenue":"--","Revenue Forecast":"49.9M","Time":null},{"Company":"West Bancorporation\u00a0(WTBA)","EPS":"0.31","EPS Forecast":"0.32","Market Cap":"356.96M","Revenue":"19.58M","Revenue Forecast":"19.29M","Time":null},{"Company":"First Business\u00a0(FBIZ)","EPS":"--","EPS Forecast":"1.09","Market Cap":"352.35M","Revenue":"--","Revenue Forecast":"37.13M","Time":null},{"Company":"Marine Products\u00a0(MPX)","EPS":"0.14","EPS Forecast":"0.14","Market Cap":"345.10M","Revenue":"69.5M","Revenue Forecast":"65.35M","Time":null},{"Company":"ACNB\u00a0(ACNB)","EPS":"1.32","EPS Forecast":"0.835","Market Cap":"329.52M","Revenue":"27.39M","Revenue Forecast":"26.93M","Time":null},{"Company":"Zynex\u00a0(ZYXI)","EPS":"--","EPS Forecast":"0.0767","Market Cap":"320.29M","Revenue":"--","Revenue Forecast":"51.99M","Time":null},{"Company":"Primis Financial\u00a0(FRST)","EPS":"--","EPS Forecast":"0.375","Market Cap":"318.64M","Revenue":"--","Revenue Forecast":"37.2M","Time":null},{"Company":"US Century Bank\u00a0(USCB)","EPS":"--","EPS Forecast":"0.235","Market Cap":"303.48M","Revenue":"--","Revenue Forecast":"18.45M","Time":null},{"Company":"First of Long Island\u00a0(FLIC)","EPS":"--","EPS Forecast":"0.1667","Market Cap":"278.75M","Revenue":"--","Revenue Forecast":"20.66M","Time":null},{"Company":"PCB Bancorp\u00a0(PCB)","EPS":"--","EPS Forecast":"0.4067","Market Cap":"262.61M","Revenue":"--","Revenue Forecast":"24.97M","Time":null},{"Company":"Silvercrest Asset Management Group\u00a0(SAMG)","EPS":"--","EPS Forecast":"0.3767","Market Cap":"234.53M","Revenue":"--","Revenue Forecast":"30.78M","Time":null},{"Company":"AudioEye\u00a0(AEYE)","EPS":"--","EPS Forecast":"0.0967","Market Cap":"230.86M","Revenue":"--","Revenue Forecast":"8.43M","Time":null},{"Company":"FVCBankcorp\u00a0(FVCB)","EPS":"--","EPS Forecast":"0.21","Market Cap":"219.77M","Revenue":"--","Revenue Forecast":"14.07M","Time":null},{"Company":"LCNB\u00a0(LCNB)","EPS":"0.29","EPS Forecast":"0.18","Market Cap":"212.70M","Revenue":"19.3M","Revenue Forecast":"16.80M","Time":null},{"Company":"ChoiceOne Financial Services\u00a0(COFS)","EPS":"0.87","EPS Forecast":"0.76","Market Cap":"211.99M","Revenue":"22.45M","Revenue Forecast":"--","Time":null},{"Company":"First Financial Northwest\u00a0(FFNW)","EPS":"--","EPS Forecast":"0.035","Market Cap":"201.85M","Revenue":"--","Revenue Forecast":"9.45M","Time":null},{"Company":"California BanCorp\u00a0(CALB)","EPS":"--","EPS Forecast":"0.5267","Market Cap":"201.01M","Revenue":"--","Revenue Forecast":"19.44M","Time":null},{"Company":"Escalade\u00a0(ESCA)","EPS":"0.2","EPS Forecast":"--","Market Cap":"197.53M","Revenue":"62.5K","Revenue Forecast":"--","Time":null},{"Company":"Provident Bancorp Inc\u00a0(PVBC)","EPS":"--","EPS Forecast":"0.07","Market Cap":"191.59M","Revenue":"--","Revenue Forecast":"14.9M","Time":null},{"Company":"Ultralife\u00a0(ULBI)","EPS":"0.22","EPS Forecast":"0.13","Market Cap":"189.58M","Revenue":"43M","Revenue Forecast":"43M","Time":null},{"Company":"OP Bancorp\u00a0(OPBK)","EPS":"--","EPS Forecast":"0.295","Market Cap":"174.71M","Revenue":"--","Revenue Forecast":"19.55M","Time":null},{"Company":"Red Cat Holdings\u00a0(RCAT)","EPS":"--","EPS Forecast":"-0.03","Market Cap":"159.71M","Revenue":"--","Revenue Forecast":"7M","Time":null},{"Company":"Finwise Bancorp\u00a0(FINW)","EPS":"--","EPS Forecast":"0.185","Market Cap":"151.99M","Revenue":"--","Revenue Forecast":"19.45M","Time":null},{"Company":"eHealth\u00a0(EHTH)","EPS":"--","EPS Forecast":"-1.09","Market Cap":"150.86M","Revenue":"--","Revenue Forecast":"55.05M","Time":null},{"Company":"Hawthorn Bancshares\u00a0(HWBK)","EPS":"--","EPS Forecast":"--","Market Cap":"145.92M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"First Guaranty Bancshares Inc\u00a0(FGBI)","EPS":"0.53","EPS Forecast":"0.2","Market Cap":"123.55M","Revenue":"--","Revenue Forecast":"24.4M","Time":null},{"Company":"Ohio Valley Banc\u00a0(OVBC)","EPS":"--","EPS Forecast":"--","Market Cap":"110.25M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Travelzoo\u00a0(TZOO)","EPS":"0.23","EPS Forecast":"0.22","Market Cap":"106.75M","Revenue":"21.1M","Revenue Forecast":"21.72M","Time":null},{"Company":"First Capital\u00a0(FCAP)","EPS":"--","EPS Forecast":"--","Market Cap":"105.13M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Riverview\u00a0(RVSB)","EPS":"--","EPS Forecast":"0.06","Market Cap":"94.37M","Revenue":"--","Revenue Forecast":"12.2M","Time":null},{"Company":"Bogota Financial\u00a0(BSBK)","EPS":"--","EPS Forecast":"0.09","Market Cap":"94.08M","Revenue":"--","Revenue Forecast":"5.30M","Time":null},{"Company":"First Northwest Bancorp\u00a0(FNWB)","EPS":"0.16","EPS Forecast":"0.08","Market Cap":"90.95M","Revenue":"21.6M","Revenue Forecast":"17.2M","Time":null},{"Company":"Old Point\u00a0(OPOF)","EPS":"--","EPS Forecast":"--","Market Cap":"87.30M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Territorial\u00a0(TBNK)","EPS":"--","EPS Forecast":"-0.03","Market Cap":"83.76M","Revenue":"--","Revenue Forecast":"9.03M","Time":null},{"Company":"GSI Technology\u00a0(GSIT)","EPS":"--","EPS Forecast":"--","Market Cap":"82.62M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"FFD Financial Corp\u00a0(FFDF)","EPS":"--","EPS Forecast":"--","Market Cap":"82.40M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Lifeist Wellness\u00a0(LFSWF)","EPS":"--","EPS Forecast":"--","Market Cap":"64.59M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Lexaria Bioscience\u00a0(LEXX)","EPS":"--","EPS Forecast":"-0.0933","Market Cap":"48.22M","Revenue":"--","Revenue Forecast":"150K","Time":null},{"Company":"Touchstone Bank\u00a0(TSBA)","EPS":"--","EPS Forecast":"--","Market Cap":"41.05M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Verimatrix\u00a0(ISDCF)","EPS":"--","EPS Forecast":"--","Market Cap":"36.43M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Altisource Portfolio Solutions\u00a0(ASPS)","EPS":"-0.21","EPS Forecast":"-0.26","Market Cap":"32.89M","Revenue":"36.9M","Revenue Forecast":"38.32M","Time":null},{"Company":"Commercial National Financial\u00a0(CNAF)","EPS":"--","EPS Forecast":"--","Market Cap":"29.78M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Data I/O\u00a0(DAIO)","EPS":"--","EPS Forecast":"-0.015","Market Cap":"25.00M","Revenue":"--","Revenue Forecast":"6.33M","Time":null},{"Company":"Ocean Power\u00a0(OPTT)","EPS":"--","EPS Forecast":"--","Market Cap":"20.81M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Silvergate Capital\u00a0(SICP)","EPS":"--","EPS Forecast":"0.01","Market Cap":"16.46M","Revenue":"--","Revenue Forecast":"10M","Time":null},{"Company":"Third Century\u00a0(TDCB)","EPS":"--","EPS Forecast":"--","Market Cap":"8.35M","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Netcapital\u00a0(NCPL)","EPS":"--","EPS Forecast":"-0.05","Market Cap":"3.26M","Revenue":"--","Revenue Forecast":"1.1M","Time":null},{"Company":"SVB\u00a0(SIVBQ)","EPS":"--","EPS Forecast":"4.18","Market Cap":"1.19M","Revenue":"--","Revenue Forecast":"1.36B","Time":null},{"Company":"ITT Educational Services\u00a0(ESINQ)","EPS":"--","EPS Forecast":"--","Market Cap":"2.4K","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Prism Tech\u00a0(PRZM)","EPS":"--","EPS Forecast":"--","Market Cap":"1.01K","Revenue":"--","Revenue Forecast":"--","Time":null},{"Company":"Global Gaming\u00a0(BLKCF)","EPS":"--","EPS Forecast":"--","Market Cap":"122","Revenue":"--","Revenue Forecast":"--","Time":null}],"message":"Success!","status":200}
+[
+  {
+    "symbol": "CNAF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PTAIF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ROYTL",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CBLNF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ALBY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "OXBC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "YVRLF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "KFRC",
+    "date": "2024-07-29 17:02:00"
+  },
+  {
+    "symbol": "HTLF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "NBN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PCH",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "SES",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "IPA",
+    "date": "2024-09-11 09:00:00"
+  },
+  {
+    "symbol": "CZFS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FBAK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "OFLX",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "OPWEF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AKO.A",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TFSL",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "GIVXF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "NGKIF",
+    "date": "2024-10-25 09:00:00"
+  },
+  {
+    "symbol": "KREVF",
+    "date": "2024-07-29 22:00:00"
+  },
+  {
+    "symbol": "HOPE",
+    "date": "2024-10-21 09:00:00"
+  },
+  {
+    "symbol": "FRCB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AKBTY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PHG",
+    "date": "2024-07-29 02:00:00"
+  },
+  {
+    "symbol": "XTLB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BSBK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CR",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "WMK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FWRD",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MSEX",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PRTG",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SHERF",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PLOW",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "OGI",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "L",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "GBFH",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "YGRAF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "IMPP",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CDP",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "HMST",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CLHI",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CPKF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "KMTUF",
+    "date": "2024-10-30 09:00:00"
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PQEFF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "RPKIF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TPHS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PPERY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BDOUF",
+    "date": "2024-10-21 09:00:00"
+  },
+  {
+    "symbol": "EMMS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CAMPQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CSR",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "ZEOOF",
+    "date": "2024-10-31 09:00:00"
+  },
+  {
+    "symbol": "NCPL",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PBNNF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "OBT",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AGNPF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BHVN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CPLP",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "WCFB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SYM",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PSO",
+    "date": "2025-02-21 09:00:00"
+  },
+  {
+    "symbol": "SILC",
+    "date": "2024-10-31 09:00:00"
+  },
+  {
+    "symbol": "BIOAF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "DBVT",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FXNC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MLCO",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "VRNS",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "PTAIY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "LNKB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CCOEY",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "TPZEF",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "LPMDF",
+    "date": "2024-07-29 06:00:00"
+  },
+  {
+    "symbol": "CPSS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ACKAY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SBNY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FLNCF",
+    "date": "2024-07-29 21:00:01"
+  },
+  {
+    "symbol": "PROV",
+    "date": "2024-10-22 09:00:00"
+  },
+  {
+    "symbol": "HLIT",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "GABC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "EGIO",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CNA",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "PHVS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MNSB",
+    "date": "2024-10-21 09:00:00"
+  },
+  {
+    "symbol": "GMPUF",
+    "date": "2024-07-29 12:30:00"
+  },
+  {
+    "symbol": "AMBK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ESI",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "HLFN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BTU",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MEOH",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MCBC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "VNTRF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BDMXF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "NEU",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "GRI",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BMRC",
+    "date": "2024-10-21 09:00:00"
+  },
+  {
+    "symbol": "LTFD",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FMBH",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FANUF",
+    "date": "2024-10-30 09:00:00"
+  },
+  {
+    "symbol": "BYON",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "CWBK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CALB",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "SBAC",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "CHK",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "SAVE",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SFBC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BKOR",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "HEINY",
+    "date": "2025-02-12 03:00:00"
+  },
+  {
+    "symbol": "NXTP",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CWSFF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AEXAY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PDLB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AAGRY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SFM",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "KOTMF",
+    "date": "2024-10-29 09:00:00"
+  },
+  {
+    "symbol": "SGMA",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "GRMHF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TDCB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "INN",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "APLD",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "RADCQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FBPI",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "HUKEF",
+    "date": "2024-10-23 09:00:00"
+  },
+  {
+    "symbol": "MEDS",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CRSP",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "WNGRF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TRVG",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "RMBS",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "RNGR",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "EKSO",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "PEXZF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "EQR",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "ATNM",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MTAL",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FANUY",
+    "date": "2024-10-30 09:00:00"
+  },
+  {
+    "symbol": "FSTF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PCLB",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "IART",
+    "date": "2024-10-23 09:00:00"
+  },
+  {
+    "symbol": "LTC",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "NPSKY",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "CVRX",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PBHC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "LSCC",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PVBC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "NURO",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ABR",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BUR",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "HINKF",
+    "date": "2025-02-12 03:00:00"
+  },
+  {
+    "symbol": "VIV",
+    "date": "2024-07-29 18:00:00"
+  },
+  {
+    "symbol": "KMTUY",
+    "date": "2024-10-30 09:00:00"
+  },
+  {
+    "symbol": "WELL",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "MVBF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FMAO",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "PIAGF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "HKHHF",
+    "date": "2025-02-12 03:00:00"
+  },
+  {
+    "symbol": "NEO",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PSORF",
+    "date": "2025-02-21 09:00:00"
+  },
+  {
+    "symbol": "AMG",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "SSBI",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MBIN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AEXAF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ESGR",
+    "date": "2024-11-07 09:00:00"
+  },
+  {
+    "symbol": "MSC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "HOLX",
+    "date": "2024-07-29 17:01:00"
+  },
+  {
+    "symbol": "AFIIQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ST",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "ARHTF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SB",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "OPMZ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "BMEA",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CLBK",
+    "date": "2024-10-23 09:00:00"
+  },
+  {
+    "symbol": "SEVN",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "AKO.B",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "EORBF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "DHHXF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ROWC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ACNDF",
+    "date": "2025-01-28 09:00:00"
+  },
+  {
+    "symbol": "NTST",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "SGIOY",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "SIVBQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TSBA",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FRBK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CWK",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "HWBK",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "AMKR",
+    "date": "2024-07-29 17:03:00"
+  },
+  {
+    "symbol": "TTOO",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "GORO",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SGLMF",
+    "date": "2024-07-29 06:00:00"
+  },
+  {
+    "symbol": "CZWI",
+    "date": "2024-10-23 09:00:00"
+  },
+  {
+    "symbol": "INVA",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SMBC",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SGIOF",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "SAFE",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "PVL",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "WWD",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "MCD",
+    "date": "2024-10-23 09:00:00"
+  },
+  {
+    "symbol": "FFDF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CCB",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "RVTY",
+    "date": "2024-10-29 09:00:00"
+  },
+  {
+    "symbol": "BFIN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SANM",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "FMBM",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "MACE",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ON",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "RYLPF",
+    "date": "2024-07-29 02:00:00"
+  },
+  {
+    "symbol": "SICP",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FFIC",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "WUXAY",
+    "date": "2024-10-31 09:00:00"
+  },
+  {
+    "symbol": "MPW",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CVI",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "HSII",
+    "date": "2024-07-29 17:01:00"
+  },
+  {
+    "symbol": "PPERF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ARLP",
+    "date": "2024-10-28 09:00:00"
+  },
+  {
+    "symbol": "TBPMQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "CCOEF",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "CTRI",
+    "date": "2024-11-27 09:00:00"
+  },
+  {
+    "symbol": "GBNXF",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "OIS",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "DRQ",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "ILPMY",
+    "date": "2025-02-26 09:00:00"
+  },
+  {
+    "symbol": "RILY",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FFIV",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "UAN",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "CIVB",
+    "date": "2024-10-25 09:00:00"
+  },
+  {
+    "symbol": "TRNS",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "HLAN",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "LFSWF",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "TLRY",
+    "date": "2024-07-29 17:00:00"
+  },
+  {
+    "symbol": "CNO",
+    "date": "2024-07-29 17:15:00"
+  },
+  {
+    "symbol": "CORT",
+    "date": "2024-07-29 17:05:00"
+  },
+  {
+    "symbol": "BCAL",
+    "date": "2024-10-24 09:00:00"
+  },
+  {
+    "symbol": "MCET",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "SLCA",
+    "date": "2024-07-29 09:00:00"
+  },
+  {
+    "symbol": "FLS",
+    "date": "2024-07-29 17:00:00"
+  }
+]

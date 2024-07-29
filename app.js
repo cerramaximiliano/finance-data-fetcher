@@ -7,6 +7,8 @@ const {
   fetchEarningCalendar,
   fetchDayWath,
   fetchStockPrice,
+  fetchMarketCapStocks,
+  fetchMarketCap
 } = require("./server/controllers/controllersAPIs");
 
 (async () => {
@@ -47,27 +49,33 @@ const {
 
   try {
 
-/*     const economicCalendar = await fetchEconomicCalendar("2024-01-01", "2024-12-31", ["Interest Rate","Inflation Rate"]);
-    const filePath = path.join(
+    //const economicCalendar = await fetchEconomicCalendar( ["Interest Rate","Inflation Rate"], 1);
+    //const marketCapData = await fetchMarketCap();
+    //const earningsCalendar = await fetchEarningCalendar();
+    //const filteredSymbols = earningsCalendar.filter(item => marketCapData.includes(item.symbol));
+
+/*     const filePath = path.join(
+      __dirname,
+      "server",
+      "examples",
+      "investing",
+      "earningsCalendar.json"
+    );
+    fs.writeFileSync(filePath, JSON.stringify(earningsCalendar, null, 2)); */
+/*     const filePath = path.join(
       __dirname,
       "server",
       "examples",
       "investing",
       "economicCalendar.json"
     );
-    fs.writeFileSync(filePath, JSON.stringify(economicCalendar, null, 2));  */
-
-
-
-    const earningCalendar = await fetchEarningCalendar();
-    
-
+    fs.writeFileSync(filePath, JSON.stringify(economicCalendar, null, 2)); */
 
 /*     const dayWatch = await fetchDayWath();
     console.log(dayWatch); */
     
     
-    /* const openMarketPromises = openSymbols.map((symbols) => {
+    const openMarketPromises = openSymbols.map((symbols) => {
       return fetchStockPrice(symbols.symbol);
     });
     const openMarketResults = await Promise.all(openMarketPromises);
@@ -79,9 +87,9 @@ const {
       "yahooFinance",
       "openMarketData.json"
     );
-    fs.writeFileSync(filePath, JSON.stringify(openMarketData, null, 2)); */
+    fs.writeFileSync(filePath, JSON.stringify(openMarketData, null, 2));
 
-/*     const closeMarketPromises = closeSymbols.map((symbols) => {
+    const closeMarketPromises = closeSymbols.map((symbols) => {
       return fetchStockPrice(symbols.symbol);
     });
     const closeMarketResults = await Promise.all(closeMarketPromises);
@@ -93,7 +101,7 @@ const {
       "yahooFinance",
       "closeMarketData.json"
     );
-    fs.writeFileSync(filePathClose, JSON.stringify(closeMarketData, null, 2)); */
+    fs.writeFileSync(filePathClose, JSON.stringify(closeMarketData, null, 2));
 
 
   } catch (error) {
