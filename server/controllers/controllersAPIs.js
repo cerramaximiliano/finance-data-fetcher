@@ -1,5 +1,6 @@
 const axios = require("axios");
-
+const fs = require("fs");
+const path = require("path");
 const {
   getToday,
   getTomorrow,
@@ -60,6 +61,7 @@ const fetchEarningCalendar = async (
   from = getUnixStartOfDay(),
   to = getUnixEndOfDay()
 ) => {
+  console.log(from, to)
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-earning-calendar",
@@ -78,9 +80,16 @@ const fetchEarningCalendar = async (
   try {
     const { data } = await axios.request(options);
     const readable = data.data.map((element) => {
-      return { symbol: element.d[0], date: readableDate(element.d[2]) };
+      return { symbol: element.d[0], name: element.d[1], date: readableDate(element.d[4]) };
     });
-
+    const filePath = path.join(
+      __dirname,
+      "../",
+      "examples",
+      "tradingView",
+      "earningsCalendar.json"
+    );
+    fs.writeFileSync(filePath, JSON.stringify(data.data, null, 2));
     return readable;
   } catch (error) {
     throw new Error(`Error fetching earning calendar data: ${error.message}`);

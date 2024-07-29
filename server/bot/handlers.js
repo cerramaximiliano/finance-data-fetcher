@@ -1,6 +1,5 @@
 const moment = require("moment");
-const fs = require("fs");
-const path = require("path");
+
 const {
   fetchEconomicCalendar,
   fetchEarningCalendar,
@@ -11,6 +10,42 @@ const {
 } = require("../controllers/controllersAPIs");
 const bot = require("./commands");
 const { formatData, formatDataEarnings } = require("../utils/formatData");
+
+const openSymbols = [
+    { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
+    { description: "Futuros Soja", symbol: "ZS=F" },
+    { description: "Futuros Oro", symbol: "GC=F" },
+    { description: "Futuros Plata", symbol: "SI=F" },
+    { description: "Futuros Petróleo", symbol: "CL=F" },
+    { description: "Futuros S&P 500", symbol: "ES=F" },
+    { description: "Futuros NASDAQ 100", symbol: "NQ=F" },
+    { description: "Futuros Dow Jones", symbol: "YM=F" },
+    { description: "Futuros Russell 2000", symbol: "RTY=F" },
+    { description: "Futuros Dólar Îndex", symbol: "DX=F" },
+    { description: "Bitcoin/USD", symbol: "BTC-USD" },
+    { description: "Etherum/USD", symbol: "ETH-USD" },
+  ];
+
+  const closeSymbols = [
+    { description: "S&P 500", symbol: "^SPX" },
+    { description: "Nasdaq", symbol: "^IXIC" },
+    { description: "Dow Jones", symbol: "^DJI" },
+    { description: "Russell 2000", symbol: "^RUT" },
+    { description: "Tasa Bonos US 10 años ", symbol: "^TNX" },
+    { description: "DAX", symbol: "^GDAXI", country: "Germany" },
+    { description: "SSE", symbol: "000001.SS", country: "China" },
+    { description: "Nikkei", symbol: "^N225" },
+    { description: "Bovespa", symbol: "^BVSP" },
+    { description: "Merval", symbol: "^MERV" },
+    { description: "US Dólar Index", symbol: "DX-Y.NYB" },
+    { description: "Futuros Soja", symbol: "ZS=F" },
+    { description: "Futuros Oro", symbol: "GC=F" },
+    { description: "Futuros Plata", symbol: "SI=F" },
+    { description: "Futuros Petróleo", symbol: "CL=F" },
+    { description: "Bitcoin/USD", symbol: "BTC-USD" },
+    { description: "Etherum/USD", symbol: "ETH-USD" },
+  ];
+
 
 function sendMainMenu(chatId, messageId, topicId) {
   const options = {
@@ -50,6 +85,13 @@ function sendSubMenu(chatId, messageId, menuTitle, options, topicId) {
   bot.editMessageText(menuTitle, sendOptions);
 }
 
+async function sendTemporaryMessage(chatId, text, options, delay = 5000) {
+  const message = await bot.sendMessage(chatId, text, options);
+  setTimeout(() => {
+    bot.deleteMessage(chatId, message.message_id);
+  }, delay);
+}
+
 bot.onText(/\/informes/, (msg) => {
   const chatId = msg.chat.id;
   const topicId = msg.is_topic_message ? msg.message_thread_id : undefined;
@@ -65,6 +107,7 @@ bot.onText(/\/informes/, (msg) => {
             [{ text: "Informe Cierre", callback_data: "option2" }],
             [{ text: "Earnings Calendar", callback_data: "option3" }],
             [{ text: "Economic Calendar", callback_data: "option4" }],
+            [{ text: "Opción con errores", callback_data: "option5" }],
           ],
         },
         message_thread_id: topicId,
@@ -98,6 +141,13 @@ bot.on("callback_query", async (callbackQuery) => {
   try {
     switch (data) {
       case "option1":
+        const openMarketPromises = openSymbols.map((symbols) => {
+            return fetchStockPrice(symbols.symbol);
+          });
+          const openMarketResults = await Promise.all(openMarketPromises);
+          const openMarketData = openMarketResults.map((result) => result.data);
+
+          console.log(openMarketData)
         sendSubMenu(
           message.chat.id,
           message.message_id,
@@ -120,26 +170,15 @@ bot.on("callback_query", async (callbackQuery) => {
       case "option3":
         const marketCapData = await fetchMarketCap();
         const earningsCalendar = await fetchEarningCalendar();
-        console.log(earningsCalendar)
-
-        const filePath = path.join(
-            __dirname,
-            "server",
-            "examples",
-            "tradingView",
-            "earningsCalendar.json"
-          );
-          fs.writeFileSync(filePath, JSON.stringify(earningsCalendar, null, 2));
-
         const filteredSymbols = earningsCalendar.filter((item) =>
           marketCapData.includes(item.symbol)
         );
-        console.log(filteredSymbols)
+        console.log(filteredSymbols);
         let earningsCalendarText = `Earnings Calendar ${moment().format(
           "DD-MM-YYYY"
         )}\n`;
-        if ( filteredSymbols && filteredSymbols.length > 0){
-            earningsCalendarText += formatDataEarnings(filteredSymbols)
+        if (filteredSymbols && filteredSymbols.length > 0) {
+          earningsCalendarText += formatDataEarnings(filteredSymbols);
         }
         sendSubMenu(
           message.chat.id,
@@ -147,6 +186,16 @@ bot.on("callback_query", async (callbackQuery) => {
           earningsCalendarText,
           [],
           topicId
+        );
+        break;
+      case "option5":
+        await sendTemporaryMessage(
+          message.chat.id,
+          "Opción no reconocida. Vuelve a intentarlo más tarde.",
+          {
+            ...(topicId && { message_thread_id: topicId }),
+          },
+          5000
         );
         break;
       case "option4":
@@ -176,23 +225,25 @@ bot.on("callback_query", async (callbackQuery) => {
         sendMainMenu(message.chat.id, message.message_id, topicId);
         break;
       default:
-        bot.sendMessage(
-          message.chat.id,
-          "Opción no reconocida. Vuelve a intentar.",
-          {
-            ...(topicId && { message_thread_id: topicId }),
-          }
-        );
+        await sendTemporaryMessage(
+            message.chat.id,
+            "Opción no reconocida. Vuelve a intentarlo más tarde.",
+            {
+              ...(topicId && { message_thread_id: topicId }),
+            },
+            5000
+          );
     }
   } catch (err) {
     console.log(err);
-    bot.sendMessage(
-      message.chat.id,
-      "Opción no reconocida. Vuelve a intentar.",
-      {
-        ...(topicId && { message_thread_id: topicId }),
-      }
-    );
+    await sendTemporaryMessage(
+        message.chat.id,
+        "Opción no reconocida. Vuelve a intentarlo más tarde.",
+        {
+          ...(topicId && { message_thread_id: topicId }),
+        },
+        5000
+      );
   }
   bot.answerCallbackQuery(callbackQuery.id); // Finaliza el callback query
 });

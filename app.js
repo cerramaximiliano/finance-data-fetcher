@@ -45,11 +45,6 @@ const path = require("path");
 
   try {
 
-    const economicCalendar = await fetchEconomicCalendar( ["Interest Rate","Inflation Rate"], 1);
-    
-    const marketCapData = await fetchMarketCap();
-    const earningsCalendar = await fetchEarningCalendar();
-    const filteredSymbols = earningsCalendar.filter(item => marketCapData.includes(item.symbol));
     
     const openMarketPromises = openSymbols.map((symbols) => {
       return fetchStockPrice(symbols.symbol);
