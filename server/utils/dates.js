@@ -12,7 +12,11 @@ const getUnixEndOfDay = (dateStr = null) => {
   return date.endOf('day').unix();
 };
 
-const readableDate = (unixTimestamp) => moment.unix(unixTimestamp).format('YYYY-MM-DD HH:mm:ss');
+const readableDate = (unixTimestamp) => {
+  let date = moment.unix(unixTimestamp).format('YYYY-MM-DD HH:mm:ss')
+  return moment.unix(unixTimestamp).format('YYYY-MM-DD HH:mm:ss')
+
+};
 
 module.exports = {
   getToday,

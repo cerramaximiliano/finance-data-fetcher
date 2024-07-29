@@ -1,16 +1,12 @@
 const dotenv = require("dotenv");
   dotenv.config();
+
+  const bot = require("./server/bot/handlers");
+
 const fs = require("fs");
 const path = require("path");
-const {
-  fetchEconomicCalendar,
-  fetchEarningCalendar,
-  fetchDayWath,
-  fetchStockPrice,
-  fetchMarketCapStocks,
-  fetchMarketCap
-} = require("./server/controllers/controllersAPIs");
 
+/*
 (async () => {
   const openSymbols = [
     { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
@@ -49,12 +45,44 @@ const {
 
   try {
 
-    //const economicCalendar = await fetchEconomicCalendar( ["Interest Rate","Inflation Rate"], 1);
-    //const marketCapData = await fetchMarketCap();
-    //const earningsCalendar = await fetchEarningCalendar();
-    //const filteredSymbols = earningsCalendar.filter(item => marketCapData.includes(item.symbol));
+    const economicCalendar = await fetchEconomicCalendar( ["Interest Rate","Inflation Rate"], 1);
+    
+    const marketCapData = await fetchMarketCap();
+    const earningsCalendar = await fetchEarningCalendar();
+    const filteredSymbols = earningsCalendar.filter(item => marketCapData.includes(item.symbol));
+    
+    const openMarketPromises = openSymbols.map((symbols) => {
+      return fetchStockPrice(symbols.symbol);
+    });
+    const openMarketResults = await Promise.all(openMarketPromises);
+    const openMarketData = openMarketResults.map((result) => result.data);
 
-/*     const filePath = path.join(
+    const closeMarketPromises = closeSymbols.map((symbols) => {
+      return fetchStockPrice(symbols.symbol);
+    });
+    const closeMarketResults = await Promise.all(closeMarketPromises);
+    const closeMarketData = closeMarketResults.map((result) => result.data);
+
+    /*     const filePath = path.join(
+      __dirname,
+      "server",
+      "examples",
+      "yahooFinance",
+      "openMarketData.json"
+    );
+    fs.writeFileSync(filePath, JSON.stringify(openMarketData, null, 2)); */
+
+
+/*     const filePathClose = path.join(
+      __dirname,
+      "server",
+      "examples",
+      "yahooFinance",
+      "closeMarketData.json"
+    );
+    fs.writeFileSync(filePathClose, JSON.stringify(closeMarketData, null, 2)); */
+
+    /*     const filePath = path.join(
       __dirname,
       "server",
       "examples",
@@ -69,42 +97,10 @@ const {
       "investing",
       "economicCalendar.json"
     );
-    fs.writeFileSync(filePath, JSON.stringify(economicCalendar, null, 2)); */
-
-/*     const dayWatch = await fetchDayWath();
-    console.log(dayWatch); */
-    
-    
-    const openMarketPromises = openSymbols.map((symbols) => {
-      return fetchStockPrice(symbols.symbol);
-    });
-    const openMarketResults = await Promise.all(openMarketPromises);
-    const openMarketData = openMarketResults.map((result) => result.data);
-    const filePath = path.join(
-      __dirname,
-      "server",
-      "examples",
-      "yahooFinance",
-      "openMarketData.json"
-    );
-    fs.writeFileSync(filePath, JSON.stringify(openMarketData, null, 2));
-
-    const closeMarketPromises = closeSymbols.map((symbols) => {
-      return fetchStockPrice(symbols.symbol);
-    });
-    const closeMarketResults = await Promise.all(closeMarketPromises);
-    const closeMarketData = closeMarketResults.map((result) => result.data);
-    const filePathClose = path.join(
-      __dirname,
-      "server",
-      "examples",
-      "yahooFinance",
-      "closeMarketData.json"
-    );
-    fs.writeFileSync(filePathClose, JSON.stringify(closeMarketData, null, 2));
-
+    fs.writeFileSync(filePath, JSON.stringify(economicCalendar, null, 2)); 
 
   } catch (error) {
     console.error(`error: ${error.message}`);
   }
-})();
+  })(); 
+  */

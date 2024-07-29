@@ -21,7 +21,6 @@ const fetchEconomicCalendar = async (
   from = getToday(),
   to = getTomorrow()
 ) => {
-  console.log(from, to)
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-economic-calendar",
@@ -61,7 +60,6 @@ const fetchEarningCalendar = async (
   from = getUnixStartOfDay(),
   to = getUnixEndOfDay()
 ) => {
-  console.log(from, to);
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-earning-calendar",
@@ -79,7 +77,6 @@ const fetchEarningCalendar = async (
 
   try {
     const { data } = await axios.request(options);
-    console.log(data);
     const readable = data.data.map((element) => {
       return { symbol: element.d[0], date: readableDate(element.d[2]) };
     });
@@ -118,7 +115,7 @@ const fetchMarketCapStocks = async (marketCap = "cap_mega") => {
       });
     };
     const transformedData = transformData(data);
-    console.log(transformedData);
+
     return transformedData;
   } catch (error) {
     throw new Error(`Error fetching marketcap data: ${error.message}`);

@@ -4,4 +4,7 @@ module.exports = {
   rapidApiTradingViewHost: "trading-view.p.rapidapi.com",
   rapidApiSeekingAlphaHost: "seeking-alpha.p.rapidapi.com",
   rapidApiFinvizHost: "finviz-screener.p.rapidapi.com",
+  telegramToken: process.env.TELEGRAM_TOKEN,
+  chatId: process.env.CHAT_ID,
+  topicId: process.env.TOPIC_ID,
 };
