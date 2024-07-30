@@ -21,7 +21,11 @@ const {
   fetchStockPriceWithDelay,
   fetchAllStockPrices,
 } = require("../utils/delay");
-
+const { getLastMarketData } = require("../controllers/marketDataController");
+const {
+  findStockDataByDateRange,
+} = require("../controllers/earningsDataController");
+const { getClosestDate, readableDate } = require("../utils/dates");
 
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
@@ -33,7 +37,7 @@ const openSymbols = [
   { description: "Futuros NASDAQ 100", symbol: "NQ=F" },
   { description: "Futuros Dow Jones", symbol: "YM=F" },
   { description: "Futuros Russell 2000", symbol: "RTY=F" },
-  { description: "Futuros Dólar Îndex", symbol: "DX=F" },
+  { description: "Futuros Dólar Index", symbol: "DX=F" },
   { description: "Bitcoin/USD", symbol: "BTC-USD" },
   { description: "Etherum/USD", symbol: "ETH-USD" },
 ];
@@ -91,6 +95,7 @@ function sendSubMenu(chatId, messageId, menuTitle, options, topicId) {
       inline_keyboard: keyboard,
     },
     message_thread_id: topicId,
+    parse_mode: "Markdown",
   };
 
   bot.editMessageText(menuTitle, sendOptions);
@@ -106,7 +111,7 @@ async function sendTemporaryMessage(chatId, text, options, delay = 5000) {
 bot.onText(/\/informes/, (msg) => {
   const chatId = msg.chat.id;
   const topicId = msg.is_topic_message ? msg.message_thread_id : undefined;
-  console.log(chatId, topicId)
+  console.log(chatId, topicId);
   if (topicId) {
     const topicName = msg.reply_to_message.forum_topic_created.name;
     console.log(topicName);
@@ -152,41 +157,87 @@ bot.on("callback_query", async (callbackQuery) => {
   try {
     switch (data) {
       case "option1":
-        const delayTime = 1000;
-        const openMarketData = await fetchAllStockPrices(fetchStockPrice, openSymbols, delayTime);
-        const formattedMarketData = formatMarketData(openMarketData, openSymbols);
-        console.log(formattedMarketData);
+        let textOpen;
+        let date;
+        const openMarketData = await getLastMarketData("open");
+        if (openMarketData && openMarketData.symbols && openMarketData.symbols.length > 0) {
+          console.log("market data on database")
+          textOpen = formatMarketData(openMarketData.symbols, openSymbols);
+          date = moment(openMarketData.date).format("DD/MM/YYYY");
+        } else {
+          console.log("market data no available")
+          textOpen = "No se han encontrado resultados.";
+          date = moment().format("DD/MM/YYYY");
+        }
+
         sendSubMenu(
           message.chat.id,
           message.message_id,
-          `Informe Apertura ${moment().format(
-            "DD-MM-YYYY"
-          )}\nEste es el informe de apertura`,
+          `*Informe apertura de mercado ${date}*\n\n${textOpen}`,
           [],
           topicId
         );
         break;
       case "option2":
+        let textClose;
+        let dateClose;
+        const closeMarketData = await getLastMarketData("close");
+        if (closeMarketData && closeMarketData.symbols && closeMarketData.symbols.length > 0) {
+          console.log("market data on database")
+          textClose = formatMarketData(closeMarketData.symbols, closeSymbols);
+          dateClose = moment(closeMarketData.date).format("DD/MM/YYYY");
+        } else {
+          console.log("market data no available")
+          textClose = "No se han encontrado resultados.";
+          dateClose = moment().format("DD/MM/YYYY");
+        }
         sendSubMenu(
           message.chat.id,
           message.message_id,
-          `Informe Cierre ${moment().format("DD-MM-YYYY")}\n`,
+          `*Informe cierre de mercado ${dateClose}*\n\n${textClose}`,
           [],
           topicId
         );
         break;
       case "option3":
+        let text = [];
+        const dataBaseFound = await findStockDataByDateRange();
         const marketCapData = await fetchMarketCap();
-        const earningsCalendar = await fetchEarningCalendar();
-        const filteredSymbols = earningsCalendar.filter((item) =>
+        if (dataBaseFound && dataBaseFound.length > 0) {
+          console.log("Earnings Calendar en DDBB");
+          text = dataBaseFound.map((element) => {
+            const closestTimestamp = getClosestDate(
+              element.earnings_release_date,
+              element.earnings_release_next_date
+            );
+            return {
+              symbol: element.symbol,
+              name: element.name,
+              date: readableDate(closestTimestamp),
+            };
+          });
+        } else {
+          console.log("Earnings Calendar en API");
+          const earningsCalendar = await fetchEarningCalendar();
+          text = earningsCalendar.map((element) => {
+            const closestTimestamp = getClosestDate(element.d[2], element.d[4]);
+            return {
+              symbol: element.d[0],
+              name: element.d[1],
+              date: readableDate(closestTimestamp),
+            };
+          });
+        }
+        const filteredSymbols = text.filter((item) =>
           marketCapData.includes(item.symbol)
         );
-        console.log(filteredSymbols);
-        let earningsCalendarText = `Earnings Calendar ${moment().format(
-          "DD-MM-YYYY"
-        )}\n`;
+        let earningsCalendarText = `*Earnings Calendar ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
         if (filteredSymbols && filteredSymbols.length > 0) {
           earningsCalendarText += formatDataEarnings(filteredSymbols);
+        } else {
+          earningsCalendarText += `No hay eventos para la fecha`;
         }
         sendSubMenu(
           message.chat.id,
@@ -196,25 +247,19 @@ bot.on("callback_query", async (callbackQuery) => {
           topicId
         );
         break;
-      case "option5":
-        await sendTemporaryMessage(
-          message.chat.id,
-          "Opción no reconocida. Vuelve a intentarlo más tarde.",
-          {
-            ...(topicId && { message_thread_id: topicId }),
-          },
-          5000
-        );
-        break;
       case "option4":
         const economicCalendar = await fetchEconomicCalendar(
           ["Interest Rate", "Inflation Rate"],
           1
         );
-        let economicCalendarText = `Economic Calendar ${moment().format(
-          "DD-MM-YYYY"
-        )}\n`;
-        if (economicCalendar && economicCalendar.status === 200) {
+        let economicCalendarText = `*Economic Calendar ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
+        if (
+          economicCalendar &&
+          economicCalendar.status === 200 &&
+          economicCalendar.data > 0
+        ) {
           let formattedData = formatData(economicCalendar.data);
           economicCalendarText = economicCalendarText + formattedData;
         } else {

@@ -12,9 +12,16 @@ const getUnixEndOfDay = (dateStr = null) => {
   return date.endOf('day').unix();
 };
 
+const getClosestDate = (timestamp1, timestamp2) => {
+  const now = moment().unix();
+  const diff1 = Math.abs(now - timestamp1);
+  const diff2 = Math.abs(now - timestamp2);
+
+  return diff1 < diff2 ? timestamp1 : timestamp2;
+};
+
 const readableDate = (unixTimestamp) => {
-  let date = moment.unix(unixTimestamp).format('YYYY-MM-DD HH:mm:ss')
-  return moment.unix(unixTimestamp).format('YYYY-MM-DD HH:mm:ss')
+  return moment.unix(unixTimestamp).format('DD-MM-YYYY HH:mm')
 
 };
 
@@ -23,5 +30,6 @@ module.exports = {
   getTomorrow,
   getUnixStartOfDay,
   getUnixEndOfDay,
-  readableDate
+  readableDate,
+  getClosestDate
 };

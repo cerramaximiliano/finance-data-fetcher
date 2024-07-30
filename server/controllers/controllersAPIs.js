@@ -7,6 +7,7 @@ const {
   getUnixStartOfDay,
   getUnixEndOfDay,
   readableDate,
+  getClosestDate,
 } = require("../utils/dates");
 const {
   rapidApiKey,
@@ -15,6 +16,7 @@ const {
   rapidApiYahooFinance,
   rapidApiFinvizHost,
 } = require("../config/configAPIs");
+
 // Tradign View
 const fetchEconomicCalendar = async (
   indicatorFilter = [],
@@ -41,17 +43,23 @@ const fetchEconomicCalendar = async (
     const response = await axios.request(options);
     const { result } = response.data;
 
-    if( result ) {
-      const uniqueIndicators = [...new Set(result.map((item) => item.indicator))];
+    if (result) {
+      const uniqueIndicators = [
+        ...new Set(result.map((item) => item.indicator)),
+      ];
       let filterData = result;
       if (indicatorFilter.length > 0) {
         filterData = result.filter((item) =>
           indicatorFilter.includes(item.indicator)
         );
       }
-      return { status: 200, data: filterData, uniqueIndicators: uniqueIndicators };
+      return {
+        status: 200,
+        data: filterData,
+        uniqueIndicators: uniqueIndicators,
+      };
     }
-      return {status: 204, data: []}
+    return { status: 204, data: [] };
   } catch (error) {
     throw new Error(`Error fetching economic calendar data: ${error.message}`);
   }
@@ -61,7 +69,6 @@ const fetchEarningCalendar = async (
   from = getUnixStartOfDay(),
   to = getUnixEndOfDay()
 ) => {
-  console.log(from, to)
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-earning-calendar",
@@ -79,18 +86,12 @@ const fetchEarningCalendar = async (
 
   try {
     const { data } = await axios.request(options);
-    const readable = data.data.map((element) => {
-      return { symbol: element.d[0], name: element.d[1], date: readableDate(element.d[4]) };
-    });
-    const filePath = path.join(
-      __dirname,
-      "../",
-      "examples",
-      "tradingView",
-      "earningsCalendar.json"
-    );
-    fs.writeFileSync(filePath, JSON.stringify(data.data, null, 2));
-    return readable;
+
+    if (data.data) {
+      return data.data;
+    } else {
+      return [];
+    }
   } catch (error) {
     throw new Error(`Error fetching earning calendar data: ${error.message}`);
   }
