@@ -12,8 +12,9 @@ const formatDataEarnings = (data) => {
 };
 
 const formatMarketData = (data, symbols) => {
+  console.log(data)
   return data.map(item => {
-    const matchingSymbol = symbols.find(sym => sym.symbol === item.symbol);
+    const matchingSymbol = symbols.find(sym => sym.symbol === item.underlyingSymbol);
     const description = matchingSymbol ? matchingSymbol.description : 'N/A';
     const price = item.regularMarketPrice || item.regularMarketPreviousClose;
     return `Description: ${description}\nPrice: ${price}\n`;

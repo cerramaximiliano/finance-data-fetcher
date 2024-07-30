@@ -106,7 +106,7 @@ async function sendTemporaryMessage(chatId, text, options, delay = 5000) {
 bot.onText(/\/informes/, (msg) => {
   const chatId = msg.chat.id;
   const topicId = msg.is_topic_message ? msg.message_thread_id : undefined;
-
+  console.log(chatId, topicId)
   if (topicId) {
     const topicName = msg.reply_to_message.forum_topic_created.name;
     console.log(topicName);
@@ -152,8 +152,7 @@ bot.on("callback_query", async (callbackQuery) => {
   try {
     switch (data) {
       case "option1":
-        console.log("apertura");
-        const delayTime = 1000; // 1 segundo de retraso entre las solicitudes
+        const delayTime = 1000;
         const openMarketData = await fetchAllStockPrices(fetchStockPrice, openSymbols, delayTime);
         const formattedMarketData = formatMarketData(openMarketData, openSymbols);
         console.log(formattedMarketData);

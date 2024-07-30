@@ -1,552 +1,13 @@
 [
   {
-    "s": "OTC:GBFH",
+    "s": "NYSE:NTST",
     "d": [
-      "GBFH",
-      "GBank Financial Holdings Inc.",
-      1722254400,
-      0.28,
-      1714509300,
-      0.26
-    ]
-  },
-  {
-    "s": "NASDAQ:TFSL",
-    "d": [
-      "TFSL",
-      "TFS Financial Corporation",
-      1722254400,
-      0.06,
-      1714508220,
-      0.06
-    ]
-  },
-  {
-    "s": "OTC:PPERF",
-    "d": [
-      "PPERF",
-      "PT Bank Mandiri Persero TBK",
-      1722254400,
-      0.008980378825,
-      1714469340,
-      0.008963963379
-    ]
-  },
-  {
-    "s": "NASDAQ:ESGR",
-    "d": [
-      "ESGR",
-      "Enstar Group Limited",
-      1730980800,
-      null,
-      1722251820,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:MPW",
-    "d": [
-      "MPW",
-      "Medical Properties Trust, Inc.",
-      1722254400,
-      0.04447,
-      1715256180,
-      0.089921
-    ]
-  },
-  {
-    "s": "OTC:OPWEF",
-    "d": [
-      "OPWEF",
-      "Opawica Explorations Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "OTC:SICP",
-    "d": [
-      "SICP",
-      "SILVERGATE CAPITAL CORPORATION",
-      1722254400,
-      0.01,
-      1713268800,
-      0.01
-    ]
-  },
-  {
-    "s": "NASDAQ:IMPP",
-    "d": [
-      "IMPP",
-      "Imperial Petroleum Inc.",
-      1722254400,
-      0.42,
-      1715861820,
-      0.23
-    ]
-  },
-  {
-    "s": "NASDAQ:LSCC",
-    "d": [
-      "LSCC",
-      "Lattice Semiconductor Corporation",
-      1730203200,
-      0.295659,
-      1722283320,
-      0.240869
-    ]
-  },
-  {
-    "s": "OTC:BDOUF",
-    "d": [
-      "BDOUF",
-      "BDO Unibank Inc.",
-      1729512000,
-      0.06871007429999999,
-      1722254400,
-      0.0659318744
-    ]
-  },
-  {
-    "s": "OTC:ZEOOF",
-    "d": [
-      "ZEOOF",
-      "Zeon Corp.",
-      1730376000,
-      0.14893791,
-      1722232800,
-      0.14691379999999998
-    ]
-  },
-  {
-    "s": "NASDAQ:IPA",
-    "d": [
-      "IPA",
-      "ImmunoPrecise Antibodies Ltd.",
-      1726056000,
-      -0.07225000000000001,
-      1722256320,
-      -0.08346930000000001
-    ]
-  },
-  {
-    "s": "NYSE:RNGR",
-    "d": [
-      "RNGR",
-      "Ranger Energy Services, Inc.",
+      "NTST",
+      "NetSTREIT Corp.",
       1729771200,
-      0.26897,
-      1722285420,
-      0.142813
-    ]
-  },
-  {
-    "s": "NASDAQ:MNSB",
-    "d": [
-      "MNSB",
-      "MainStreet Bancshares, Inc.",
-      1729512000,
-      0.32,
-      1722254580,
-      0.29
-    ]
-  },
-  {
-    "s": "NYSE:AMG",
-    "d": [
-      "AMG",
-      "Affiliated Managers Group, Inc.",
-      1730116800,
-      4.768328,
-      1722250821,
-      4.604245
-    ]
-  },
-  {
-    "s": "OTC:TPZEF",
-    "d": [
-      "TPZEF",
-      "TOPAZ ENERGY CORP.",
-      1730754000,
-      0.049616965,
-      1722285120,
-      0.0451309548
-    ]
-  },
-  {
-    "s": "OTC:EMMS",
-    "d": [
-      "EMMS",
-      "EMMIS CORPORATION",
-      1722254400,
-      null,
-      1715256000,
-      null
-    ]
-  },
-  {
-    "s": "OTC:HLFN",
-    "d": [
-      "HLFN",
-      "Home Loan Financial Corp.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:FFIC",
-    "d": [
-      "FFIC",
-      "Flushing Financial Corporation",
-      1729598400,
-      0.202,
-      1722283200,
-      0.184
-    ]
-  },
-  {
-    "s": "NASDAQ:RMBS",
-    "d": [
-      "RMBS",
-      "Rambus, Inc.",
-      1730116800,
-      0.518492,
-      1722283680,
-      0.444826
-    ]
-  },
-  {
-    "s": "NASDAQ:FWRD",
-    "d": [
-      "FWRD",
-      "Forward Air Corporation",
-      1722254400,
-      -0.183333,
-      1715216280,
-      0.015714
-    ]
-  },
-  {
-    "s": "OTC:AEXAF",
-    "d": [
-      "AEXAF",
-      "Atos Origin SA",
-      1722254400,
-      0.2356464,
-      1711434600,
-      3.2339582
-    ]
-  },
-  {
-    "s": "NASDAQ:SMBC",
-    "d": [
-      "SMBC",
-      "Southern Missouri Bancorp, Inc.",
-      1729512000,
-      1.015,
-      1722254400,
-      0.995
-    ]
-  },
-  {
-    "s": "NYSE:DRQ",
-    "d": [
-      "DRQ",
-      "Dril-Quip, Inc.",
-      1722254400,
-      0.174235,
-      1714680360,
-      0.055791
-    ]
-  },
-  {
-    "s": "NASDAQ:BFIN",
-    "d": [
-      "BFIN",
-      "BankFinancial Corporation",
-      1722254400,
-      0.17,
-      1715288400,
-      0.16
-    ]
-  },
-  {
-    "s": "NYSE:VIV",
-    "d": [
-      "VIV",
-      "Telefonica Brasil S.A.",
-      1722286800,
-      0.145772,
-      1715123280,
-      0.1201
-    ]
-  },
-  {
-    "s": "OTC:GMPUF",
-    "d": [
-      "GMPUF",
-      "GESTAMP Automocion S A",
-      1722267000,
-      0.1345005384,
-      1715282820,
-      0.135227833
-    ]
-  },
-  {
-    "s": "OTC:NPSKY",
-    "d": [
-      "NPSKY",
-      "NSK Ltd.",
-      1730116800,
-      null,
-      1722232800,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:HOLX",
-    "d": [
-      "HOLX",
-      "Hologic, Inc.",
-      1730116800,
-      1.041825,
-      1722283260,
-      1.017357
-    ]
-  },
-  {
-    "s": "NASDAQ:SBAC",
-    "d": [
-      "SBAC",
-      "SBA Communications Corporation",
-      1730116800,
-      2.169772,
-      1722283440,
-      2.149529
-    ]
-  },
-  {
-    "s": "OTC:FANUF",
-    "d": [
-      "FANUF",
-      "Fanuc Corporation",
-      1730289600,
-      0.22818510000000003,
-      1722232800,
-      0.20499599999999998
-    ]
-  },
-  {
-    "s": "OTC:KMTUF",
-    "d": [
-      "KMTUF",
-      "Komatsu Ltd.",
-      1730289600,
-      0.5319768300000001,
-      1722232800,
-      0.61362136
-    ]
-  },
-  {
-    "s": "OTC:BKOR",
-    "d": [
-      "BKOR",
-      "Oak Ridge Financial Services, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:GRI",
-    "d": [
-      "GRI",
-      "GRI Bio, Inc.",
-      1722254400,
-      null,
-      1715601600,
-      null
-    ]
-  },
-  {
-    "s": "OTC:CPKF",
-    "d": [
-      "CPKF",
-      "Chesapeake Financial Shares, Inc.",
-      1722254400,
-      0.49,
-      1713873600,
-      0.58
-    ]
-  },
-  {
-    "s": "NASDAQ:TLRY",
-    "d": [
-      "TLRY",
-      "Tilray Brands, Inc.",
-      1727870400,
-      -0.03,
-      1722283800,
-      -0.022857
-    ]
-  },
-  {
-    "s": "NASDAQ:SILC",
-    "d": [
-      "SILC",
-      "Silicom Ltd",
-      1730376000,
-      -0.1469,
-      1722255420,
-      -0.3517
-    ]
-  },
-  {
-    "s": "OTC:AMBK",
-    "d": [
-      "AMBK",
-      "American Bank, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "AMEX:ATNM",
-    "d": [
-      "ATNM",
-      "Actinium Pharmaceuticals, Inc. (Delaware)",
-      1722254400,
-      -0.405,
-      1714132800,
-      -0.378
-    ]
-  },
-  {
-    "s": "OTC:SHERF",
-    "d": [
-      "SHERF",
-      "Sherritt International Corp.",
-      1730289600,
-      -0.04335,
-      1722283200,
-      -0.021921
-    ]
-  },
-  {
-    "s": "NASDAQ:SSBI",
-    "d": [
-      "SSBI",
-      "Summit State Bank",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:VRNS",
-    "d": [
-      "VRNS",
-      "Varonis Systems, Inc.",
-      1730116800,
-      0.029963,
+      0.055,
       1722283740,
-      -0.020772
-    ]
-  },
-  {
-    "s": "NYSE:BTU",
-    "d": [
-      "BTU",
-      "Peabody Energy Corporation",
-      1722254400,
-      0.604025,
-      1714651200,
-      0.30915
-    ]
-  },
-  {
-    "s": "NASDAQ:INVA",
-    "d": [
-      "INVA",
-      "Innoviva, Inc.",
-      1722254400,
-      0.235,
-      1715199360,
-      0.17
-    ]
-  },
-  {
-    "s": "NASDAQ:CZFS",
-    "d": [
-      "CZFS",
-      "Citizens Financial Services, Inc.",
-      1722254400,
-      1.316832,
-      1714076100,
-      1.534653
-    ]
-  },
-  {
-    "s": "NASDAQ:PDLB",
-    "d": [
-      "PDLB",
-      "Ponce Financial Group, Inc.",
-      1722254400,
-      0.01,
-      1714511460,
-      -0.03
-    ]
-  },
-  {
-    "s": "OTC:SBNY",
-    "d": [
-      "SBNY",
-      "Signature Bank (New York, NY)",
-      1722254400,
-      4.45,
-      1713355200,
-      4.23
-    ]
-  },
-  {
-    "s": "OTC:SGIOY",
-    "d": [
-      "SGIOY",
-      "Shionogi & Co. Ltd.",
-      1730116800,
-      0.242562,
-      1722232800,
-      0.190871
-    ]
-  },
-  {
-    "s": "NYSE:AKO.B",
-    "d": [
-      "AKO.B",
-      "Embotelladora Andina S.A.",
-      1722254400,
-      0.201288,
-      1714512600,
-      0.382819
-    ]
-  },
-  {
-    "s": "NASDAQ:CALB",
-    "d": [
-      "CALB",
-      "California BanCorp",
-      1729771200,
-      0.525,
-      1722254580,
-      0.525
+      0.055
     ]
   },
   {
@@ -561,36 +22,14 @@
     ]
   },
   {
-    "s": "OTC:MACE",
+    "s": "NYSE:CTRI",
     "d": [
-      "MACE",
-      "Mace Security International, Inc.",
-      1722254400,
-      null,
-      1715774400,
-      null
-    ]
-  },
-  {
-    "s": "OTC:FRBK",
-    "d": [
-      "FRBK",
-      "Republic First Bancorp, Inc.",
-      1722254400,
-      -0.05,
-      1713960000,
-      -0.05
-    ]
-  },
-  {
-    "s": "NYSE:ABR",
-    "d": [
-      "ABR",
-      "Arbor Realty Trust",
-      1722254400,
-      0.412089,
-      1714738620,
-      0.408881
+      "CTRI",
+      "Centuri Holdings, Inc.",
+      1732708800,
+      0.377212,
+      1722254580,
+      0.226776
     ]
   },
   {
@@ -605,10 +44,87 @@
     ]
   },
   {
-    "s": "NASDAQ:OFLX",
+    "s": "OTC:HEINY",
     "d": [
-      "OFLX",
-      "Omega Flex, Inc.",
+      "HEINY",
+      "Heineken N.V.",
+      1739340000,
+      1.443768,
+      1722230280,
+      1.167438
+    ]
+  },
+  {
+    "s": "OTC:PEXZF",
+    "d": [
+      "PEXZF",
+      "Pacific Ridge Exploration Ltd.",
+      1722254400,
+      null,
+      1716782400,
+      null
+    ]
+  },
+  {
+    "s": "OTC:CAMPQ",
+    "d": [
+      "CAMPQ",
+      "CALAMP CORP",
+      1722254400,
+      -0.92,
+      1714046400,
+      -2.043333
+    ]
+  },
+  {
+    "s": "OTC:PPERY",
+    "d": [
+      "PPERY",
+      "PT Bank Mandiri Persero TBK",
+      1722254400,
+      0.180964,
+      1714469340,
+      0.177975
+    ]
+  },
+  {
+    "s": "OTC:GBNXF",
+    "d": [
+      "GBNXF",
+      "Gibson Energy, Inc.",
+      1730116800,
+      0.27023811999999997,
+      1722287220,
+      0.2611200292
+    ]
+  },
+  {
+    "s": "NASDAQ:BMEA",
+    "d": [
+      "BMEA",
+      "Biomea Fusion, Inc.",
+      1722254400,
+      -1.076641,
+      1714680540,
+      -0.994247
+    ]
+  },
+  {
+    "s": "NASDAQ:CALB",
+    "d": [
+      "CALB",
+      "California BanCorp",
+      1729771200,
+      0.525,
+      1722254580,
+      0.525
+    ]
+  },
+  {
+    "s": "OTC:OPWEF",
+    "d": [
+      "OPWEF",
+      "Opawica Explorations Inc.",
       1722254400,
       null,
       null,
@@ -616,58 +132,212 @@
     ]
   },
   {
-    "s": "OTC:FANUY",
+    "s": "NYSE:BRX",
     "d": [
-      "FANUY",
-      "Fanuc Corporation",
+      "BRX",
+      "Brixmor Property Group Inc.",
+      1730145600,
+      0.217439,
+      1722283620,
+      0.216654
+    ]
+  },
+  {
+    "s": "NASDAQ:TLRY",
+    "d": [
+      "TLRY",
+      "Tilray Brands, Inc.",
+      1727870400,
+      -0.03,
+      1722283800,
+      -0.022857
+    ]
+  },
+  {
+    "s": "NASDAQ:HWBK",
+    "d": [
+      "HWBK",
+      "Hawthorn Bancshares, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:SFBC",
+    "d": [
+      "SFBC",
+      "Sound Financial Bancorp, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:HOPE",
+    "d": [
+      "HOPE",
+      "Hope Bancorp, Inc.",
+      1729512000,
+      0.22418,
+      1722254700,
+      0.22
+    ]
+  },
+  {
+    "s": "NYSE:EQR",
+    "d": [
+      "EQR",
+      "Equity Residential",
+      1729598400,
+      0.399904,
+      1722285120,
+      0.382676
+    ]
+  },
+  {
+    "s": "NASDAQ:PHVS",
+    "d": [
+      "PHVS",
+      "Pharvaris N.V.",
+      1722254400,
+      -0.5910011712000001,
+      1715199540,
+      -0.607625902
+    ]
+  },
+  {
+    "s": "OTC:SHERF",
+    "d": [
+      "SHERF",
+      "Sherritt International Corp.",
       1730289600,
-      0.112925,
-      1722232800,
-      0.10528
+      -0.04335,
+      1722283200,
+      -0.021921
     ]
   },
   {
-    "s": "NASDAQ:GABC",
+    "s": "NASDAQ:EGIO",
     "d": [
-      "GABC",
-      "German American Bancorp, Inc.",
-      1730116800,
-      0.642,
+      "EGIO",
+      "Edgio, Inc.",
       1722254400,
-      1.348
+      -0.8,
+      1714046400,
+      -1.64
     ]
   },
   {
-    "s": "NASDAQ:DBVT",
+    "s": "NASDAQ:SFM",
     "d": [
-      "DBVT",
-      "DBV Technologies S.A.",
+      "SFM",
+      "Sprouts Farmers Market, Inc.",
+      1730289600,
+      0.69658,
+      1722283320,
+      0.784042
+    ]
+  },
+  {
+    "s": "NYSE:SLCA",
+    "d": [
+      "SLCA",
+      "U.S. Silica Holdings, Inc.",
       1722254400,
-      -0.446667,
-      1715113800,
-      -0.42
+      0.27807,
+      1714129440,
+      0.204238
     ]
   },
   {
-    "s": "NASDAQ:BSBK",
+    "s": "NASDAQ:CZFS",
     "d": [
-      "BSBK",
-      "Bogota Financial Corp.",
+      "CZFS",
+      "Citizens Financial Services, Inc.",
       1722254400,
-      0.09,
-      1714507620,
-      0.08
+      1.316832,
+      1714076100,
+      1.534653
     ]
   },
   {
-    "s": "OTC:RYLPF",
+    "s": "NYSE:SB",
     "d": [
-      "RYLPF",
-      "Koninklijke Philips N.V",
-      1722229200,
-      0.35130807984,
-      1714375260,
-      0.288684292
+      "SB",
+      "Safe Bulkers, Inc",
+      1730894400,
+      0.225137,
+      1722283740,
+      0.191696
+    ]
+  },
+  {
+    "s": "NYSE:SAFE",
+    "d": [
+      "SAFE",
+      "Safehold Inc. New",
+      1730203200,
+      0.373102,
+      1722283260,
+      0.360974
+    ]
+  },
+  {
+    "s": "NYSE:BUR",
+    "d": [
+      "BUR",
+      "Burford Capital Limited",
+      1722254400,
+      0.3855,
+      1715598180,
+      0.44595
+    ]
+  },
+  {
+    "s": "OTC:AEXAF",
+    "d": [
+      "AEXAF",
+      "Atos Origin SA",
+      1722254400,
+      0.2356464,
+      1711434600,
+      3.2339582
+    ]
+  },
+  {
+    "s": "NASDAQ:AMSF",
+    "d": [
+      "AMSF",
+      "AMERISAFE, Inc.",
+      1729684800,
+      0.596667,
+      1722283740,
+      0.625625
+    ]
+  },
+  {
+    "s": "NYSE:OIS",
+    "d": [
+      "OIS",
+      "Oil States International, Inc.",
+      1729771200,
+      0.066,
+      1722250920,
+      0.03852
+    ]
+  },
+  {
+    "s": "OTC:AFIIQ",
+    "d": [
+      "AFIIQ",
+      "Armstrong Flooring, Inc.",
+      1722254400,
+      null,
+      1714046400,
+      null
     ]
   },
   {
@@ -682,69 +352,47 @@
     ]
   },
   {
-    "s": "NASDAQ:MSEX",
+    "s": "OTC:BDMXF",
     "d": [
-      "MSEX",
-      "Middlesex Water Company",
+      "BDMXF",
+      "Budimex S A",
       1722254400,
-      0.64,
-      1715204760,
-      0.48
-    ]
-  },
-  {
-    "s": "NASDAQ:ON",
-    "d": [
-      "ON",
-      "ON Semiconductor Corporation",
-      1730116800,
-      0.972788,
-      1722254400,
-      0.920927
-    ]
-  },
-  {
-    "s": "NASDAQ:EKSO",
-    "d": [
-      "EKSO",
-      "Ekso Bionics Holdings, Inc.",
-      1730376000,
-      -0.115,
-      1722283620,
-      -0.13
-    ]
-  },
-  {
-    "s": "NASDAQ:BCAL",
-    "d": [
-      "BCAL",
-      "Southern California Bancorp",
-      1729771200,
-      0.21,
-      1722254400,
-      0.27
-    ]
-  },
-  {
-    "s": "OTC:ILPMY",
-    "d": [
-      "ILPMY",
-      "Permanent TSB Group Holdings plc",
-      1740571200,
       null,
-      1722254400,
-      0.341824
+      1715169600,
+      null
     ]
   },
   {
-    "s": "NASDAQ:HTLF",
+    "s": "NYSE:AMG",
     "d": [
-      "HTLF",
-      "Heartland Financial USA, Inc.",
-      1722254400,
-      1.1375,
-      1714390200,
-      1.11
+      "AMG",
+      "Affiliated Managers Group, Inc.",
+      1730116800,
+      4.797848,
+      1722250821,
+      4.604245
+    ]
+  },
+  {
+    "s": "NYSE:CWK",
+    "d": [
+      "CWK",
+      "Cushman & Wakefield plc",
+      1730376000,
+      0.277857,
+      1722283620,
+      0.187403
+    ]
+  },
+  {
+    "s": "NYSE:BYON",
+    "d": [
+      "BYON",
+      "Beyond, Inc.",
+      1729771200,
+      -0.593977,
+      1722286140,
+      -0.833295
     ]
   },
   {
@@ -752,6 +400,50 @@
     "d": [
       "MCET",
       "MULTICELL TECHNOLOGIES INC",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:PROV",
+    "d": [
+      "PROV",
+      "Provident Financial Holdings, Inc.",
+      1729598400,
+      0.27,
+      1722247320,
+      0.26
+    ]
+  },
+  {
+    "s": "OTC:SGIOF",
+    "d": [
+      "SGIOF",
+      "Shionogi & Co. Ltd.",
+      1730116800,
+      0.9872364641700001,
+      1722232800,
+      0.7528876227079999
+    ]
+  },
+  {
+    "s": "OTC:CLHI",
+    "d": [
+      "CLHI",
+      "CLST Holdings, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:OFLX",
+    "d": [
+      "OFLX",
+      "Omega Flex, Inc.",
       1722254400,
       null,
       null,
@@ -770,83 +462,6 @@
     ]
   },
   {
-    "s": "NYSE:FLS",
-    "d": [
-      "FLS",
-      "Flowserve Corporation",
-      1730203200,
-      0.651486,
-      1722283200,
-      0.631187
-    ]
-  },
-  {
-    "s": "OTC:HINKF",
-    "d": [
-      "HINKF",
-      "Heineken N.V.",
-      1739340000,
-      2.9145675,
-      1722230280,
-      2.3114769600000002
-    ]
-  },
-  {
-    "s": "OTC:CCOEF",
-    "d": [
-      "CCOEF",
-      "Capcom Co. Ltd",
-      1729771200,
-      0.131610606171,
-      1722234000,
-      0.142271497856
-    ]
-  },
-  {
-    "s": "NYSE:MTAL",
-    "d": [
-      "MTAL",
-      "Metals Acquisition Limited",
-      1722254400,
-      0.073883,
-      1714424460,
-      -0.016204
-    ]
-  },
-  {
-    "s": "NASDAQ:CRSP",
-    "d": [
-      "CRSP",
-      "CRISPR Therapeutics AG",
-      1722254400,
-      -1.427466,
-      1715198520,
-      -1.360873
-    ]
-  },
-  {
-    "s": "OTC:WUXAY",
-    "d": [
-      "WUXAY",
-      "Wuxi Apptec Co Ltd.",
-      1730376000,
-      0.123194,
-      1722251220,
-      0.107365
-    ]
-  },
-  {
-    "s": "NASDAQ:MLCO",
-    "d": [
-      "MLCO",
-      "Melco Resorts & Entertainment Limited",
-      1722254400,
-      0.084565,
-      1714478400,
-      0.027883
-    ]
-  },
-  {
     "s": "NASDAQ:TTOO",
     "d": [
       "TTOO",
@@ -855,1414 +470,6 @@
       -0.7516,
       1722283740,
       -0.97
-    ]
-  },
-  {
-    "s": "NYSE:PHG",
-    "d": [
-      "PHG",
-      "Koninklijke Philips N.V. NY Registry Shares",
-      1722229200,
-      0.37326,
-      1714375260,
-      0.289907
-    ]
-  },
-  {
-    "s": "NASDAQ:MEDS",
-    "d": [
-      "MEDS",
-      "TRxADE HEALTH, Inc.",
-      1722254400,
-      -0.15,
-      1719403200,
-      -0.15
-    ]
-  },
-  {
-    "s": "NASDAQ:CPLP",
-    "d": [
-      "CPLP",
-      "Capital Product Partners L.P.",
-      1722254400,
-      0.17,
-      1714474800,
-      0.3132
-    ]
-  },
-  {
-    "s": "NYSE:EQR",
-    "d": [
-      "EQR",
-      "Equity Residential",
-      1729598400,
-      0.399904,
-      1722285120,
-      0.382676
-    ]
-  },
-  {
-    "s": "OTC:NGKIF",
-    "d": [
-      "NGKIF",
-      "NGK Insulators Ltd.",
-      1729857600,
-      0.22499961000000002,
-      1722235200,
-      0.4391884
-    ]
-  },
-  {
-    "s": "NASDAQ:LNKB",
-    "d": [
-      "LNKB",
-      "LINKBANCORP, Inc.",
-      1730116800,
-      0.2,
-      1722254400,
-      0.18
-    ]
-  },
-  {
-    "s": "NYSE:ST",
-    "d": [
-      "ST",
-      "Sensata Technologies Holding plc",
-      1730203200,
-      0.930102,
-      1722283440,
-      0.928951
-    ]
-  },
-  {
-    "s": "NASDAQ:APLD",
-    "d": [
-      "APLD",
-      "Applied Digital Corporation",
-      1722254400,
-      -0.208,
-      1712865900,
-      -0.071667
-    ]
-  },
-  {
-    "s": "NYSE:SAFE",
-    "d": [
-      "SAFE",
-      "Safehold Inc. New",
-      1730203200,
-      0.373102,
-      1722283260,
-      0.360974
-    ]
-  },
-  {
-    "s": "OTC:GIVXF",
-    "d": [
-      "GIVXF",
-      "GIVEX CORP",
-      1722254400,
-      null,
-      1714654800,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:WWD",
-    "d": [
-      "WWD",
-      "Woodward, Inc.",
-      1731585600,
-      1.399833,
-      1722283260,
-      1.519854
-    ]
-  },
-  {
-    "s": "NYSE:SB",
-    "d": [
-      "SB",
-      "Safe Bulkers, Inc",
-      1730894400,
-      0.225137,
-      1722283740,
-      0.191696
-    ]
-  },
-  {
-    "s": "NYSE:PSO",
-    "d": [
-      "PSO",
-      "Pearson, Plc",
-      1740139200,
-      0.497456,
-      1722233700,
-      0.29837
-    ]
-  },
-  {
-    "s": "OTC:YVRLF",
-    "d": [
-      "YVRLF",
-      "Liquid Media Group Ltd.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "AMEX:TPHS",
-    "d": [
-      "TPHS",
-      "Trinity Place Holdings Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:PVBC",
-    "d": [
-      "PVBC",
-      "Provident Bancorp, Inc.",
-      1729771200,
-      0.07,
-      1722285000,
-      0.05
-    ]
-  },
-  {
-    "s": "NASDAQ:NURO",
-    "d": [
-      "NURO",
-      "NeuroMetrix, Inc.",
-      1722254400,
-      null,
-      1715803200,
-      null
-    ]
-  },
-  {
-    "s": "OTC:ACKAY",
-    "d": [
-      "ACKAY",
-      "Arcelik A.S.",
-      1722254400,
-      null,
-      1714145400,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:KFRC",
-    "d": [
-      "KFRC",
-      "Kforce, Inc.",
-      1730116800,
-      0.787442,
-      1722283440,
-      0.72614
-    ]
-  },
-  {
-    "s": "NYSE:SAVE",
-    "d": [
-      "SAVE",
-      "Spirit Airlines, Inc.",
-      1722254400,
-      -1.357843,
-      1714989060,
-      -1.44705
-    ]
-  },
-  {
-    "s": "OTC:PEXZF",
-    "d": [
-      "PEXZF",
-      "Pacific Ridge Exploration Ltd.",
-      1722254400,
-      null,
-      1716782400,
-      null
-    ]
-  },
-  {
-    "s": "OTC:WNGRF",
-    "d": [
-      "WNGRF",
-      "Weston George Ltd. (Canada)",
-      1722254400,
-      2.221328,
-      1715079660,
-      1.86096529
-    ]
-  },
-  {
-    "s": "OTC:AKBTY",
-    "d": [
-      "AKBTY",
-      "Akbank Turk Anonim Sirketi",
-      1722254400,
-      0.153203,
-      1714478400,
-      0.160794
-    ]
-  },
-  {
-    "s": "NYSE:MCD",
-    "d": [
-      "MCD",
-      "McDonald's Corporation",
-      1729684800,
-      3.266417,
-      1722250920,
-      3.074349
-    ]
-  },
-  {
-    "s": "OTC:AEXAY",
-    "d": [
-      "AEXAY",
-      "Atos Origin SA",
-      1722254400,
-      0.047104,
-      1711434600,
-      0.639546
-    ]
-  },
-  {
-    "s": "NYSE:CSR",
-    "d": [
-      "CSR",
-      "D/B/A Centerspace",
-      1730116800,
-      -0.253333,
-      1722285120,
-      -0.23
-    ]
-  },
-  {
-    "s": "OTC:OPMZ",
-    "d": [
-      "OPMZ",
-      "1PM INDS INC",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "OTC:PCLB",
-    "d": [
-      "PCLB",
-      "Pinnacle Bancshares, Inc.",
-      1722254400,
-      null,
-      1713873600,
-      null
-    ]
-  },
-  {
-    "s": "OTC:ROYTL",
-    "d": [
-      "ROYTL",
-      "PACIFIC COAST OIL TR",
-      1722254400,
-      null,
-      1715256000,
-      null
-    ]
-  },
-  {
-    "s": "OTC:FFDF",
-    "d": [
-      "FFDF",
-      "FFD Financial Corp.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:MBIN",
-    "d": [
-      "MBIN",
-      "Merchants Bancorp",
-      1729771200,
-      1.54,
-      1722283620,
-      1.565
-    ]
-  },
-  {
-    "s": "NASDAQ:HLIT",
-    "d": [
-      "HLIT",
-      "Harmonic Inc.",
-      1730116800,
-      0.195,
-      1722283620,
-      0.038333
-    ]
-  },
-  {
-    "s": "NASDAQ:CORT",
-    "d": [
-      "CORT",
-      "Corcept Therapeutics Incorporated",
-      1730289600,
-      0.244,
-      1722283620,
-      0.23
-    ]
-  },
-  {
-    "s": "NYSE:AKO.A",
-    "d": [
-      "AKO.A",
-      "Embotelladora Andina S.A.",
-      1722254400,
-      0.201288,
-      1714512600,
-      0.382819
-    ]
-  },
-  {
-    "s": "OTC:ACNDF",
-    "d": [
-      "ACNDF",
-      "Ascendas India Trust",
-      1738065600,
-      null,
-      1722249360,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:HMST",
-    "d": [
-      "HMST",
-      "HomeStreet, Inc.",
-      1729512000,
-      -0.175975,
-      1722283440,
-      -0.26
-    ]
-  },
-  {
-    "s": "NASDAQ:OBT",
-    "d": [
-      "OBT",
-      "Orange County Bancorp, Inc.",
-      1722254400,
-      1.345,
-      1714594320,
-      1.365
-    ]
-  },
-  {
-    "s": "NASDAQ:SYM",
-    "d": [
-      "SYM",
-      "Symbotic Inc.",
-      1731931200,
-      0.07045,
-      1722283440,
-      0.057762
-    ]
-  },
-  {
-    "s": "OTC:PPERY",
-    "d": [
-      "PPERY",
-      "PT Bank Mandiri Persero TBK",
-      1722254400,
-      0.180964,
-      1714469340,
-      0.177975
-    ]
-  },
-  {
-    "s": "OTC:AAGRY",
-    "d": [
-      "AAGRY",
-      "Astra Agro Lestari TBK",
-      1722254400,
-      null,
-      1714132800,
-      null
-    ]
-  },
-  {
-    "s": "OTC:CWSFF",
-    "d": [
-      "CWSFF",
-      "CIELO WASTE SOLUTIONS CORP.",
-      1722254400,
-      null,
-      1711659600,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:BMEA",
-    "d": [
-      "BMEA",
-      "Biomea Fusion, Inc.",
-      1722254400,
-      -1.076641,
-      1714680540,
-      -0.994247
-    ]
-  },
-  {
-    "s": "NASDAQ:CIVB",
-    "d": [
-      "CIVB",
-      "Civista Bancshares, Inc.",
-      1729857600,
-      0.450283,
-      1722252720,
-      0.38955
-    ]
-  },
-  {
-    "s": "OTC:TSBA",
-    "d": [
-      "TSBA",
-      "Touchstone Bankshares Inc.",
-      1722254400,
-      null,
-      1714474800,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:ARLP",
-    "d": [
-      "ARLP",
-      "Alliance Resource Partners, L.P.",
-      1730116800,
-      0.88,
-      1722250920,
-      0.9475
-    ]
-  },
-  {
-    "s": "NYSE:CNA",
-    "d": [
-      "CNA",
-      "CNA Financial Corporation",
-      1730116800,
-      1.183333,
-      1722252240,
-      1.19175
-    ]
-  },
-  {
-    "s": "NASDAQ:TRNS",
-    "d": [
-      "TRNS",
-      "Transcat, Inc.",
-      1730203200,
-      0.643333,
-      1722283440,
-      0.633333
-    ]
-  },
-  {
-    "s": "NASDAQ:HOPE",
-    "d": [
-      "HOPE",
-      "Hope Bancorp, Inc.",
-      1729512000,
-      0.24178,
-      1722254700,
-      0.22
-    ]
-  },
-  {
-    "s": "OTC:HKHHF",
-    "d": [
-      "HKHHF",
-      "Heineken Holding N.V.",
-      1739340000,
-      null,
-      1722243840,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:RVTY",
-    "d": [
-      "RVTY",
-      "Revvity, Inc.",
-      1730203200,
-      1.142375,
-      1722247320,
-      1.121862
-    ]
-  },
-  {
-    "s": "NASDAQ:FXNC",
-    "d": [
-      "FXNC",
-      "First National Corporation",
-      1722254400,
-      0.44,
-      1714474800,
-      0.43
-    ]
-  },
-  {
-    "s": "NASDAQ:SEVN",
-    "d": [
-      "SEVN",
-      "Seven Hills Realty Trust",
-      1730203200,
-      0.355,
-      1722283200,
-      0.33
-    ]
-  },
-  {
-    "s": "OTC:VNTRF",
-    "d": [
-      "VNTRF",
-      "Venator Materials PLC",
-      1722254400,
-      -7277.854683,
-      1715860800,
-      -22915.526251
-    ]
-  },
-  {
-    "s": "NYSE:CTRI",
-    "d": [
-      "CTRI",
-      "Centuri Holdings, Inc.",
-      1732708800,
-      0.392212,
-      1722254580,
-      0.226776
-    ]
-  },
-  {
-    "s": "NASDAQ:CCB",
-    "d": [
-      "CCB",
-      "Coastal Financial Corporation",
-      1729771200,
-      0.972775,
-      1722259620,
-      0.8014
-    ]
-  },
-  {
-    "s": "NYSE:CWK",
-    "d": [
-      "CWK",
-      "Cushman & Wakefield plc",
-      1730376000,
-      0.277857,
-      1722283620,
-      0.187403
-    ]
-  },
-  {
-    "s": "OTC:LTFD",
-    "d": [
-      "LTFD",
-      "LITTLEFIELD CORP",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:RILY",
-    "d": [
-      "RILY",
-      "B. Riley Financial, Inc.",
-      1722254400,
-      null,
-      1715803260,
-      null
-    ]
-  },
-  {
-    "s": "OTC:AGNPF",
-    "d": [
-      "AGNPF",
-      "Algernon Pharmaceuticals Inc.",
-      1722254400,
-      null,
-      1714363200,
-      null
-    ]
-  },
-  {
-    "s": "OTC:BIOAF",
-    "d": [
-      "BIOAF",
-      "Bioasis Technologies Inc.",
-      1722254400,
-      null,
-      1714564800,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:PHVS",
-    "d": [
-      "PHVS",
-      "Pharvaris N.V.",
-      1722254400,
-      -0.5910011712000001,
-      1715199540,
-      -0.607625902
-    ]
-  },
-  {
-    "s": "OTC:FLNCF",
-    "d": [
-      "FLNCF",
-      "Freelancer Ltd",
-      1722297601,
-      null,
-      1708987920,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:FFIV",
-    "d": [
-      "FFIV",
-      "F5, Inc.",
-      1729598400,
-      3.332137,
-      1722283500,
-      2.971267
-    ]
-  },
-  {
-    "s": "OTC:SIVBQ",
-    "d": [
-      "SIVBQ",
-      "SVB Financial Group",
-      1722254400,
-      4.1772,
-      1714046400,
-      3.7463
-    ]
-  },
-  {
-    "s": "NYSE:WMK",
-    "d": [
-      "WMK",
-      "Weis Markets, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:OGI",
-    "d": [
-      "OGI",
-      "Organigram Holdings Inc.",
-      1722254400,
-      -0.04963374450000001,
-      1689299700,
-      -0.053168080000000006
-    ]
-  },
-  {
-    "s": "OTC:FRCB",
-    "d": [
-      "FRCB",
-      "First Republic Bank (San Francisco, California)",
-      1722254400,
-      -2,
-      1712923200,
-      -2.37
-    ]
-  },
-  {
-    "s": "OTC:OXBC",
-    "d": [
-      "OXBC",
-      "Oxford Bank Corporation",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:NCPL",
-    "d": [
-      "NCPL",
-      "Netcapital Inc.",
-      1722254400,
-      -0.05,
-      1710798060,
-      0.04
-    ]
-  },
-  {
-    "s": "OTC:PSORF",
-    "d": [
-      "PSORF",
-      "Pearson PLC",
-      1740139200,
-      0.5046154899999999,
-      1722233700,
-      0.2961837681
-    ]
-  },
-  {
-    "s": "NASDAQ:NEO",
-    "d": [
-      "NEO",
-      "NeoGenomics, Inc.",
-      1730203200,
-      0.009636,
-      1722283620,
-      -0.0031
-    ]
-  },
-  {
-    "s": "NASDAQ:SFBC",
-    "d": [
-      "SFBC",
-      "Sound Financial Bancorp, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:PLOW",
-    "d": [
-      "PLOW",
-      "Douglas Dynamics, Inc.",
-      1722283200,
-      0.6575,
-      1714428060,
-      -0.296667
-    ]
-  },
-  {
-    "s": "NASDAQ:AMSF",
-    "d": [
-      "AMSF",
-      "AMERISAFE, Inc.",
-      1729684800,
-      0.596667,
-      1722283740,
-      0.625625
-    ]
-  },
-  {
-    "s": "NASDAQ:PCH",
-    "d": [
-      "PCH",
-      "PotlatchDeltic Corporation - Common Stock",
-      1729512000,
-      0.002199,
-      1722283860,
-      0.066892
-    ]
-  },
-  {
-    "s": "NYSE:BUR",
-    "d": [
-      "BUR",
-      "Burford Capital Limited",
-      1722254400,
-      0.3855,
-      1715598180,
-      0.44595
-    ]
-  },
-  {
-    "s": "OTC:HEINY",
-    "d": [
-      "HEINY",
-      "Heineken N.V.",
-      1739340000,
-      1.443768,
-      1722230280,
-      1.167438
-    ]
-  },
-  {
-    "s": "OTC:GBNXF",
-    "d": [
-      "GBNXF",
-      "Gibson Energy, Inc.",
-      1730116800,
-      0.269840745,
-      1722283200,
-      0.2611200292
-    ]
-  },
-  {
-    "s": "OTC:STLY",
-    "d": [
-      "STLY",
-      "HG Holdings, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:BMRC",
-    "d": [
-      "BMRC",
-      "Bank of Marin Bancorp",
-      1729512000,
-      0.301667,
-      1722256260,
-      0.163333
-    ]
-  },
-  {
-    "s": "NYSE:OIS",
-    "d": [
-      "OIS",
-      "Oil States International, Inc.",
-      1729771200,
-      0.078,
-      1722250920,
-      0.03852
-    ]
-  },
-  {
-    "s": "NYSE:INN",
-    "d": [
-      "INN",
-      "Summit Hotel Properties, Inc.",
-      1730289600,
-      -0.07,
-      1722285120,
-      -0.07
-    ]
-  },
-  {
-    "s": "OTC:RADCQ",
-    "d": [
-      "RADCQ",
-      "Rite Aid Corp.",
-      1722254400,
-      -0.498088,
-      1712836800,
-      -1.470225
-    ]
-  },
-  {
-    "s": "OTC:TDCB",
-    "d": [
-      "TDCB",
-      "Third Century Bancorp",
-      1722254400,
-      null,
-      1714076280,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:L",
-    "d": [
-      "L",
-      "Loews Corporation",
-      1730116800,
-      null,
-      1722247320,
-      null
-    ]
-  },
-  {
-    "s": "OTC:CNAF",
-    "d": [
-      "CNAF",
-      "Commercial National Financial Corp. (PA)",
-      1722254400,
-      null,
-      1714419900,
-      null
-    ]
-  },
-  {
-    "s": "OTC:CBLNF",
-    "d": [
-      "CBLNF",
-      "Mersen",
-      1722254400,
-      null,
-      1710244800,
-      null
-    ]
-  },
-  {
-    "s": "OTC:LPMDF",
-    "d": [
-      "LPMDF",
-      "Lippo Malls Indonesia Trust",
-      1722243600,
-      null,
-      1714126140,
-      null
-    ]
-  },
-  {
-    "s": "OTC:GRMHF",
-    "d": [
-      "GRMHF",
-      "GREENTOWN MGMT HLDGS CO LTD",
-      1722254400,
-      null,
-      1711025280,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:EGIO",
-    "d": [
-      "EGIO",
-      "Edgio, Inc.",
-      1722254400,
-      -0.8,
-      1714046400,
-      -1.64
-    ]
-  },
-  {
-    "s": "OTC:ALBY",
-    "d": [
-      "ALBY",
-      "Community Capital Bancshares, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "OTC:SGLMF",
-    "d": [
-      "SGLMF",
-      "Starhill Global Real Estate Investment Trust",
-      1722243600,
-      null,
-      1706457600,
-      null
-    ]
-  },
-  {
-    "s": "OTC:WCFB",
-    "d": [
-      "WCFB",
-      "WCF Bancorp, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:HWBK",
-    "d": [
-      "HWBK",
-      "Hawthorn Bancshares, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:PBHC",
-    "d": [
-      "PBHC",
-      "Pathfinder Bancorp, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:SES",
-    "d": [
-      "SES",
-      "SES AI Corporation",
-      1730894400,
-      -0.064446,
-      1722283200,
-      -0.064446
-    ]
-  },
-  {
-    "s": "OTC:PBNNF",
-    "d": [
-      "PBNNF",
-      "PT Bank Negara Indonesia TBK",
-      1722254400,
-      0.0086706132,
-      1714380900,
-      0.0094590783
-    ]
-  },
-  {
-    "s": "NASDAQ:PROV",
-    "d": [
-      "PROV",
-      "Provident Financial Holdings, Inc.",
-      1729598400,
-      0.27,
-      1722247320,
-      0.26
-    ]
-  },
-  {
-    "s": "NASDAQ:MVBF",
-    "d": [
-      "MVBF",
-      "MVB Financial Corp.",
-      1730116800,
-      0.429888,
-      1722285120,
-      0.362131
-    ]
-  },
-  {
-    "s": "OTC:NXTP",
-    "d": [
-      "NXTP",
-      "NextPlay Technologies, Inc.",
-      1722254400,
-      null,
-      1714564800,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:CHK",
-    "d": [
-      "CHK",
-      "Chesapeake Energy Corporation",
-      1730289600,
-      0.197488,
-      1722283260,
-      -0.01104
-    ]
-  },
-  {
-    "s": "OTC:CLHI",
-    "d": [
-      "CLHI",
-      "CLST Holdings, Inc.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "OTC:PQEFF",
-    "d": [
-      "PQEFF",
-      "Petroteq Energy Inc.",
-      1722254400,
-      null,
-      1714392000,
-      null
-    ]
-  },
-  {
-    "s": "OTC:PTAIF",
-    "d": [
-      "PTAIF",
-      "PT Astra International",
-      1722254400,
-      0.011397945465,
-      1714476060,
-      0.011429459999999999
-    ]
-  },
-  {
-    "s": "OTC:ARHTF",
-    "d": [
-      "ARHTF",
-      "Arht Media, Inc.",
-      1722254400,
-      null,
-      1717162140,
-      null
-    ]
-  },
-  {
-    "s": "OTC:CAMPQ",
-    "d": [
-      "CAMPQ",
-      "CALAMP CORP",
-      1722254400,
-      -0.92,
-      1714046400,
-      -2.043333
-    ]
-  },
-  {
-    "s": "NASDAQ:MCBC",
-    "d": [
-      "MCBC",
-      "Macatawa Bank Corporation",
-      1722254400,
-      0.29,
-      1714076220,
-      0.3
-    ]
-  },
-  {
-    "s": "OTC:FBPI",
-    "d": [
-      "FBPI",
-      "First Bancorp of Indiana, Inc.",
-      1722254400,
-      null,
-      1715601600,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:XTLB",
-    "d": [
-      "XTLB",
-      "XTL Biopharmaceuticals Ltd.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:CZWI",
-    "d": [
-      "CZWI",
-      "Citizens Community Bancorp, Inc.",
-      1729684800,
-      0.28,
-      1722256200,
-      0.27
-    ]
-  },
-  {
-    "s": "OTC:KOTMF",
-    "d": [
-      "KOTMF",
-      "Koito Manufacturing Co., Ltd.",
-      1730203200,
-      0.26069010000000004,
-      1722232800,
-      0.22238959999999997
-    ]
-  },
-  {
-    "s": "NYSE:CDP",
-    "d": [
-      "CDP",
-      "COPT Defense Properties",
-      1729771200,
-      0.308792,
-      1722284280,
-      0.308943
-    ]
-  },
-  {
-    "s": "NYSE:NEU",
-    "d": [
-      "NEU",
-      "NewMarket Corp",
-      1729512000,
-      null,
-      1722283200,
-      null
-    ]
-  },
-  {
-    "s": "OTC:KMTUY",
-    "d": [
-      "KMTUY",
-      "Komatsu Ltd.",
-      1730289600,
-      0.531174,
-      1722232800,
-      0.610998
-    ]
-  },
-  {
-    "s": "OTC:RPKIF",
-    "d": [
-      "RPKIF",
-      "Richards Packaging Income Fund",
-      1722254400,
-      0.577253,
-      1714683600,
-      0.597942
-    ]
-  },
-  {
-    "s": "OTC:PIAGF",
-    "d": [
-      "PIAGF",
-      "Piaggio & C Spa Pontedera",
-      1722254400,
-      0.14995680000000003,
-      1715260440,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:CVRX",
-    "d": [
-      "CVRX",
-      "CVRx, Inc.",
-      1730289600,
-      -0.467283,
-      1722283620,
-      -0.5463
-    ]
-  },
-  {
-    "s": "NYSE:WELL",
-    "d": [
-      "WELL",
-      "Welltower Inc.",
-      1730116800,
-      0.375126,
-      1722283740,
-      0.344691
-    ]
-  },
-  {
-    "s": "NASDAQ:IART",
-    "d": [
-      "IART",
-      "Integra LifeSciences Holdings Corporation",
-      1729684800,
-      0.853756,
-      1722247200,
-      0.622557
-    ]
-  },
-  {
-    "s": "NYSE:ESI",
-    "d": [
-      "ESI",
-      "Element Solutions Inc.",
-      1729684800,
-      0.389807,
-      1722284220,
-      0.353551
-    ]
-  },
-  {
-    "s": "AMEX:GORO",
-    "d": [
-      "GORO",
-      "Gold Resource Corporation",
-      1722254400,
-      -0.04,
-      1714685940,
-      -0.05
-    ]
-  },
-  {
-    "s": "NASDAQ:PRTG",
-    "d": [
-      "PRTG",
-      "Portage Biotech Inc.",
-      1722254400,
-      -0.22,
-      1709158200,
-      -0.27
-    ]
-  },
-  {
-    "s": "NASDAQ:FMAO",
-    "d": [
-      "FMAO",
-      "Farmers & Merchants Bancorp, Inc.",
-      1722254400,
-      0.3575,
-      1714595400,
-      0.346667
-    ]
-  },
-  {
-    "s": "OTC:SGIOF",
-    "d": [
-      "SGIOF",
-      "Shionogi & Co. Ltd.",
-      1730116800,
-      0.9872364641700001,
-      1722232800,
-      0.7528876227079999
-    ]
-  },
-  {
-    "s": "NYSE:MSC",
-    "d": [
-      "MSC",
-      "Studio City International Holdings Limited",
-      1722254400,
-      null,
-      1714478400,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:CVI",
-    "d": [
-      "CVI",
-      "CVR Energy Inc.",
-      1730116800,
-      0.330005,
-      1722283200,
-      -0.214469
-    ]
-  },
-  {
-    "s": "OTC:AFIIQ",
-    "d": [
-      "AFIIQ",
-      "Armstrong Flooring, Inc.",
-      1722254400,
-      null,
-      1714046400,
-      null
-    ]
-  },
-  {
-    "s": "OTC:HUKEF",
-    "d": [
-      "HUKEF",
-      "Hokuriku Electrical Construction Ltd.",
-      1729684800,
-      null,
-      1722232800,
-      null
     ]
   },
   {
@@ -2277,32 +484,21 @@
     ]
   },
   {
-    "s": "NYSE:NTST",
+    "s": "OTC:PSORF",
     "d": [
-      "NTST",
-      "NetSTREIT Corp.",
-      1729771200,
-      0.055,
-      1722283740,
-      0.055
+      "PSORF",
+      "Pearson PLC",
+      1740139200,
+      0.5046154899999999,
+      1722233700,
+      0.2961837681
     ]
   },
   {
-    "s": "OTC:TBPMQ",
+    "s": "OTC:STLY",
     "d": [
-      "TBPMQ",
-      "Tetra Bio-Pharma Inc.",
-      1722254400,
-      null,
-      1712923200,
-      null
-    ]
-  },
-  {
-    "s": "OTC:DHHXF",
-    "d": [
-      "DHHXF",
-      "DESARROLLADORA HOMEX SAB DE CV",
+      "STLY",
+      "HG Holdings, Inc.",
       1722254400,
       null,
       null,
@@ -2310,131 +506,10 @@
     ]
   },
   {
-    "s": "OTC:FSTF",
+    "s": "OTC:BKOR",
     "d": [
-      "FSTF",
-      "First State Financial Corp.",
-      1722254400,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "s": "NYSE:BYON",
-    "d": [
-      "BYON",
-      "Beyond, Inc.",
-      1729771200,
-      -0.593977,
-      1722283200,
-      -0.833295
-    ]
-  },
-  {
-    "s": "NYSE:BHVN",
-    "d": [
-      "BHVN",
-      "Biohaven Ltd.",
-      1722254400,
-      -1.780699,
-      1715285340,
-      -1.54854
-    ]
-  },
-  {
-    "s": "OTC:YGRAF",
-    "d": [
-      "YGRAF",
-      "Yangarra Resources Ltd.",
-      1722254400,
-      0.065763,
-      1714687200,
-      0.066438
-    ]
-  },
-  {
-    "s": "NYSE:CNO",
-    "d": [
-      "CNO",
-      "CNO Financial Group, Inc.",
-      1730721600,
-      0.790483,
-      1722284220,
-      0.7184
-    ]
-  },
-  {
-    "s": "NASDAQ:MEOH",
-    "d": [
-      "MEOH",
-      "Methanex Corporation",
-      1722254400,
-      0.5230482126,
-      1713992700,
-      0.3063138754
-    ]
-  },
-  {
-    "s": "OTC:CCOEY",
-    "d": [
-      "CCOEY",
-      "Capcom Co. Ltd",
-      1729771200,
-      0.057899,
-      1722234000,
-      0.071499
-    ]
-  },
-  {
-    "s": "NYSE:LTC",
-    "d": [
-      "LTC",
-      "LTC Properties, Inc.",
-      1729771200,
-      0.452309,
-      1722284820,
-      0.450999
-    ]
-  },
-  {
-    "s": "NASDAQ:TRVG",
-    "d": [
-      "TRVG",
-      "trivago N.V.",
-      1722254400,
-      -0.05346067032,
-      1714507200,
-      -0.029155659
-    ]
-  },
-  {
-    "s": "NASDAQ:CPSS",
-    "d": [
-      "CPSS",
-      "Consumer Portfolio Services, Inc.",
-      1722254400,
-      null,
-      1715372100,
-      null
-    ]
-  },
-  {
-    "s": "NASDAQ:NBN",
-    "d": [
-      "NBN",
-      "Northeast Bank",
-      1730116800,
-      1.82,
-      1722254400,
-      1.79
-    ]
-  },
-  {
-    "s": "OTC:EORBF",
-    "d": [
-      "EORBF",
-      "ORBITE TECHNOLOGIES INC",
+      "BKOR",
+      "Oak Ridge Financial Services, Inc.",
       1722254400,
       null,
       null,
@@ -2453,6 +528,710 @@
     ]
   },
   {
+    "s": "OTC:ROWC",
+    "d": [
+      "ROWC",
+      "ROWE COS",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:AMKR",
+    "d": [
+      "AMKR",
+      "Amkor Technology, Inc.",
+      1730116800,
+      0.644282,
+      1722283440,
+      0.225834
+    ]
+  },
+  {
+    "s": "OTC:FANUY",
+    "d": [
+      "FANUY",
+      "Fanuc Corporation",
+      1730289600,
+      0.112925,
+      1722232800,
+      0.10528
+    ]
+  },
+  {
+    "s": "AMEX:ATNM",
+    "d": [
+      "ATNM",
+      "Actinium Pharmaceuticals, Inc. (Delaware)",
+      1722254400,
+      -0.405,
+      1714132800,
+      -0.378
+    ]
+  },
+  {
+    "s": "OTC:LTFD",
+    "d": [
+      "LTFD",
+      "LITTLEFIELD CORP",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "OTC:AAGRY",
+    "d": [
+      "AAGRY",
+      "Astra Agro Lestari TBK",
+      1722254400,
+      null,
+      1714132800,
+      null
+    ]
+  },
+  {
+    "s": "OTC:HUKEF",
+    "d": [
+      "HUKEF",
+      "Hokuriku Electrical Construction Ltd.",
+      1729684800,
+      null,
+      1722232800,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:CZWI",
+    "d": [
+      "CZWI",
+      "Citizens Community Bancorp, Inc.",
+      1729684800,
+      0.28,
+      1722256200,
+      0.27
+    ]
+  },
+  {
+    "s": "OTC:FSTF",
+    "d": [
+      "FSTF",
+      "First State Financial Corp.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:SILC",
+    "d": [
+      "SILC",
+      "Silicom Ltd",
+      1730376000,
+      -0.1469,
+      1722255420,
+      -0.3517
+    ]
+  },
+  {
+    "s": "NASDAQ:CLBK",
+    "d": [
+      "CLBK",
+      "Columbia Financial, Inc.",
+      1729684800,
+      0.045,
+      1722254400,
+      0.035
+    ]
+  },
+  {
+    "s": "NASDAQ:APLD",
+    "d": [
+      "APLD",
+      "Applied Digital Corporation",
+      1722254400,
+      -0.208,
+      1712865900,
+      -0.071667
+    ]
+  },
+  {
+    "s": "OTC:ROYTL",
+    "d": [
+      "ROYTL",
+      "PACIFIC COAST OIL TR",
+      1722254400,
+      null,
+      1715256000,
+      null
+    ]
+  },
+  {
+    "s": "OTC:CBLNF",
+    "d": [
+      "CBLNF",
+      "Mersen",
+      1722254400,
+      null,
+      1710244800,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:NEO",
+    "d": [
+      "NEO",
+      "NeoGenomics, Inc.",
+      1730203200,
+      0.009636,
+      1722283620,
+      -0.0031
+    ]
+  },
+  {
+    "s": "NASDAQ:XTLB",
+    "d": [
+      "XTLB",
+      "XTL Biopharmaceuticals Ltd.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:BSBK",
+    "d": [
+      "BSBK",
+      "Bogota Financial Corp.",
+      1722254400,
+      0.09,
+      1714507620,
+      0.08
+    ]
+  },
+  {
+    "s": "OTC:OPMZ",
+    "d": [
+      "OPMZ",
+      "1PM INDS INC",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:AKO.B",
+    "d": [
+      "AKO.B",
+      "Embotelladora Andina S.A.",
+      1722254400,
+      0.201288,
+      1714512600,
+      0.382819
+    ]
+  },
+  {
+    "s": "OTC:RYLPF",
+    "d": [
+      "RYLPF",
+      "Koninklijke Philips N.V",
+      1722229200,
+      0.33753669000000003,
+      1714375260,
+      0.288684292
+    ]
+  },
+  {
+    "s": "OTC:LPMDF",
+    "d": [
+      "LPMDF",
+      "Lippo Malls Indonesia Trust",
+      1722243600,
+      null,
+      1714126140,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:PLOW",
+    "d": [
+      "PLOW",
+      "Douglas Dynamics, Inc.",
+      1730116800,
+      0.4775,
+      1722283200,
+      0.6575
+    ]
+  },
+  {
+    "s": "OTC:CPKF",
+    "d": [
+      "CPKF",
+      "Chesapeake Financial Shares, Inc.",
+      1722254400,
+      0.49,
+      1713873600,
+      0.58
+    ]
+  },
+  {
+    "s": "OTC:CWSFF",
+    "d": [
+      "CWSFF",
+      "CIELO WASTE SOLUTIONS CORP.",
+      1722254400,
+      null,
+      1711659600,
+      null
+    ]
+  },
+  {
+    "s": "OTC:ILPMY",
+    "d": [
+      "ILPMY",
+      "Permanent TSB Group Holdings plc",
+      1740571200,
+      null,
+      1722254400,
+      0.341824
+    ]
+  },
+  {
+    "s": "NASDAQ:OBT",
+    "d": [
+      "OBT",
+      "Orange County Bancorp, Inc.",
+      1722254400,
+      1.345,
+      1714594320,
+      1.365
+    ]
+  },
+  {
+    "s": "NASDAQ:CORT",
+    "d": [
+      "CORT",
+      "Corcept Therapeutics Incorporated",
+      1730289600,
+      0.244,
+      1722283620,
+      0.23
+    ]
+  },
+  {
+    "s": "NASDAQ:GABC",
+    "d": [
+      "GABC",
+      "German American Bancorp, Inc.",
+      1730116800,
+      0.642,
+      1722254400,
+      1.348
+    ]
+  },
+  {
+    "s": "NASDAQ:TRVG",
+    "d": [
+      "TRVG",
+      "trivago N.V.",
+      1722254400,
+      -0.05346067032,
+      1714507200,
+      -0.029155659
+    ]
+  },
+  {
+    "s": "NASDAQ:SSBI",
+    "d": [
+      "SSBI",
+      "Summit State Bank",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:WMK",
+    "d": [
+      "WMK",
+      "Weis Markets, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:FWRD",
+    "d": [
+      "FWRD",
+      "Forward Air Corporation",
+      1722254400,
+      -0.183333,
+      1715216280,
+      0.015714
+    ]
+  },
+  {
+    "s": "NASDAQ:MEOH",
+    "d": [
+      "MEOH",
+      "Methanex Corporation",
+      1722254400,
+      0.5230482126,
+      1713992700,
+      0.3063138754
+    ]
+  },
+  {
+    "s": "NASDAQ:PRTG",
+    "d": [
+      "PRTG",
+      "Portage Biotech Inc.",
+      1722254400,
+      -0.22,
+      1709158200,
+      -0.27
+    ]
+  },
+  {
+    "s": "NASDAQ:NCPL",
+    "d": [
+      "NCPL",
+      "Netcapital Inc.",
+      1722254400,
+      -0.05,
+      1710798060,
+      0.04
+    ]
+  },
+  {
+    "s": "NASDAQ:SEVN",
+    "d": [
+      "SEVN",
+      "Seven Hills Realty Trust",
+      1730203200,
+      0.355,
+      1722284100,
+      0.33
+    ]
+  },
+  {
+    "s": "OTC:CCOEF",
+    "d": [
+      "CCOEF",
+      "Capcom Co. Ltd",
+      1729771200,
+      0.131610606171,
+      1722234000,
+      0.142271497856
+    ]
+  },
+  {
+    "s": "OTC:GRMHF",
+    "d": [
+      "GRMHF",
+      "GREENTOWN MGMT HLDGS CO LTD",
+      1722254400,
+      null,
+      1711025280,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:SMBC",
+    "d": [
+      "SMBC",
+      "Southern Missouri Bancorp, Inc.",
+      1729512000,
+      1.015,
+      1722254400,
+      0.995
+    ]
+  },
+  {
+    "s": "NYSE:PSO",
+    "d": [
+      "PSO",
+      "Pearson, Plc",
+      1740139200,
+      0.497456,
+      1722233700,
+      0.29837
+    ]
+  },
+  {
+    "s": "OTC:CNAF",
+    "d": [
+      "CNAF",
+      "Commercial National Financial Corp. (PA)",
+      1722254400,
+      null,
+      1714419900,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:MNSB",
+    "d": [
+      "MNSB",
+      "MainStreet Bancshares, Inc.",
+      1729512000,
+      0.32,
+      1722254580,
+      0.29
+    ]
+  },
+  {
+    "s": "OTC:PTAIF",
+    "d": [
+      "PTAIF",
+      "PT Astra International",
+      1722254400,
+      0.011397945465,
+      1714476060,
+      0.011429459999999999
+    ]
+  },
+  {
+    "s": "NASDAQ:WWD",
+    "d": [
+      "WWD",
+      "Woodward, Inc.",
+      1731585600,
+      1.399833,
+      1722283260,
+      1.519854
+    ]
+  },
+  {
+    "s": "OTC:YVRLF",
+    "d": [
+      "YVRLF",
+      "Liquid Media Group Ltd.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "OTC:KMTUY",
+    "d": [
+      "KMTUY",
+      "Komatsu Ltd.",
+      1730289600,
+      0.531174,
+      1722232800,
+      0.610998
+    ]
+  },
+  {
+    "s": "NASDAQ:TRNS",
+    "d": [
+      "TRNS",
+      "Transcat, Inc.",
+      1730203200,
+      0.643333,
+      1722283440,
+      0.633333
+    ]
+  },
+  {
+    "s": "NASDAQ:TFSL",
+    "d": [
+      "TFSL",
+      "TFS Financial Corporation",
+      1722254400,
+      0.06,
+      1714508220,
+      0.06
+    ]
+  },
+  {
+    "s": "OTC:RADCQ",
+    "d": [
+      "RADCQ",
+      "Rite Aid Corp.",
+      1722254400,
+      -0.498088,
+      1712836800,
+      -1.470225
+    ]
+  },
+  {
+    "s": "OTC:NXTP",
+    "d": [
+      "NXTP",
+      "NextPlay Technologies, Inc.",
+      1722254400,
+      null,
+      1714564800,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:MVBF",
+    "d": [
+      "MVBF",
+      "MVB Financial Corp.",
+      1730116800,
+      0.429888,
+      1722285120,
+      0.362131
+    ]
+  },
+  {
+    "s": "NYSE:RNGR",
+    "d": [
+      "RNGR",
+      "Ranger Energy Services, Inc.",
+      1729771200,
+      0.26897,
+      1722285420,
+      0.142813
+    ]
+  },
+  {
+    "s": "NYSE:AKO.A",
+    "d": [
+      "AKO.A",
+      "Embotelladora Andina S.A.",
+      1722254400,
+      0.201288,
+      1714512600,
+      0.382819
+    ]
+  },
+  {
+    "s": "NYSE:CDP",
+    "d": [
+      "CDP",
+      "COPT Defense Properties",
+      1729771200,
+      0.308792,
+      1722284280,
+      0.308943
+    ]
+  },
+  {
+    "s": "NASDAQ:SBAC",
+    "d": [
+      "SBAC",
+      "SBA Communications Corporation",
+      1730116800,
+      2.169772,
+      1722283440,
+      2.149529
+    ]
+  },
+  {
+    "s": "NYSE:LTC",
+    "d": [
+      "LTC",
+      "LTC Properties, Inc.",
+      1729771200,
+      0.452309,
+      1722284820,
+      0.450999
+    ]
+  },
+  {
+    "s": "OTC:PQEFF",
+    "d": [
+      "PQEFF",
+      "Petroteq Energy Inc.",
+      1722254400,
+      null,
+      1714392000,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:UAN",
+    "d": [
+      "UAN",
+      "CVR Partners, LP",
+      1722283200,
+      null,
+      1714424520,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:CRSP",
+    "d": [
+      "CRSP",
+      "CRISPR Therapeutics AG",
+      1722254400,
+      -1.427466,
+      1715198520,
+      -1.360873
+    ]
+  },
+  {
+    "s": "NASDAQ:MEDS",
+    "d": [
+      "MEDS",
+      "TRxADE HEALTH, Inc.",
+      1722254400,
+      -0.15,
+      1719403200,
+      -0.15
+    ]
+  },
+  {
+    "s": "NASDAQ:NBN",
+    "d": [
+      "NBN",
+      "Northeast Bank",
+      1730116800,
+      1.82,
+      1722285120,
+      1.79
+    ]
+  },
+  {
+    "s": "NYSE:VIV",
+    "d": [
+      "VIV",
+      "Telefonica Brasil S.A.",
+      1730808000,
+      0.160912,
+      1722286800,
+      0.145772
+    ]
+  },
+  {
+    "s": "OTC:PIAGF",
+    "d": [
+      "PIAGF",
+      "Piaggio & C Spa Pontedera",
+      1722254400,
+      0.14995680000000003,
+      1715260440,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:WELL",
+    "d": [
+      "WELL",
+      "Welltower Inc.",
+      1730116800,
+      0.375126,
+      1722283740,
+      0.344691
+    ]
+  },
+  {
     "s": "OTC:HLAN",
     "d": [
       "HLAN",
@@ -2464,10 +1243,87 @@
     ]
   },
   {
-    "s": "NASDAQ:SGMA",
+    "s": "NASDAQ:BMRC",
     "d": [
-      "SGMA",
-      "SigmaTron International, Inc.",
+      "BMRC",
+      "Bank of Marin Bancorp",
+      1729512000,
+      0.29,
+      1722256260,
+      0.163333
+    ]
+  },
+  {
+    "s": "OTC:AGNPF",
+    "d": [
+      "AGNPF",
+      "Algernon Pharmaceuticals Inc.",
+      1722254400,
+      null,
+      1714363200,
+      null
+    ]
+  },
+  {
+    "s": "OTC:TBPMQ",
+    "d": [
+      "TBPMQ",
+      "Tetra Bio-Pharma Inc.",
+      1722254400,
+      null,
+      1712923200,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:VRNS",
+    "d": [
+      "VRNS",
+      "Varonis Systems, Inc.",
+      1730116800,
+      0.029963,
+      1722283740,
+      -0.020772
+    ]
+  },
+  {
+    "s": "NASDAQ:CHK",
+    "d": [
+      "CHK",
+      "Chesapeake Energy Corporation",
+      1730289600,
+      0.197614,
+      1722283260,
+      -0.01104
+    ]
+  },
+  {
+    "s": "NASDAQ:IMPP",
+    "d": [
+      "IMPP",
+      "Imperial Petroleum Inc.",
+      1722254400,
+      0.42,
+      1715861820,
+      0.23
+    ]
+  },
+  {
+    "s": "OTC:HINKF",
+    "d": [
+      "HINKF",
+      "Heineken N.V.",
+      1739340000,
+      2.9145675,
+      1722230280,
+      2.3114769600000002
+    ]
+  },
+  {
+    "s": "OTC:HLFN",
+    "d": [
+      "HLFN",
+      "Home Loan Financial Corp.",
       1722254400,
       null,
       null,
@@ -2475,35 +1331,79 @@
     ]
   },
   {
-    "s": "NYSE:CR",
+    "s": "NASDAQ:LNKB",
     "d": [
-      "CR",
-      "Crane Company",
+      "LNKB",
+      "LINKBANCORP, Inc.",
+      1730116800,
+      0.2,
+      1722285660,
+      0.18
+    ]
+  },
+  {
+    "s": "NYSE:NEU",
+    "d": [
+      "NEU",
+      "NewMarket Corp",
       1729512000,
-      1.287359,
-      1722285120,
-      1.240176
-    ]
-  },
-  {
-    "s": "NASDAQ:FMBH",
-    "d": [
-      "FMBH",
-      "First Mid Bancshares, Inc.",
-      1722254400,
-      0.791429,
-      1713990600,
-      0.846667
-    ]
-  },
-  {
-    "s": "OTC:BDMXF",
-    "d": [
-      "BDMXF",
-      "Budimex S A",
-      1722254400,
       null,
-      1715169600,
+      1722286860,
+      null
+    ]
+  },
+  {
+    "s": "OTC:SGLMF",
+    "d": [
+      "SGLMF",
+      "Starhill Global Real Estate Investment Trust",
+      1722243600,
+      null,
+      1706457600,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:INN",
+    "d": [
+      "INN",
+      "Summit Hotel Properties, Inc.",
+      1730289600,
+      -0.07,
+      1722285120,
+      -0.07
+    ]
+  },
+  {
+    "s": "OTC:KMTUF",
+    "d": [
+      "KMTUF",
+      "Komatsu Ltd.",
+      1730289600,
+      0.5319768300000001,
+      1722232800,
+      0.61362136
+    ]
+  },
+  {
+    "s": "OTC:WNGRF",
+    "d": [
+      "WNGRF",
+      "Weston George Ltd. (Canada)",
+      1722254400,
+      2.221328,
+      1715079660,
+      1.86096529
+    ]
+  },
+  {
+    "s": "OTC:FLNCF",
+    "d": [
+      "FLNCF",
+      "Freelancer Ltd",
+      1722297601,
+      null,
+      1708987920,
       null
     ]
   },
@@ -2519,25 +1419,487 @@
     ]
   },
   {
-    "s": "NASDAQ:CLBK",
+    "s": "OTC:WCFB",
     "d": [
-      "CLBK",
-      "Columbia Financial, Inc.",
-      1729684800,
-      0.045,
-      1722254400,
-      0.035
-    ]
-  },
-  {
-    "s": "OTC:ROWC",
-    "d": [
-      "ROWC",
-      "ROWE COS",
+      "WCFB",
+      "WCF Bancorp, Inc.",
       1722254400,
       null,
       null,
       null
+    ]
+  },
+  {
+    "s": "NASDAQ:CVRX",
+    "d": [
+      "CVRX",
+      "CVRx, Inc.",
+      1730289600,
+      -0.467283,
+      1722283620,
+      -0.5463
+    ]
+  },
+  {
+    "s": "NYSE:MSC",
+    "d": [
+      "MSC",
+      "Studio City International Holdings Limited",
+      1722254400,
+      null,
+      1714478400,
+      null
+    ]
+  },
+  {
+    "s": "OTC:TDCB",
+    "d": [
+      "TDCB",
+      "Third Century Bancorp",
+      1722254400,
+      null,
+      1714076280,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:CPLP",
+    "d": [
+      "CPLP",
+      "Capital Product Partners L.P.",
+      1722254400,
+      0.17,
+      1714474800,
+      0.3132
+    ]
+  },
+  {
+    "s": "OTC:MACE",
+    "d": [
+      "MACE",
+      "Mace Security International, Inc.",
+      1722254400,
+      null,
+      1715774400,
+      null
+    ]
+  },
+  {
+    "s": "OTC:GMPUF",
+    "d": [
+      "GMPUF",
+      "GESTAMP Automocion S A",
+      1722267000,
+      0.1345005384,
+      1715282820,
+      0.135227833
+    ]
+  },
+  {
+    "s": "OTC:SGIOY",
+    "d": [
+      "SGIOY",
+      "Shionogi & Co. Ltd.",
+      1730116800,
+      0.242562,
+      1722232800,
+      0.190871
+    ]
+  },
+  {
+    "s": "NYSE:CR",
+    "d": [
+      "CR",
+      "Crane Company",
+      1729512000,
+      1.287359,
+      1722285120,
+      1.240176
+    ]
+  },
+  {
+    "s": "NASDAQ:ON",
+    "d": [
+      "ON",
+      "ON Semiconductor Corporation",
+      1730116800,
+      0.973448,
+      1722254400,
+      0.920927
+    ]
+  },
+  {
+    "s": "OTC:EMMS",
+    "d": [
+      "EMMS",
+      "EMMIS CORPORATION",
+      1722254400,
+      null,
+      1715256000,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:RILY",
+    "d": [
+      "RILY",
+      "B. Riley Financial, Inc.",
+      1722254400,
+      null,
+      1715803260,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:BCAL",
+    "d": [
+      "BCAL",
+      "Southern California Bancorp",
+      1729771200,
+      0.20135,
+      1722254400,
+      0.27
+    ]
+  },
+  {
+    "s": "OTC:RPKIF",
+    "d": [
+      "RPKIF",
+      "Richards Packaging Income Fund",
+      1722254400,
+      0.577253,
+      1714683600,
+      0.597942
+    ]
+  },
+  {
+    "s": "NASDAQ:RMBS",
+    "d": [
+      "RMBS",
+      "Rambus, Inc.",
+      1730116800,
+      0.518492,
+      1722283680,
+      0.444826
+    ]
+  },
+  {
+    "s": "NASDAQ:HTLF",
+    "d": [
+      "HTLF",
+      "Heartland Financial USA, Inc.",
+      1722254400,
+      1.1375,
+      1714390200,
+      1.11
+    ]
+  },
+  {
+    "s": "OTC:GIVXF",
+    "d": [
+      "GIVXF",
+      "GIVEX CORP",
+      1722254400,
+      null,
+      1714654800,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:MCBC",
+    "d": [
+      "MCBC",
+      "Macatawa Bank Corporation",
+      1722254400,
+      0.29,
+      1714076220,
+      0.3
+    ]
+  },
+  {
+    "s": "NYSE:DRQ",
+    "d": [
+      "DRQ",
+      "Dril-Quip, Inc.",
+      1722254400,
+      0.174235,
+      1714680360,
+      0.055791
+    ]
+  },
+  {
+    "s": "NYSE:KFRC",
+    "d": [
+      "KFRC",
+      "Kforce, Inc.",
+      1730116800,
+      0.787442,
+      1722283440,
+      0.72614
+    ]
+  },
+  {
+    "s": "NYSE:CNO",
+    "d": [
+      "CNO",
+      "CNO Financial Group, Inc.",
+      1730721600,
+      0.790483,
+      1722284220,
+      0.7184
+    ]
+  },
+  {
+    "s": "NYSE:SAVE",
+    "d": [
+      "SAVE",
+      "Spirit Airlines, Inc.",
+      1722254400,
+      -1.357843,
+      1714989060,
+      -1.44705
+    ]
+  },
+  {
+    "s": "OTC:PBNNF",
+    "d": [
+      "PBNNF",
+      "PT Bank Negara Indonesia TBK",
+      1722254400,
+      0.0086706132,
+      1714380900,
+      0.0094590783
+    ]
+  },
+  {
+    "s": "NASDAQ:CIVB",
+    "d": [
+      "CIVB",
+      "Civista Bancshares, Inc.",
+      1729857600,
+      0.45195,
+      1722252720,
+      0.38955
+    ]
+  },
+  {
+    "s": "OTC:OXBC",
+    "d": [
+      "OXBC",
+      "Oxford Bank Corporation",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "OTC:FRBK",
+    "d": [
+      "FRBK",
+      "Republic First Bancorp, Inc.",
+      1722254400,
+      -0.05,
+      1713960000,
+      -0.05
+    ]
+  },
+  {
+    "s": "OTC:ARHTF",
+    "d": [
+      "ARHTF",
+      "Arht Media, Inc.",
+      1722254400,
+      null,
+      1717162140,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:PCH",
+    "d": [
+      "PCH",
+      "PotlatchDeltic Corporation - Common Stock",
+      1729512000,
+      0.002199,
+      1722283860,
+      0.066892
+    ]
+  },
+  {
+    "s": "OTC:WUXAY",
+    "d": [
+      "WUXAY",
+      "Wuxi Apptec Co Ltd.",
+      1730376000,
+      0.123194,
+      1722251220,
+      0.107365
+    ]
+  },
+  {
+    "s": "NASDAQ:PDLB",
+    "d": [
+      "PDLB",
+      "Ponce Financial Group, Inc.",
+      1722254400,
+      0.01,
+      1714511460,
+      -0.03
+    ]
+  },
+  {
+    "s": "OTC:BIOAF",
+    "d": [
+      "BIOAF",
+      "Bioasis Technologies Inc.",
+      1722254400,
+      null,
+      1714564800,
+      null
+    ]
+  },
+  {
+    "s": "OTC:ACNDF",
+    "d": [
+      "ACNDF",
+      "Ascendas India Trust",
+      1738065600,
+      null,
+      1722249360,
+      null
+    ]
+  },
+  {
+    "s": "OTC:YGRAF",
+    "d": [
+      "YGRAF",
+      "Yangarra Resources Ltd.",
+      1722254400,
+      0.065763,
+      1714687200,
+      0.066438
+    ]
+  },
+  {
+    "s": "OTC:DHHXF",
+    "d": [
+      "DHHXF",
+      "DESARROLLADORA HOMEX SAB DE CV",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:NURO",
+    "d": [
+      "NURO",
+      "NeuroMetrix, Inc.",
+      1722254400,
+      null,
+      1715803200,
+      null
+    ]
+  },
+  {
+    "s": "OTC:EORBF",
+    "d": [
+      "EORBF",
+      "ORBITE TECHNOLOGIES INC",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:ESGR",
+    "d": [
+      "ESGR",
+      "Enstar Group Limited",
+      1730980800,
+      null,
+      1722251820,
+      null
+    ]
+  },
+  {
+    "s": "OTC:PPERF",
+    "d": [
+      "PPERF",
+      "PT Bank Mandiri Persero TBK",
+      1722254400,
+      0.008980378825,
+      1714469340,
+      0.008963963379
+    ]
+  },
+  {
+    "s": "AMEX:GORO",
+    "d": [
+      "GORO",
+      "Gold Resource Corporation",
+      1722254400,
+      -0.04,
+      1714685940,
+      -0.05
+    ]
+  },
+  {
+    "s": "NASDAQ:DBVT",
+    "d": [
+      "DBVT",
+      "DBV Technologies S.A.",
+      1722254400,
+      -0.446667,
+      1715113800,
+      -0.42
+    ]
+  },
+  {
+    "s": "NASDAQ:IART",
+    "d": [
+      "IART",
+      "Integra LifeSciences Holdings Corporation",
+      1729684800,
+      0.729274,
+      1722247200,
+      0.622557
+    ]
+  },
+  {
+    "s": "NASDAQ:PVBC",
+    "d": [
+      "PVBC",
+      "Provident Bancorp, Inc.",
+      1729771200,
+      0.07,
+      1722285000,
+      0.05
+    ]
+  },
+  {
+    "s": "OTC:FBPI",
+    "d": [
+      "FBPI",
+      "First Bancorp of Indiana, Inc.",
+      1722254400,
+      null,
+      1715601600,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:FMBH",
+    "d": [
+      "FMBH",
+      "First Mid Bancshares, Inc.",
+      1722254400,
+      0.791429,
+      1713990600,
+      0.846667
     ]
   },
   {
@@ -2552,36 +1914,124 @@
     ]
   },
   {
-    "s": "NASDAQ:AMKR",
+    "s": "OTC:ZEOOF",
     "d": [
-      "AMKR",
-      "Amkor Technology, Inc.",
+      "ZEOOF",
+      "Zeon Corp.",
+      1730376000,
+      0.14893791,
+      1722232800,
+      0.14691379999999998
+    ]
+  },
+  {
+    "s": "NASDAQ:FFIV",
+    "d": [
+      "FFIV",
+      "F5, Inc.",
+      1729598400,
+      3.332137,
+      1722283500,
+      2.971267
+    ]
+  },
+  {
+    "s": "NASDAQ:ARLP",
+    "d": [
+      "ARLP",
+      "Alliance Resource Partners, L.P.",
       1730116800,
-      0.644282,
-      1722283440,
-      0.225834
+      0.88,
+      1722250920,
+      0.9475
     ]
   },
   {
-    "s": "NYSE:SLCA",
+    "s": "OTC:VNTRF",
     "d": [
-      "SLCA",
-      "U.S. Silica Holdings, Inc.",
+      "VNTRF",
+      "Venator Materials PLC",
       1722254400,
-      0.27807,
-      1714129440,
-      0.204238
+      -7277.854683,
+      1715860800,
+      -22915.526251
     ]
   },
   {
-    "s": "NYSE:UAN",
+    "s": "OTC:ACKAY",
     "d": [
-      "UAN",
-      "CVR Partners, LP",
-      1722283200,
+      "ACKAY",
+      "Arcelik A.S.",
+      1722254400,
       null,
-      1714424520,
+      1714145400,
       null
+    ]
+  },
+  {
+    "s": "OTC:SBNY",
+    "d": [
+      "SBNY",
+      "Signature Bank (New York, NY)",
+      1722254400,
+      4.45,
+      1713355200,
+      4.23
+    ]
+  },
+  {
+    "s": "NASDAQ:HMST",
+    "d": [
+      "HMST",
+      "HomeStreet, Inc.",
+      1729512000,
+      -0.175975,
+      1722283440,
+      -0.26
+    ]
+  },
+  {
+    "s": "OTC:FRCB",
+    "d": [
+      "FRCB",
+      "First Republic Bank (San Francisco, California)",
+      1722254400,
+      -2,
+      1712923200,
+      -2.37
+    ]
+  },
+  {
+    "s": "NASDAQ:EKSO",
+    "d": [
+      "EKSO",
+      "Ekso Bionics Holdings, Inc.",
+      1730376000,
+      -0.115,
+      1722283620,
+      -0.13
+    ]
+  },
+  {
+    "s": "NASDAQ:GRI",
+    "d": [
+      "GRI",
+      "GRI Bio, Inc.",
+      1722254400,
+      null,
+      1715601600,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:CNA",
+    "d": [
+      "CNA",
+      "CNA Financial Corporation",
+      1730116800,
+      1.133333,
+      1722252240,
+      1.19175
     ]
   },
   {
@@ -2596,25 +2046,542 @@
     ]
   },
   {
-    "s": "NYSE:BRX",
+    "s": "OTC:GBFH",
     "d": [
-      "BRX",
-      "Brixmor Property Group Inc.",
-      1730145600,
-      0.217439,
-      1722283620,
-      0.216654
+      "GBFH",
+      "GBank Financial Holdings Inc.",
+      1722254400,
+      0.28,
+      1714509300,
+      0.26
     ]
   },
   {
-    "s": "NASDAQ:SFM",
+    "s": "OTC:TPZEF",
     "d": [
-      "SFM",
-      "Sprouts Farmers Market, Inc.",
-      1730289600,
-      0.69658,
+      "TPZEF",
+      "TOPAZ ENERGY CORP.",
+      1730754000,
+      0.049616965,
+      1722285120,
+      0.0451309548
+    ]
+  },
+  {
+    "s": "NASDAQ:FMAO",
+    "d": [
+      "FMAO",
+      "Farmers & Merchants Bancorp, Inc.",
+      1722254400,
+      0.3575,
+      1714595400,
+      0.346667
+    ]
+  },
+  {
+    "s": "NASDAQ:PBHC",
+    "d": [
+      "PBHC",
+      "Pathfinder Bancorp, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:OGI",
+    "d": [
+      "OGI",
+      "Organigram Holdings Inc.",
+      1722254400,
+      -0.04963374450000001,
+      1689299700,
+      -0.053168080000000006
+    ]
+  },
+  {
+    "s": "OTC:NGKIF",
+    "d": [
+      "NGKIF",
+      "NGK Insulators Ltd.",
+      1729857600,
+      0.22499961000000002,
+      1722235200,
+      0.4391884
+    ]
+  },
+  {
+    "s": "NYSE:RVTY",
+    "d": [
+      "RVTY",
+      "Revvity, Inc.",
+      1730203200,
+      1.132358,
+      1722247320,
+      1.121862
+    ]
+  },
+  {
+    "s": "NASDAQ:HOLX",
+    "d": [
+      "HOLX",
+      "Hologic, Inc.",
+      1730116800,
+      1.039836,
+      1722283260,
+      1.017357
+    ]
+  },
+  {
+    "s": "NASDAQ:LSCC",
+    "d": [
+      "LSCC",
+      "Lattice Semiconductor Corporation",
+      1730203200,
+      0.295659,
       1722283320,
-      0.784042
+      0.240869
+    ]
+  },
+  {
+    "s": "NASDAQ:CCB",
+    "d": [
+      "CCB",
+      "Coastal Financial Corporation",
+      1729771200,
+      0.91455,
+      1722259620,
+      0.8014
+    ]
+  },
+  {
+    "s": "OTC:PCLB",
+    "d": [
+      "PCLB",
+      "Pinnacle Bancshares, Inc.",
+      1722254400,
+      null,
+      1713873600,
+      null
+    ]
+  },
+  {
+    "s": "OTC:AEXAY",
+    "d": [
+      "AEXAY",
+      "Atos Origin SA",
+      1722254400,
+      0.047104,
+      1711434600,
+      0.639546
+    ]
+  },
+  {
+    "s": "NASDAQ:MLCO",
+    "d": [
+      "MLCO",
+      "Melco Resorts & Entertainment Limited",
+      1722254400,
+      0.084565,
+      1714478400,
+      0.027883
+    ]
+  },
+  {
+    "s": "NASDAQ:MBIN",
+    "d": [
+      "MBIN",
+      "Merchants Bancorp",
+      1729771200,
+      1.54,
+      1722283620,
+      1.565
+    ]
+  },
+  {
+    "s": "NASDAQ:FXNC",
+    "d": [
+      "FXNC",
+      "First National Corporation",
+      1722254400,
+      0.44,
+      1714474800,
+      0.43
+    ]
+  },
+  {
+    "s": "NYSE:L",
+    "d": [
+      "L",
+      "Loews Corporation",
+      1730116800,
+      null,
+      1722247320,
+      null
+    ]
+  },
+  {
+    "s": "OTC:KOTMF",
+    "d": [
+      "KOTMF",
+      "Koito Manufacturing Co., Ltd.",
+      1730203200,
+      0.26069010000000004,
+      1722232800,
+      0.22238959999999997
+    ]
+  },
+  {
+    "s": "NYSE:ABR",
+    "d": [
+      "ABR",
+      "Arbor Realty Trust",
+      1722254400,
+      0.412089,
+      1714738620,
+      0.408881
+    ]
+  },
+  {
+    "s": "NASDAQ:IPA",
+    "d": [
+      "IPA",
+      "ImmunoPrecise Antibodies Ltd.",
+      1726056000,
+      -0.07225000000000001,
+      1722256320,
+      -0.08346930000000001
+    ]
+  },
+  {
+    "s": "OTC:AKBTY",
+    "d": [
+      "AKBTY",
+      "Akbank Turk Anonim Sirketi",
+      1722254400,
+      0.153203,
+      1714478400,
+      0.160794
+    ]
+  },
+  {
+    "s": "OTC:TSBA",
+    "d": [
+      "TSBA",
+      "Touchstone Bankshares Inc.",
+      1722254400,
+      null,
+      1714474800,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:CVI",
+    "d": [
+      "CVI",
+      "CVR Energy Inc.",
+      1730116800,
+      0.330005,
+      1722283200,
+      -0.214469
+    ]
+  },
+  {
+    "s": "NYSE:BHVN",
+    "d": [
+      "BHVN",
+      "Biohaven Ltd.",
+      1722254400,
+      -1.780699,
+      1715285340,
+      -1.54854
+    ]
+  },
+  {
+    "s": "NYSE:ESI",
+    "d": [
+      "ESI",
+      "Element Solutions Inc.",
+      1729684800,
+      0.389807,
+      1722284220,
+      0.353551
+    ]
+  },
+  {
+    "s": "OTC:BDOUF",
+    "d": [
+      "BDOUF",
+      "BDO Unibank Inc.",
+      1729512000,
+      0.06871007429999999,
+      1722254400,
+      0.0659318744
+    ]
+  },
+  {
+    "s": "NYSE:FLS",
+    "d": [
+      "FLS",
+      "Flowserve Corporation",
+      1730203200,
+      0.651488,
+      1722286800,
+      0.631187
+    ]
+  },
+  {
+    "s": "OTC:FFDF",
+    "d": [
+      "FFDF",
+      "FFD Financial Corp.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "OTC:NPSKY",
+    "d": [
+      "NPSKY",
+      "NSK Ltd.",
+      1730116800,
+      null,
+      1722232800,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:FFIC",
+    "d": [
+      "FFIC",
+      "Flushing Financial Corporation",
+      1729598400,
+      0.202,
+      1722287400,
+      0.184
+    ]
+  },
+  {
+    "s": "OTC:FANUF",
+    "d": [
+      "FANUF",
+      "Fanuc Corporation",
+      1730289600,
+      0.22818510000000003,
+      1722232800,
+      0.20499599999999998
+    ]
+  },
+  {
+    "s": "OTC:AMBK",
+    "d": [
+      "AMBK",
+      "American Bank, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:CPSS",
+    "d": [
+      "CPSS",
+      "Consumer Portfolio Services, Inc.",
+      1722254400,
+      null,
+      1715372100,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:CSR",
+    "d": [
+      "CSR",
+      "D/B/A Centerspace",
+      1730116800,
+      -0.253333,
+      1722285120,
+      -0.23
+    ]
+  },
+  {
+    "s": "OTC:HKHHF",
+    "d": [
+      "HKHHF",
+      "Heineken Holding N.V.",
+      1739340000,
+      null,
+      1722243840,
+      null
+    ]
+  },
+  {
+    "s": "OTC:SICP",
+    "d": [
+      "SICP",
+      "SILVERGATE CAPITAL CORPORATION",
+      1722254400,
+      0.01,
+      1713268800,
+      0.01
+    ]
+  },
+  {
+    "s": "NYSE:PHG",
+    "d": [
+      "PHG",
+      "Koninklijke Philips N.V. NY Registry Shares",
+      1722229200,
+      0.35711,
+      1714375260,
+      0.289907
+    ]
+  },
+  {
+    "s": "NASDAQ:SYM",
+    "d": [
+      "SYM",
+      "Symbotic Inc.",
+      1731931200,
+      0.07045,
+      1722283440,
+      0.057762
+    ]
+  },
+  {
+    "s": "OTC:CCOEY",
+    "d": [
+      "CCOEY",
+      "Capcom Co. Ltd",
+      1729771200,
+      0.065706,
+      1722234000,
+      0.071499
+    ]
+  },
+  {
+    "s": "NYSE:MTAL",
+    "d": [
+      "MTAL",
+      "Metals Acquisition Limited",
+      1722254400,
+      0.073883,
+      1714424460,
+      -0.016204
+    ]
+  },
+  {
+    "s": "NASDAQ:SGMA",
+    "d": [
+      "SGMA",
+      "SigmaTron International, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NASDAQ:HLIT",
+    "d": [
+      "HLIT",
+      "Harmonic Inc.",
+      1730116800,
+      0.195,
+      1722283620,
+      0.038333
+    ]
+  },
+  {
+    "s": "AMEX:TPHS",
+    "d": [
+      "TPHS",
+      "Trinity Place Holdings Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "OTC:SIVBQ",
+    "d": [
+      "SIVBQ",
+      "SVB Financial Group",
+      1722254400,
+      4.1772,
+      1714046400,
+      3.7463
+    ]
+  },
+  {
+    "s": "OTC:ALBY",
+    "d": [
+      "ALBY",
+      "Community Capital Bancshares, Inc.",
+      1722254400,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "s": "NYSE:SES",
+    "d": [
+      "SES",
+      "SES AI Corporation",
+      1730894400,
+      -0.064446,
+      1722283200,
+      -0.064446
+    ]
+  },
+  {
+    "s": "NYSE:ST",
+    "d": [
+      "ST",
+      "Sensata Technologies Holding plc",
+      1730203200,
+      0.930343,
+      1722283440,
+      0.928951
+    ]
+  },
+  {
+    "s": "NYSE:MCD",
+    "d": [
+      "MCD",
+      "McDonald's Corporation",
+      1729684800,
+      3.247675,
+      1722250920,
+      3.074161
+    ]
+  },
+  {
+    "s": "NASDAQ:BFIN",
+    "d": [
+      "BFIN",
+      "BankFinancial Corporation",
+      1722254400,
+      0.17,
+      1715288400,
+      0.16
+    ]
+  },
+  {
+    "s": "NASDAQ:MSEX",
+    "d": [
+      "MSEX",
+      "Middlesex Water Company",
+      1722254400,
+      0.64,
+      1715204760,
+      0.48
     ]
   }
 ]
