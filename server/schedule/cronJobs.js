@@ -10,6 +10,7 @@ const {
 const MarketData = require("../models/marketData");
 const { saveMarketData } = require("../controllers/marketDataController");
 const { saveOrUpdateData } = require("../controllers/earningsDataController");
+const logger = require('../utils/logger');
 
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
@@ -51,12 +52,9 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
       parse_mode: "Markdown",
       message_thread_id: topicId,
     });
-    console.log(`Mensaje enviado a chatId: ${chatId}, topicId: ${topicId}`);
+    logger.info(`Mensaje enviado a chatId: ${chatId}, topicId: ${topicId}`);
   } catch (error) {
-    console.error(
-      `Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId}`,
-      error
-    );
+    logger.error(`Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId} - ${error.message}`);
   }
 };
 
@@ -85,7 +83,7 @@ const openMarketCron = cron.schedule(
   "00 9 * * 1-5",
   async () => {
     try {
-      console.log("Tarea de envío de mensaje programado ejecutada.");
+      logger.info('Tarea de envío de mensaje programado ejecutada.');
       const delayTime = 1000;
       const openMarketData = await fetchAllStockPrices(
         fetchStockPrice,
@@ -100,8 +98,9 @@ const openMarketCron = cron.schedule(
         `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       );
       await saveMarketData({data: openMarketData, time: "open" });
+      logger.info('Datos de apertura de mercado guardados correctamente.');
     } catch (err) {
-      console.log(err);
+      logger.error(`Error en la tarea de envío de mensaje programado: ${error.message}`);
       throw new Error(err);
     }
   },
@@ -114,7 +113,7 @@ const closeMarketCron = cron.schedule(
     "30 16 * * 1-5",
   async () => {
     try {
-      console.log("Tarea de envío de mensaje programado ejecutada.");
+      logger.info('Tarea de envío de mensaje programado ejecutada.');
       const delayTime = 1000;
       const closeMarketData = await fetchAllStockPrices(
         fetchStockPrice,
@@ -132,7 +131,9 @@ const closeMarketCron = cron.schedule(
         `*Informe cierre de mercado ${date}*\n\n${formattedMarketData}`
       );
       await saveMarketData({ data: closeMarketData, time: "close" });
+      logger.info('Datos de apertura de mercado guardados correctamente.');
     } catch (err) {
+      logger.error(`Error en la tarea de cierre de mercado: ${error.message}`);
       throw new Error(err);
     }
   },

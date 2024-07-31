@@ -1,3 +1,4 @@
+const logger = require('../utils/logger');
 const MarketData = require("../models/marketData");
 
 const saveMarketData = async ({data, time}) => {
@@ -14,24 +15,18 @@ const saveMarketData = async ({data, time}) => {
     });
 
     await marketDataDocument.save();
-    console.log("Datos de mercado guardados en la base de datos");
+    logger.info('Market data saved successfully.');
   } catch (error) {
-    console.error(
-      "Error al guardar datos de mercado en la base de datos:",
-      error
-    );
+    logger.error(`Error saving market data: ${error.message}`);
+    throw error;
   }
 };
 
 const getLastMarketData = async (time) => {
   try {
-    const lastMarketData = await MarketData.findOne({ time: time }).sort({ date: -1 }).exec();
-    return lastMarketData;
+    return await MarketData.findOne({ time }).sort({ date: -1 }).exec();
   } catch (error) {
-    console.error(
-      "Error al obtener el último documento de datos de mercado:",
-      error
-    );
+    logger.error(`Error fetching last market data: ${error.message}`);
     throw error;
   }
 };
