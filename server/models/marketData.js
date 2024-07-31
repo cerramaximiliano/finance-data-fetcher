@@ -8,6 +8,10 @@ const marketSymbolSchema = new mongoose.Schema(
     description: String,
     regularMarketPrice: Number,
     regularMarketPreviousClose: Number,
+    open: Number,
+    close: Number,
+    bid: Number,
+    ask: Number,
   },
   { _id: false }
 );

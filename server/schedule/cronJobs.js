@@ -59,8 +59,8 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
   }
 };
 
-//"*/2 * * * *"
-//"00 9 * * 1-5"
+//  "*/2 * * * *"
+//  "00 9 * * 1-5"
 
 const earningsDataCron = cron.schedule(
   "00 9 * * 1-5",
@@ -81,7 +81,7 @@ const earningsDataCron = cron.schedule(
 );
 
 const openMarketCron = cron.schedule(
-  "00 9 * * 1-5",
+  "30 9 * * 1-5",
   async () => {
     try {
       logger.info('Tarea de envío de mensaje programado ejecutada.');
