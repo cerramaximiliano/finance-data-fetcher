@@ -1,7 +1,7 @@
-const logger = require('../utils/logger');
+const logger = require("../utils/logger");
 const MarketData = require("../models/marketData");
 
-const saveMarketData = async ({data, time}) => {
+const saveMarketData = async ({ data, time }) => {
   try {
     const marketDataDocument = new MarketData({
       date: new Date(),
@@ -13,11 +13,15 @@ const saveMarketData = async ({data, time}) => {
         description: item.description,
         regularMarketPrice: item.regularMarketPrice,
         regularMarketPreviousClose: item.regularMarketPreviousClose,
+        open: item.open,
+        close: item.close,
+        bid: item.bid,
+        ask: item.ask,
       })),
     });
 
     await marketDataDocument.save();
-    logger.info('Market data saved successfully.');
+    logger.info("Market data saved successfully.");
   } catch (error) {
     logger.error(`Error saving market data: ${error.message}`);
     throw error;

@@ -66,12 +66,12 @@ const earningsDataCron = cron.schedule(
   "00 9 * * 1-5",
   async () => {
     try {
-      console.log("Tarea de actualización de base de datos ejecutada.");
+      logger.info("Tarea de actualización de base de datos ejecutada.");
       const earningsCalendar = await fetchEarningCalendar();
       const saveData = await saveOrUpdateData(earningsCalendar);
       return saveData;
     } catch (err) {
-      console.log(err);
+      logger.error(err);
       throw err;
     }
   },

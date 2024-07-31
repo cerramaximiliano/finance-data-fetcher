@@ -1,7 +1,7 @@
 const moment = require("moment");
 const fs = require("fs");
 const path = require("path");
-
+const logger = require('../utils/logger');
 const {
   fetchEconomicCalendar,
   fetchEarningCalendar,
@@ -111,10 +111,8 @@ async function sendTemporaryMessage(chatId, text, options, delay = 5000) {
 bot.onText(/\/informes/, (msg) => {
   const chatId = msg.chat.id;
   const topicId = msg.is_topic_message ? msg.message_thread_id : undefined;
-  console.log(chatId, topicId);
   if (topicId) {
     const topicName = msg.reply_to_message.forum_topic_created.name;
-    console.log(topicName);
     if (topicName === "Informes") {
       bot.sendMessage(chatId, "Menú Principal:", {
         reply_markup: {
@@ -161,11 +159,11 @@ bot.on("callback_query", async (callbackQuery) => {
         let date;
         const openMarketData = await getLastMarketData("open");
         if (openMarketData && openMarketData.symbols && openMarketData.symbols.length > 0) {
-          console.log("market data on database")
+          logger.info("bot request - open market data on database")
           textOpen = formatMarketData(openMarketData.symbols, openSymbols);
           date = moment(openMarketData.date).format("DD/MM/YYYY");
         } else {
-          console.log("market data no available")
+          logger.info("bot request - open market data no available")
           textOpen = "No se han encontrado resultados.";
           date = moment().format("DD/MM/YYYY");
         }
@@ -182,13 +180,12 @@ bot.on("callback_query", async (callbackQuery) => {
         let textClose;
         let dateClose;
         const closeMarketData = await getLastMarketData("close");
-        console.log(closeMarketData)
         if (closeMarketData && closeMarketData.symbols && closeMarketData.symbols.length > 0) {
-          console.log("close market data on database")
+          logger.info("bot request - close market data on database")
           textClose = formatMarketData(closeMarketData.symbols, closeSymbols);
           dateClose = moment(closeMarketData.date).format("DD/MM/YYYY");
         } else {
-          console.log("close market data no available")
+          logger.info("bot request - close market data no available")
           textClose = "No se han encontrado resultados.";
           dateClose = moment().format("DD/MM/YYYY");
         }
@@ -205,7 +202,7 @@ bot.on("callback_query", async (callbackQuery) => {
         const dataBaseFound = await findStockDataByDateRange();
         const marketCapData = await fetchMarketCap();
         if (dataBaseFound && dataBaseFound.length > 0) {
-          console.log("Earnings Calendar en DDBB");
+          logger.info("bot request - earnings Calendar DDBB");
           text = dataBaseFound.map((element) => {
             const closestTimestamp = getClosestDate(
               element.earnings_release_date,
@@ -218,7 +215,7 @@ bot.on("callback_query", async (callbackQuery) => {
             };
           });
         } else {
-          console.log("Earnings Calendar en API");
+          logger.info("bot request - earnings Calendar API");
           const earningsCalendar = await fetchEarningCalendar();
           text = earningsCalendar.map((element) => {
             const closestTimestamp = getClosestDate(element.d[2], element.d[4]);
@@ -289,7 +286,7 @@ bot.on("callback_query", async (callbackQuery) => {
         );
     }
   } catch (err) {
-    console.log(err);
+    logger.error(err);
     await sendTemporaryMessage(
       message.chat.id,
       "Opción no reconocida. Vuelve a intentarlo más tarde.",
