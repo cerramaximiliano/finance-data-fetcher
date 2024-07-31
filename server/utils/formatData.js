@@ -13,10 +13,10 @@ const formatDataEarnings = (data) => {
 
 const formatMarketData = (data, symbols) => {
   return data.map(item => {
-    const matchingSymbol = symbols.find(sym => sym.symbol === item.underlyingSymbol || sym.symbol === item.symbol);
+    const matchingSymbol = symbols.find(sym => sym.symbol === item.underlyingSymbol || sym.symbol === item.symbol );
     const description = matchingSymbol ? matchingSymbol.description : 'N/A';
     const price = item.regularMarketPrice || item.regularMarketPreviousClose;
-    return `${description}\nUSD ${price}\n`;
+    return `${description}\n${item.currency || ""} ${price}\n`;
   }).join('\n');
 };
 

@@ -43,7 +43,7 @@ const openSymbols = [
 ];
 
 const closeSymbols = [
-  { description: "S&P 500", symbol: "^SPX" },
+  { description: "S&P 500", symbol: "^GSPC" },
   { description: "Nasdaq", symbol: "^IXIC" },
   { description: "Dow Jones", symbol: "^DJI" },
   { description: "Russell 2000", symbol: "^RUT" },
@@ -182,12 +182,13 @@ bot.on("callback_query", async (callbackQuery) => {
         let textClose;
         let dateClose;
         const closeMarketData = await getLastMarketData("close");
+        console.log(closeMarketData)
         if (closeMarketData && closeMarketData.symbols && closeMarketData.symbols.length > 0) {
-          console.log("market data on database")
+          console.log("close market data on database")
           textClose = formatMarketData(closeMarketData.symbols, closeSymbols);
           dateClose = moment(closeMarketData.date).format("DD/MM/YYYY");
         } else {
-          console.log("market data no available")
+          console.log("close market data no available")
           textClose = "No se han encontrado resultados.";
           dateClose = moment().format("DD/MM/YYYY");
         }

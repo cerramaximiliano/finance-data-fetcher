@@ -6,6 +6,7 @@ const { formatMarketData } = require("../utils/formatData");
 const {
   fetchStockPrice,
   fetchEarningCalendar,
+  marketOpen
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
 const { saveMarketData } = require("../controllers/marketDataController");
@@ -27,7 +28,7 @@ const openSymbols = [
   { description: "Etherum/USD", symbol: "ETH-USD" },
 ];
 const closeSymbols = [
-  { description: "S&P 500", symbol: "^SPX" },
+  { description: "S&P 500", symbol: "^GSPC" },
   { description: "Nasdaq", symbol: "^IXIC" },
   { description: "Dow Jones", symbol: "^DJI" },
   { description: "Russell 2000", symbol: "^RUT" },
@@ -36,7 +37,7 @@ const closeSymbols = [
   { description: "SSE", symbol: "000001.SS", country: "China" },
   { description: "Nikkei", symbol: "^N225" },
   { description: "Bovespa", symbol: "^BVSP" },
-  { description: "Merval", symbol: "^MERV" },
+  { description: "Merval", symbol: "^MERV" }, // no trae currency
   { description: "US Dólar Index", symbol: "DX-Y.NYB" },
   { description: "Futuros Soja", symbol: "ZS=F" },
   { description: "Futuros Oro", symbol: "GC=F" },
@@ -53,8 +54,8 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
       message_thread_id: topicId,
     });
     logger.info(`Mensaje enviado a chatId: ${chatId}, topicId: ${topicId}`);
-  } catch (error) {
-    logger.error(`Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId} - ${error.message}`);
+  } catch (err) {
+    logger.error(`Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId} - ${err.message}`);
   }
 };
 
@@ -100,7 +101,7 @@ const openMarketCron = cron.schedule(
       await saveMarketData({data: openMarketData, time: "open" });
       logger.info('Datos de apertura de mercado guardados correctamente.');
     } catch (err) {
-      logger.error(`Error en la tarea de envío de mensaje programado: ${error.message}`);
+      logger.error(`Error en la tarea de envío de mensaje programado: ${err.message}`);
       throw new Error(err);
     }
   },
@@ -133,7 +134,7 @@ const closeMarketCron = cron.schedule(
       await saveMarketData({ data: closeMarketData, time: "close" });
       logger.info('Datos de apertura de mercado guardados correctamente.');
     } catch (err) {
-      logger.error(`Error en la tarea de cierre de mercado: ${error.message}`);
+      logger.error(`Error en la tarea de cierre de mercado: ${err.message}`);
       throw new Error(err);
     }
   },

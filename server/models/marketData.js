@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const marketSymbolSchema = new mongoose.Schema(
   {
     symbol: String,
+    underlyingSymbol: String,
+    currency: String,
     description: String,
     regularMarketPrice: Number,
     regularMarketPreviousClose: Number,
