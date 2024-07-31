@@ -26,7 +26,7 @@ const {
   findStockDataByDateRange,
 } = require("../controllers/earningsDataController");
 const { getClosestDate, readableDate } = require("../utils/dates");
-
+const {findEconomicEventsByDateRange} = require("../controllers/economicEventController")
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
   { description: "Futuros Soja", symbol: "ZS=F" },
@@ -246,24 +246,36 @@ bot.on("callback_query", async (callbackQuery) => {
         );
         break;
       case "option4":
-        const economicCalendar = await fetchEconomicCalendar(
-          ["Interest Rate", "Inflation Rate"],
-          1
-        );
+        logger.info("bot request - economic Calendar");
+        let results = await findEconomicEventsByDateRange()
         let economicCalendarText = `*Economic Calendar ${moment().format(
           "DD/MM/YYYY"
         )}*\n\n`;
-        if (
-          economicCalendar &&
-          economicCalendar.status === 200 &&
-          economicCalendar.data > 0
-        ) {
-          let formattedData = formatData(economicCalendar.data);
+        if (results && results.length > 0){
+          logger.info("economic Calendar ddbb results")
+          false
+        }else{
+          const economicCalendar = await fetchEconomicCalendar(
+            ["Interest Rate", "Inflation Rate"],
+            1
+          );
+          if (
+            economicCalendar &&
+            economicCalendar.status === 200 &&
+            economicCalendar.data.length > 0
+          ){
+            logger.info("economic Calendar API results")
+            results = economicCalendar.data
+          }
+        }
+        if (results.length > 0){
+          let formattedData = formatData(results);
           economicCalendarText = economicCalendarText + formattedData;
-        } else {
+        }else{
           economicCalendarText =
             economicCalendarText + "No hay eventos para la fecha";
         }
+
         sendSubMenu(
           message.chat.id,
           message.message_id,

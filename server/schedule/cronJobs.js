@@ -6,11 +6,13 @@ const { formatMarketData } = require("../utils/formatData");
 const {
   fetchStockPrice,
   fetchEarningCalendar,
+  fetchEconomicCalendar,
   marketOpen
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
 const { saveMarketData } = require("../controllers/marketDataController");
 const { saveOrUpdateData } = require("../controllers/earningsDataController");
+const { saveOrUpdateEconomicEvents } = require("../controllers/economicEventController");
 const logger = require('../utils/logger');
 
 const openSymbols = [
@@ -70,6 +72,28 @@ const earningsDataCron = cron.schedule(
       const earningsCalendar = await fetchEarningCalendar();
       const saveData = await saveOrUpdateData(earningsCalendar);
       return saveData;
+    } catch (err) {
+      logger.error(err);
+      throw err;
+    }
+  },
+  {
+    timezone: "America/New_York",
+  }
+);
+
+const calendarDataCron = cron.schedule(
+  "22 12 * * 1-5",
+  async () => {
+    try {
+      logger.info("Tarea de actualización de base de datos ejecutada.");
+      const economicCalendar = await fetchEconomicCalendar();
+      if (economicCalendar && economicCalendar.status === 200 && economicCalendar.data.length > 0 ){
+        const saveOrUpdateData = saveOrUpdateEconomicEvents(economicCalendar.data)
+        logger.info(`economic info actualizada`)
+      }else{
+        logger.info(`no hay economic info que actualizar`)
+      }
     } catch (err) {
       logger.error(err);
       throw err;

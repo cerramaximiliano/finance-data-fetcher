@@ -16,6 +16,7 @@ const {
   rapidApiYahooFinance,
   rapidApiFinvizHost,
 } = require("../config/configAPIs");
+const logger = require("../utils/logger");
 
 // Tradign View
 const fetchEconomicCalendar = async (
@@ -24,6 +25,7 @@ const fetchEconomicCalendar = async (
   from = getToday(),
   to = getTomorrow()
 ) => {
+  logger.info("economic calendar controller")
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-economic-calendar",

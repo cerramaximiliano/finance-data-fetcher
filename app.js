@@ -13,12 +13,7 @@ mongoose
   .then(() => logger.info("Conectado a MongoDB"))
   .catch((err) => console.error("Error al conectar a MongoDB", err));
 
-const {
-  openMarketCron,
-  closeMarketCron,
-  sendMessageToChatAndTopic,
-  earningsDataCron,
-} = require("./server/schedule/cronJobs");
+require("./server/schedule/cronJobs");
 const logger = require("./server/utils/logger");
 
 app.listen(PORT, () => {
