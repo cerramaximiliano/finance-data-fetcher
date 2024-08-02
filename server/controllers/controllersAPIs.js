@@ -218,12 +218,40 @@ const fetchStockPrice = async (symbol) => {
   return axios.request(options);
 };
 
+/* Twelve Data */
+const fetchStockPricesTwelveData = async (symbols) => {
+  const options = {
+    method: 'GET',
+    url: 'https://twelve-data1.p.rapidapi.com/quote',
+    params: {
+      symbol: 'SPX,IXIC,DJI,RUT,TNX,DXY',
+      outputsize: '30',
+      format: 'json',
+      interval: '1day'
+    },
+    headers: {
+      'x-rapidapi-key': rapidApiKey,
+      'x-rapidapi-host': 'twelve-data1.p.rapidapi.com'
+    }
+  };
+  
+  try {
+    const response = await axios.request(options);
+    logger.info(`stock, indices, request fetch controller`)
+    return response
+  } catch (err) {
+    logger.error(err);
+    throw err
+  }
+};
+
 module.exports = {
   fetchEconomicCalendar,
   fetchEarningCalendar,
   fetchDayWath,
   marketOpen,
   fetchStockPrice,
+  fetchStockPricesTwelveData,
   fetchMarketCapStocks,
   fetchMarketCap,
 };

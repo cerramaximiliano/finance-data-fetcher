@@ -7,13 +7,17 @@ const {
   fetchStockPrice,
   fetchEarningCalendar,
   fetchEconomicCalendar,
-  marketOpen
+  marketOpen,
+  fetchStockPricesTwelveData,
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
 const { saveMarketData } = require("../controllers/marketDataController");
 const { saveOrUpdateData } = require("../controllers/earningsDataController");
-const { saveOrUpdateEconomicEvents } = require("../controllers/economicEventController");
-const logger = require('../utils/logger');
+const {
+  saveOrUpdateEconomicEvents,
+} = require("../controllers/economicEventController");
+const logger = require("../utils/logger");
+const { delay } = require("../utils/delay");
 
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
@@ -49,6 +53,29 @@ const closeSymbols = [
   { description: "Etherum/USD", symbol: "ETH-USD" },
 ];
 
+const closeYahooSymbols = [
+  { description: "DAX", symbol: "^GDAXI", country: "Germany" },
+  { description: "SSE", symbol: "000001.SS", country: "China" },
+  { description: "Nikkei", symbol: "^N225" },
+  { description: "Bovespa", symbol: "^BVSP" },
+  { description: "Merval", symbol: "^MERV" }, // no trae currency
+  { description: "Futuros Soja", symbol: "ZS=F" },
+  { description: "Futuros Oro", symbol: "GC=F" },
+  { description: "Futuros Plata", symbol: "SI=F" },
+  { description: "Futuros Petróleo", symbol: "CL=F" },
+  { description: "Bitcoin/USD", symbol: "BTC-USD" },
+  { description: "Etherum/USD", symbol: "ETH-USD" },
+];
+
+const closeTwelveSymbols = [
+  { description: "S&P 500", symbol: "SPX" },
+  { description: "Nasdaq", symbol: "IXIC" },
+  { description: "Dow Jones", symbol: "DJI" },
+  { description: "Russell 2000", symbol: "RUT" },
+  { description: "Tasa Bonos US 10 años ", symbol: "TNX" },
+  { description: "US Dólar Index", symbol: "DXY" },
+];
+
 const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
   try {
     await bot.sendMessage(chatId, message, {
@@ -57,7 +84,9 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
     });
     logger.info(`Mensaje enviado a chatId: ${chatId}, topicId: ${topicId}`);
   } catch (err) {
-    logger.error(`Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId} - ${err.message}`);
+    logger.error(
+      `Error enviando mensaje a chatId: ${chatId}, topicId: ${topicId} - ${err.message}`
+    );
   }
 };
 
@@ -88,11 +117,17 @@ const calendarDataCron = cron.schedule(
     try {
       logger.info("Tarea de actualización de base de datos ejecutada.");
       const economicCalendar = await fetchEconomicCalendar();
-      if (economicCalendar && economicCalendar.status === 200 && economicCalendar.data.length > 0 ){
-        const saveOrUpdateData = saveOrUpdateEconomicEvents(economicCalendar.data)
-        logger.info(`economic info actualizada`)
-      }else{
-        logger.info(`no hay economic info que actualizar`)
+      if (
+        economicCalendar &&
+        economicCalendar.status === 200 &&
+        economicCalendar.data.length > 0
+      ) {
+        const saveOrUpdateData = saveOrUpdateEconomicEvents(
+          economicCalendar.data
+        );
+        logger.info(`economic info actualizada`);
+      } else {
+        logger.info(`no hay economic info que actualizar`);
       }
     } catch (err) {
       logger.error(err);
@@ -108,7 +143,7 @@ const openMarketCron = cron.schedule(
   "30 9 * * 1-5",
   async () => {
     try {
-      logger.info('Tarea de envío de mensaje programado ejecutada.');
+      logger.info("Tarea de envío de mensaje programado ejecutada.");
       const delayTime = 1000;
       const openMarketData = await fetchAllStockPrices(
         fetchStockPrice,
@@ -122,10 +157,12 @@ const openMarketCron = cron.schedule(
         process.env.TOPIC_INFORMES,
         `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       );
-      await saveMarketData({data: openMarketData, time: "open" });
-      logger.info('Datos de apertura de mercado guardados correctamente.');
+      await saveMarketData({ data: openMarketData, time: "open" });
+      logger.info("Datos de apertura de mercado guardados correctamente.");
     } catch (err) {
-      logger.error(`Error en la tarea de envío de mensaje programado: ${err.message}`);
+      logger.error(
+        `Error en la tarea de envío de mensaje programado: ${err.message}`
+      );
       throw new Error(err);
     }
   },
@@ -135,10 +172,10 @@ const openMarketCron = cron.schedule(
 );
 
 const closeMarketCron = cron.schedule(
-    "30 16 * * 1-5",
+  "30 16 * * 1-5",
   async () => {
     try {
-      logger.info('Tarea de envío de mensaje programado ejecutada.');
+      logger.info("Tarea de envío de mensaje programado ejecutada.");
       const delayTime = 1000;
       const closeMarketData = await fetchAllStockPrices(
         fetchStockPrice,
@@ -156,7 +193,7 @@ const closeMarketCron = cron.schedule(
         `*Informe cierre de mercado ${date}*\n\n${formattedMarketData}`
       );
       await saveMarketData({ data: closeMarketData, time: "close" });
-      logger.info('Datos de apertura de mercado guardados correctamente.');
+      logger.info("Datos de apertura de mercado guardados correctamente.");
     } catch (err) {
       logger.error(`Error en la tarea de cierre de mercado: ${err.message}`);
       throw new Error(err);
@@ -166,6 +203,35 @@ const closeMarketCron = cron.schedule(
     timezone: "America/New_York",
   }
 );
+
+(async () => {
+  while (true) {
+    try {
+      const results = await fetchStockPricesTwelveData();
+      console.log(results.status, results.data.code)
+      if (results.status === 200 && results.data.code !== 429 ) {
+        //console.log(results.data);
+        logger.info(`data ok`)
+        //console.log(results.data)
+        const objectResult = Object.values(results.data);
+        console.log(objectResult)
+        break; // Salir del bucle si la petición fue exitosa
+      } else if (results.data.code === 429) {
+        //console.log(results.status)
+        //console.log("Rate limit exceeded. Retrying in 1 minute...");
+        logger.info(`delay to fetching stock data`)
+        await delay(60000); // Esperar 1 minuto antes de volver a intentar
+      } else {
+        //console.log("Failed to fetch data. Exit with code", results.data.code);
+        //console.log(results.status)
+        break; // Salir del bucle si hay otro tipo de error
+      }
+    } catch (err) {
+      logger.error(`${err}`);
+      break; // Salir del bucle si ocurre un error no relacionado con el rate limit
+    }
+  }
+})();
 
 module.exports = {
   openMarketCron,

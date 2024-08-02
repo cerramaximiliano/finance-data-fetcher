@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const apiRoutes = require('./routes/apiRoutes');
 const logger = require('./utils/logger');
-
+const telegramErrorHandler = require('./middleware/errorHandler');
 const app = express();
 
 // Middleware
@@ -11,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Rutas
 app.use('/api', apiRoutes);
+
+// Middleware para manejo de errores de Telegram
+app.use(telegramErrorHandler);
 
 // Middleware para manejo de errores
 app.use((err, req, res, next) => {

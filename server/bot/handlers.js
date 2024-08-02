@@ -78,7 +78,9 @@ function sendMainMenu(chatId, messageId, topicId) {
     message_thread_id: topicId,
   };
 
-  bot.editMessageText(options.text, options);
+  bot.editMessageText(options.text, options).catch((error) => {
+    logger.error(`Error al enviar menú principal: ${error.message}`);
+  });
 }
 
 function sendSubMenu(chatId, messageId, menuTitle, options, topicId) {
@@ -98,14 +100,22 @@ function sendSubMenu(chatId, messageId, menuTitle, options, topicId) {
     parse_mode: "Markdown",
   };
 
-  bot.editMessageText(menuTitle, sendOptions);
+  bot.editMessageText(menuTitle, sendOptions).catch((error) => {
+    logger.error(`Error al enviar submenú: ${error.message}`);
+  });
 }
 
 async function sendTemporaryMessage(chatId, text, options, delay = 5000) {
-  const message = await bot.sendMessage(chatId, text, options);
-  setTimeout(() => {
-    bot.deleteMessage(chatId, message.message_id);
-  }, delay);
+  try {
+    const message = await bot.sendMessage(chatId, text, options);
+    setTimeout(() => {
+      bot.deleteMessage(chatId, message.message_id).catch((error) => {
+        logger.error(`Error al eliminar mensaje: ${error.message}`);
+      });
+    }, delay);
+  } catch (error) {
+    logger.error(`Error al enviar mensaje temporal: ${error.message}`);
+  }
 }
 
 bot.onText(/\/informes/, (msg) => {
@@ -121,10 +131,11 @@ bot.onText(/\/informes/, (msg) => {
             [{ text: "Informe Cierre", callback_data: "option2" }],
             [{ text: "Earnings Calendar", callback_data: "option3" }],
             [{ text: "Economic Calendar", callback_data: "option4" }],
-            [{ text: "Opción con errores", callback_data: "option5" }],
           ],
         },
         message_thread_id: topicId,
+      }).catch((error) => {
+        logger.error(`Error al enviar mensaje del menú principal: ${error.message}`);
       });
     }
   }
@@ -308,7 +319,9 @@ bot.on("callback_query", async (callbackQuery) => {
       5000
     );
   }
-  bot.answerCallbackQuery(callbackQuery.id); // Finaliza el callback query
+  bot.answerCallbackQuery(callbackQuery.id).catch((error) => {
+    logger.error(`Error al finalizar el callback query: ${error.message}`);
+  }); // Finaliza el callback query
 });
 
 module.exports = bot;

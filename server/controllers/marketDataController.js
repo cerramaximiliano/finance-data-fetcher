@@ -8,7 +8,7 @@ const saveMarketData = async ({ data, time }) => {
       time: time,
       symbols: data.map((item) => ({
         symbol: item.symbol,
-        underlyingSymbol: item.symbol,
+        underlyingSymbol: item.underlyingSymbol,
         currency: item.currency,
         description: item.description,
         regularMarketPrice: item.regularMarketPrice,
@@ -17,6 +17,7 @@ const saveMarketData = async ({ data, time }) => {
         close: item.close,
         bid: item.bid,
         ask: item.ask,
+        currentPrice: item.currentPrice,
       })),
     });
 
