@@ -189,11 +189,11 @@ const openMarketCron = cron.schedule(
       sendMessageToChatAndTopic(
         process.env.CHAT_ID,
         process.env.TOPIC_INFORMES,
+        `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       );
       await saveMarketData({ data: openMarketData, time: "open" });
       logger.info("Datos de apertura de mercado guardados correctamente.");
     } catch (err) {
-      `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       logger.error(
         `Error en la tarea de envío de mensaje programado: ${err.message}`
       );
