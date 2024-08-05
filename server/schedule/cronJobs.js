@@ -19,6 +19,40 @@ const {
 const logger = require("../utils/logger");
 const { delay } = require("../utils/delay");
 
+
+function mapProperties(item) {
+  return {
+    symbol: item.symbol || null,
+    currency: item.currency || null,
+    description: item.description || null,
+    open: parseFloat(item.open) || parseFloat(item.regularMarketOpen) || null,
+    high: parseFloat(item.high) || parseFloat(item.dayHigh) || null,
+    low: parseFloat(item.low) || parseFloat(item.dayLow) || null,
+    close: parseFloat(item.close) || parseFloat(item.regularMarketPreviousClose) || null,
+    previousClose: parseFloat(item.previous_close) || parseFloat(item.previousClose) || null,
+    percent_change: parseFloat(item.percent_change) || null,
+    bid: parseFloat(item.bid) || null,
+    ask: parseFloat(item.ask) || null,
+    underlyingSymbol: item.underlyingSymbol || null,
+    currentPrice: parseFloat(item.currentPrice) || null,
+  };
+}
+
+function mergeArrays(array1, array2) {
+  const map = new Map();
+
+  array1.forEach(item => map.set(item.symbol, mapProperties(item)));
+  array2.forEach(item => {
+    const mappedItem = mapProperties(item);
+    if (map.has(item.symbol)) {
+      map.set(item.symbol, { ...map.get(item.symbol), ...mappedItem });
+    } else {
+      map.set(item.symbol, mappedItem);
+    }
+  });
+
+  return Array.from(map.values());
+}
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
   { description: "Futuros Soja", symbol: "ZS=F" },
@@ -94,7 +128,7 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
 //  "00 9 * * 1-5"
 
 const earningsDataCron = cron.schedule(
-  "00 9 * * 1-5",
+  "10 8 * * 1-5",
   async () => {
     try {
       logger.info("Tarea de actualización de base de datos ejecutada.");
@@ -112,7 +146,7 @@ const earningsDataCron = cron.schedule(
 );
 
 const calendarDataCron = cron.schedule(
-  "22 12 * * 1-5",
+  "00 8 * * 1-5",
   async () => {
     try {
       logger.info("Tarea de actualización de base de datos ejecutada.");
@@ -155,11 +189,11 @@ const openMarketCron = cron.schedule(
       sendMessageToChatAndTopic(
         process.env.CHAT_ID,
         process.env.TOPIC_INFORMES,
-        `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       );
       await saveMarketData({ data: openMarketData, time: "open" });
       logger.info("Datos de apertura de mercado guardados correctamente.");
     } catch (err) {
+      `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
       logger.error(
         `Error en la tarea de envío de mensaje programado: ${err.message}`
       );
@@ -174,7 +208,7 @@ const openMarketCron = cron.schedule(
 const closeMarketCron = cron.schedule(
   "30 16 * * 1-5",
   async () => {
-    try {
+/*     try {
       logger.info("Tarea de envío de mensaje programado ejecutada.");
       const delayTime = 1000;
       const closeMarketData = await fetchAllStockPrices(
@@ -197,41 +231,48 @@ const closeMarketCron = cron.schedule(
     } catch (err) {
       logger.error(`Error en la tarea de cierre de mercado: ${err.message}`);
       throw new Error(err);
-    }
+    } */
+      const delayTime = 1000;
+      let array1 = [];
+      let array2 = [];
+    
+      try {
+        array1 = await fetchAllStockPrices(fetchStockPrice, openSymbols, delayTime);
+      } catch (err) {
+        logger.error(`Error fetching array1: ${err}`);
+      }
+    
+      while (true) {
+        try {
+          const results = await fetchStockPricesTwelveData();
+          console.log(results.status, results.data.code);
+          if (results.status === 200 && results.data.code !== 429) {
+            logger.info(`data ok`);
+            array2 = Object.values(results.data);
+            break; // Salir del bucle si la petición fue exitosa
+          } else if (results.data.code === 429) {
+            logger.info(`delay to fetching stock data`);
+            await delay(60000); // Esperar 1 minuto antes de volver a intentar
+          } else {
+            break; // Salir del bucle si hay otro tipo de error
+          }
+        } catch (err) {
+          logger.error(`${err}`);
+          break; // Salir del bucle si ocurre un error no relacionado con el rate limit
+        }
+      }
+    
+      const mergedArray = mergeArrays(array1, array2);
+
+      await saveMarketData({ data: mergedArray, time: "close" });
+      logger.info("Datos de apertura de mercado guardados correctamente.");
   },
   {
     timezone: "America/New_York",
   }
 );
 
-(async () => {
-  while (true) {
-    try {
-      const results = await fetchStockPricesTwelveData();
-      console.log(results.status, results.data.code)
-      if (results.status === 200 && results.data.code !== 429 ) {
-        //console.log(results.data);
-        logger.info(`data ok`)
-        //console.log(results.data)
-        const objectResult = Object.values(results.data);
-        console.log(objectResult)
-        break; // Salir del bucle si la petición fue exitosa
-      } else if (results.data.code === 429) {
-        //console.log(results.status)
-        //console.log("Rate limit exceeded. Retrying in 1 minute...");
-        logger.info(`delay to fetching stock data`)
-        await delay(60000); // Esperar 1 minuto antes de volver a intentar
-      } else {
-        //console.log("Failed to fetch data. Exit with code", results.data.code);
-        //console.log(results.status)
-        break; // Salir del bucle si hay otro tipo de error
-      }
-    } catch (err) {
-      logger.error(`${err}`);
-      break; // Salir del bucle si ocurre un error no relacionado con el rate limit
-    }
-  }
-})();
+
 
 module.exports = {
   openMarketCron,
