@@ -43,17 +43,17 @@ const openSymbols = [
 ];
 
 const closeSymbols = [
-  { description: "S&P 500", symbol: "^GSPC" },
-  { description: "Nasdaq", symbol: "^IXIC" },
-  { description: "Dow Jones", symbol: "^DJI" },
-  { description: "Russell 2000", symbol: "^RUT" },
-  { description: "Tasa Bonos US 10 años ", symbol: "^TNX" },
+  { description: "S&P 500", symbol: "SPX" },
+  { description: "Nasdaq", symbol: "IXIC" },
+  { description: "Dow Jones", symbol: "DJI" },
+  { description: "Russell 2000", symbol: "RUT" },
+  { description: "Tasa Bonos US 10 años ", symbol: "TNX" },
   { description: "DAX", symbol: "^GDAXI", country: "Germany" },
   { description: "SSE", symbol: "000001.SS", country: "China" },
   { description: "Nikkei", symbol: "^N225" },
   { description: "Bovespa", symbol: "^BVSP" },
-  { description: "Merval", symbol: "^MERV" },
-  { description: "US Dólar Index", symbol: "DX-Y.NYB" },
+  { description: "Merval", symbol: "^MERV" }, // no trae currency
+  { description: "US Dólar Index", symbol: "DXY" },
   { description: "Futuros Soja", symbol: "ZS=F" },
   { description: "Futuros Oro", symbol: "GC=F" },
   { description: "Futuros Plata", symbol: "SI=F" },
@@ -141,6 +141,31 @@ bot.onText(/\/informes/, (msg) => {
   }
 });
 
+bot.onText(/\/config_hours (.+)/, (msg, match) => {
+  const chatId = msg.chat.id;
+  const topicId = msg.is_topic_message ? msg.message_thread_id : undefined;
+  const hoursInput = match[1];
+
+  console.log("Comando /config_hours recibido:", hoursInput); // Línea para depuración
+
+  // Verificar si el formato es correcto "hh,mm"
+  const timeFormat = /^\d{2},\d{2}$/;
+  if (timeFormat.test(hoursInput)) {
+    bot.sendMessage(chatId, "Formato correcto. Horas configuradas exitosamente.", {
+      ...(topicId && { message_thread_id: topicId })
+    }).catch((error) => {
+      console.error(`Error al enviar mensaje de confirmación: ${error.message}`);
+    });
+  } else {
+    bot.sendMessage(chatId, "Formato incorrecto. Por favor, usa el formato 'hh,mm'.", {
+      ...(topicId && { message_thread_id: topicId })
+    }).catch((error) => {
+      console.error(`Error al enviar mensaje de error: ${error.message}`);
+    });
+  }
+});
+
+
 bot.on("callback_query", async (callbackQuery) => {
   const message = callbackQuery.message;
   const data = callbackQuery.data;
@@ -171,7 +196,7 @@ bot.on("callback_query", async (callbackQuery) => {
         const openMarketData = await getLastMarketData("open");
         if (openMarketData && openMarketData.symbols && openMarketData.symbols.length > 0) {
           logger.info("bot request - open market data on database")
-          textOpen = formatMarketData(openMarketData.symbols, openSymbols);
+          textOpen = formatMarketData(openMarketData.symbols, openSymbols, "open");
           date = moment(openMarketData.date).format("DD/MM/YYYY");
         } else {
           logger.info("bot request - open market data no available")
@@ -193,7 +218,7 @@ bot.on("callback_query", async (callbackQuery) => {
         const closeMarketData = await getLastMarketData("close");
         if (closeMarketData && closeMarketData.symbols && closeMarketData.symbols.length > 0) {
           logger.info("bot request - close market data on database")
-          textClose = formatMarketData(closeMarketData.symbols, closeSymbols);
+          textClose = formatMarketData(closeMarketData.symbols, closeSymbols, "close");
           dateClose = moment(closeMarketData.date).format("DD/MM/YYYY");
         } else {
           logger.info("bot request - close market data no available")

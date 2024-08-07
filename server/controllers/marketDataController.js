@@ -2,6 +2,7 @@ const logger = require("../utils/logger");
 const MarketData = require("../models/marketData");
 
 const saveMarketData = async ({ data, time }) => {
+  console.log(data)
   try {
     const marketDataDocument = new MarketData({
       date: new Date(),
@@ -11,6 +12,7 @@ const saveMarketData = async ({ data, time }) => {
         underlyingSymbol: item.underlyingSymbol,
         currency: item.currency,
         description: item.description,
+        previousClose: item.previousClose,
         regularMarketPrice: item.regularMarketPrice,
         regularMarketPreviousClose: item.regularMarketPreviousClose,
         open: item.open,

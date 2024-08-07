@@ -237,13 +237,36 @@ const fetchStockPricesTwelveData = async (symbols) => {
   
   try {
     const response = await axios.request(options);
-    logger.info(`stock, indices, request fetch controller`)
+    logger.info(`twelve data stock, indices, request fetch controller`)
     return response
   } catch (err) {
     logger.error(err);
     throw err
   }
 };
+
+/* Real-Time Finance Data */
+const fetchStockPricesRealTimeData = async(symbols) => {
+  const options = {
+    method: 'GET',
+    url: 'https://real-time-finance-data.p.rapidapi.com/stock-quote-source-2',
+    params: {
+      symbol: '^GDAXI,000001.SS,^N225,^BVSP,^MERV,ZS=F,GC=F,SI=F,CL=F,BTC-USD,ETH-USD'
+    },
+    headers: {
+      'x-rapidapi-key': rapidApiKey,
+      'x-rapidapi-host': 'real-time-finance-data.p.rapidapi.com'
+    }
+  };
+  try{
+    const response = await axios.request(options);
+    logger.info(`real time finance data, futures, indices, request fetch controller`)
+    return response
+  }catch(err){
+    logger.error(err);
+    throw err
+  }
+}
 
 module.exports = {
   fetchEconomicCalendar,
@@ -252,6 +275,7 @@ module.exports = {
   marketOpen,
   fetchStockPrice,
   fetchStockPricesTwelveData,
+  fetchStockPricesRealTimeData,
   fetchMarketCapStocks,
   fetchMarketCap,
 };

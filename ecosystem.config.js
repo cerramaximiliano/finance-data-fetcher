@@ -2,10 +2,10 @@
 module.exports = {
   apps: [
     {
-      name: "finance-data-fetcher",
+      name: "finance",
       script: "app.js",
       watch: true,
-      ignore_watch: ["node_modules", "server/logs"], // Excluye la carpeta de logs y node_modules
+      ignore_watch: ["node_modules", "server/logs", ".git"], // Excluye la carpeta de logs y node_modules
       env: {
         PORT: 8085,
         NODE_ENV: "development"

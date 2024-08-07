@@ -9,6 +9,7 @@ const {
   fetchEconomicCalendar,
   marketOpen,
   fetchStockPricesTwelveData,
+  fetchStockPricesRealTimeData,
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
 const { saveMarketData } = require("../controllers/marketDataController");
@@ -19,7 +20,6 @@ const {
 const logger = require("../utils/logger");
 const { delay } = require("../utils/delay");
 
-
 function mapProperties(item) {
   return {
     symbol: item.symbol || null,
@@ -28,21 +28,22 @@ function mapProperties(item) {
     open: parseFloat(item.open) || parseFloat(item.regularMarketOpen) || null,
     high: parseFloat(item.high) || parseFloat(item.dayHigh) || null,
     low: parseFloat(item.low) || parseFloat(item.dayLow) || null,
-    close: parseFloat(item.close) || parseFloat(item.regularMarketPreviousClose) || null,
-    previousClose: parseFloat(item.previous_close) || parseFloat(item.previousClose) || null,
+    close: parseFloat(item.close) || null,
+    previousClose:
+      parseFloat(item.previous_close) || parseFloat(item.previousClose) || null,
     percent_change: parseFloat(item.percent_change) || null,
     bid: parseFloat(item.bid) || null,
     ask: parseFloat(item.ask) || null,
     underlyingSymbol: item.underlyingSymbol || null,
-    currentPrice: parseFloat(item.currentPrice) || null,
+    currentPrice: parseFloat(item.price) || null,
   };
 }
 
 function mergeArrays(array1, array2) {
   const map = new Map();
 
-  array1.forEach(item => map.set(item.symbol, mapProperties(item)));
-  array2.forEach(item => {
+  array1.forEach((item) => map.set(item.symbol, mapProperties(item)));
+  array2.forEach((item) => {
     const mappedItem = mapProperties(item);
     if (map.has(item.symbol)) {
       map.set(item.symbol, { ...map.get(item.symbol), ...mappedItem });
@@ -68,17 +69,17 @@ const openSymbols = [
   { description: "Etherum/USD", symbol: "ETH-USD" },
 ];
 const closeSymbols = [
-  { description: "S&P 500", symbol: "^GSPC" },
-  { description: "Nasdaq", symbol: "^IXIC" },
-  { description: "Dow Jones", symbol: "^DJI" },
-  { description: "Russell 2000", symbol: "^RUT" },
-  { description: "Tasa Bonos US 10 años ", symbol: "^TNX" },
+  { description: "S&P 500", symbol: "SPX" },
+  { description: "Nasdaq", symbol: "IXIC" },
+  { description: "Dow Jones", symbol: "DJI" },
+  { description: "Russell 2000", symbol: "RUT" },
+  { description: "Tasa Bonos US 10 años ", symbol: "TNX" },
   { description: "DAX", symbol: "^GDAXI", country: "Germany" },
   { description: "SSE", symbol: "000001.SS", country: "China" },
   { description: "Nikkei", symbol: "^N225" },
   { description: "Bovespa", symbol: "^BVSP" },
   { description: "Merval", symbol: "^MERV" }, // no trae currency
-  { description: "US Dólar Index", symbol: "DX-Y.NYB" },
+  { description: "US Dólar Index", symbol: "DXY" },
   { description: "Futuros Soja", symbol: "ZS=F" },
   { description: "Futuros Oro", symbol: "GC=F" },
   { description: "Futuros Plata", symbol: "SI=F" },
@@ -86,7 +87,7 @@ const closeSymbols = [
   { description: "Bitcoin/USD", symbol: "BTC-USD" },
   { description: "Etherum/USD", symbol: "ETH-USD" },
 ];
-
+// realtimefinance data ^GDAXI,000001.SS,^N225,^BVSP,^MERV
 const closeYahooSymbols = [
   { description: "DAX", symbol: "^GDAXI", country: "Germany" },
   { description: "SSE", symbol: "000001.SS", country: "China" },
@@ -184,7 +185,7 @@ const openMarketCron = cron.schedule(
         openSymbols,
         delayTime
       );
-      const formattedMarketData = formatMarketData(openMarketData, openSymbols);
+      const formattedMarketData = formatMarketData(openMarketData, openSymbols, "open");
       const date = moment().format("DD/MM/YYYY");
       sendMessageToChatAndTopic(
         process.env.CHAT_ID,
@@ -205,73 +206,76 @@ const openMarketCron = cron.schedule(
   }
 );
 
+//"30 16 * * 1-5"
+const closeHour = "30 16 * * 1-5"
 const closeMarketCron = cron.schedule(
-  "30 16 * * 1-5",
+  closeHour,
   async () => {
-/*     try {
-      logger.info("Tarea de envío de mensaje programado ejecutada.");
-      const delayTime = 1000;
-      const closeMarketData = await fetchAllStockPrices(
-        fetchStockPrice,
-        closeSymbols,
-        delayTime
-      );
-      const formattedMarketData = formatMarketData(
-        closeMarketData,
-        closeSymbols
-      );
+    const delayTime = 1000;
+    let array1 = [];
+    let array2 = [];
+
+    while (true) {
+      try {
+        const results = await fetchStockPricesTwelveData();
+        if (results.status === 200 && results.data.code !== 429) {
+          logger.info(`Data fetched successfully from TwelveData`);
+          array2 = Object.values(results.data);
+          break; // Salir del bucle si la petición fue exitosa
+        } else if (results.data.code === 429) {
+          logger.info(`Rate limit reached, delaying for 1 minute`);
+          await delay(60000); // Esperar 1 minuto antes de volver a intentar
+        } else {
+          logger.error(`Unexpected response from TwelveData: ${results.data}`);
+          break; // Salir del bucle si hay otro tipo de error
+        }
+      } catch (err) {
+        logger.error(`Error fetching data from TwelveData: ${err}`);
+        break; // Salir del bucle si ocurre un error no relacionado con el rate limit
+      }
+    }
+
+    try {
+      const results = await fetchStockPricesRealTimeData();
+      if (results.data && results.data.status === "OK") {
+        array1 = results.data.data;
+        logger.info(`Data fetched successfully from RealTimeData`);
+      } else {
+        array1 = [];
+        logger.error(`Unexpected response from RealTimeData: ${results.data}`);
+      }
+    } catch (err) {
+      logger.error(`Error fetching data from RealTimeData: ${err}`);
+    }
+    
+    try {
+      logger.info(`Merging arrays`);
+      const mergedArray = mergeArrays(array2, array1);
+      logger.info(`Merged array: ${JSON.stringify(mergedArray)}`);
+  
       const date = moment().format("DD/MM/YYYY");
-      sendMessageToChatAndTopic(
+      logger.info(`Formatting market data`);
+      const formattedMarketData = formatMarketData(mergedArray, closeSymbols, "close");
+      logger.info(`Formatted market data: ${formattedMarketData}`);
+      logger.info(`Sending market report to chat and topic`);
+      await sendMessageToChatAndTopic(
         process.env.CHAT_ID,
         process.env.TOPIC_INFORMES,
-        `*Informe cierre de mercado ${date}*\n\n${formattedMarketData}`
+        `*Informe de cierre de mercado ${date}*\n\n${formattedMarketData}`
       );
-      await saveMarketData({ data: closeMarketData, time: "close" });
-      logger.info("Datos de apertura de mercado guardados correctamente.");
-    } catch (err) {
-      logger.error(`Error en la tarea de cierre de mercado: ${err.message}`);
-      throw new Error(err);
-    } */
-      const delayTime = 1000;
-      let array1 = [];
-      let array2 = [];
-    
-      try {
-        array1 = await fetchAllStockPrices(fetchStockPrice, openSymbols, delayTime);
-      } catch (err) {
-        logger.error(`Error fetching array1: ${err}`);
-      }
-    
-      while (true) {
-        try {
-          const results = await fetchStockPricesTwelveData();
-          console.log(results.status, results.data.code);
-          if (results.status === 200 && results.data.code !== 429) {
-            logger.info(`data ok`);
-            array2 = Object.values(results.data);
-            break; // Salir del bucle si la petición fue exitosa
-          } else if (results.data.code === 429) {
-            logger.info(`delay to fetching stock data`);
-            await delay(60000); // Esperar 1 minuto antes de volver a intentar
-          } else {
-            break; // Salir del bucle si hay otro tipo de error
-          }
-        } catch (err) {
-          logger.error(`${err}`);
-          break; // Salir del bucle si ocurre un error no relacionado con el rate limit
-        }
-      }
-    
-      const mergedArray = mergeArrays(array1, array2);
-
+      logger.info(`Market report sent successfully.`);
+      logger.info(`Saving market data`);
       await saveMarketData({ data: mergedArray, time: "close" });
-      logger.info("Datos de apertura de mercado guardados correctamente.");
+      logger.info("Datos de cierre de mercado guardados correctamente.");
+    } catch (err) {
+      logger.error(`Error: ${err}`);
+    }
+
   },
   {
     timezone: "America/New_York",
   }
 );
-
 
 
 module.exports = {
