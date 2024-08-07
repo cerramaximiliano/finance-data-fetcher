@@ -12,13 +12,18 @@ const {
   fetchStockPricesRealTimeData,
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
-const { saveMarketData } = require("../controllers/marketDataController");
+const {
+  saveMarketData,
+  saveMarketOpen,
+  didMarketOpenToday,
+} = require("../controllers/marketDataController");
 const { saveOrUpdateData } = require("../controllers/earningsDataController");
 const {
   saveOrUpdateEconomicEvents,
 } = require("../controllers/economicEventController");
 const logger = require("../utils/logger");
 const { delay } = require("../utils/delay");
+const { isMarketOpenToday } = require("../utils/dates");
 
 function mapProperties(item) {
   return {
@@ -174,26 +179,40 @@ const calendarDataCron = cron.schedule(
   }
 );
 
+const openHours = "30 9 * * 1-5";
 const openMarketCron = cron.schedule(
-  "30 9 * * 1-5",
+  openHours,
   async () => {
     try {
       logger.info("Tarea de envío de mensaje programado ejecutada.");
-      const delayTime = 1000;
-      const openMarketData = await fetchAllStockPrices(
-        fetchStockPrice,
-        openSymbols,
-        delayTime
-      );
-      const formattedMarketData = formatMarketData(openMarketData, openSymbols, "open");
       const date = moment().format("DD/MM/YYYY");
-      sendMessageToChatAndTopic(
-        process.env.CHAT_ID,
-        process.env.TOPIC_INFORMES,
-        `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
-      );
-      await saveMarketData({ data: openMarketData, time: "open" });
-      logger.info("Datos de apertura de mercado guardados correctamente.");
+      const { data } = await marketOpen();
+      const { nextMarketOpen, nextMarketClose } = data.attributes;
+
+      if (isMarketOpenToday(nextMarketOpen, nextMarketClose)) {
+        const saveOpenMarket = await saveMarketOpen(data);
+        const delayTime = 1000;
+        const openMarketData = await fetchAllStockPrices(
+          fetchStockPrice,
+          openSymbols,
+          delayTime
+        );
+        const formattedMarketData = formatMarketData(
+          openMarketData,
+          openSymbols,
+          "open"
+        );
+
+        sendMessageToChatAndTopic(
+          process.env.CHAT_ID,
+          process.env.TOPIC_INFORMES,
+          `*Informe apertura de mercado ${date}*\n\n${formattedMarketData}`
+        );
+        await saveMarketData({ data: openMarketData, time: "open" });
+        logger.info("Datos de apertura de mercado guardados correctamente.");
+      } else {
+        logger.info("El mercado no opera el día de la fecha.");
+      }
     } catch (err) {
       logger.error(
         `Error en la tarea de envío de mensaje programado: ${err.message}`
@@ -207,76 +226,96 @@ const openMarketCron = cron.schedule(
 );
 
 //"30 16 * * 1-5"
-const closeHour = "30 16 * * 1-5"
+const closeHour = "30 16 * * 1-5";
 const closeMarketCron = cron.schedule(
   closeHour,
   async () => {
-    const delayTime = 1000;
-    let array1 = [];
-    let array2 = [];
-
-    while (true) {
-      try {
-        const results = await fetchStockPricesTwelveData();
-        if (results.status === 200 && results.data.code !== 429) {
-          logger.info(`Data fetched successfully from TwelveData`);
-          array2 = Object.values(results.data);
-          break; // Salir del bucle si la petición fue exitosa
-        } else if (results.data.code === 429) {
-          logger.info(`Rate limit reached, delaying for 1 minute`);
-          await delay(60000); // Esperar 1 minuto antes de volver a intentar
-        } else {
-          logger.error(`Unexpected response from TwelveData: ${results.data}`);
-          break; // Salir del bucle si hay otro tipo de error
-        }
-      } catch (err) {
-        logger.error(`Error fetching data from TwelveData: ${err}`);
-        break; // Salir del bucle si ocurre un error no relacionado con el rate limit
-      }
-    }
-
     try {
-      const results = await fetchStockPricesRealTimeData();
-      if (results.data && results.data.status === "OK") {
-        array1 = results.data.data;
-        logger.info(`Data fetched successfully from RealTimeData`);
-      } else {
-        array1 = [];
-        logger.error(`Unexpected response from RealTimeData: ${results.data}`);
-      }
-    } catch (err) {
-      logger.error(`Error fetching data from RealTimeData: ${err}`);
-    }
-    
-    try {
-      logger.info(`Merging arrays`);
-      const mergedArray = mergeArrays(array2, array1);
-      logger.info(`Merged array: ${JSON.stringify(mergedArray)}`);
-  
+      const { data } = await marketOpen();
+      const { nextMarketOpen, nextMarketClose } = data.attributes;
       const date = moment().format("DD/MM/YYYY");
-      logger.info(`Formatting market data`);
-      const formattedMarketData = formatMarketData(mergedArray, closeSymbols, "close");
-      logger.info(`Formatted market data: ${formattedMarketData}`);
-      logger.info(`Sending market report to chat and topic`);
-      await sendMessageToChatAndTopic(
-        process.env.CHAT_ID,
-        process.env.TOPIC_INFORMES,
-        `*Informe de cierre de mercado ${date}*\n\n${formattedMarketData}`
-      );
-      logger.info(`Market report sent successfully.`);
-      logger.info(`Saving market data`);
-      await saveMarketData({ data: mergedArray, time: "close" });
-      logger.info("Datos de cierre de mercado guardados correctamente.");
-    } catch (err) {
-      logger.error(`Error: ${err}`);
-    }
+      const marketOpen = await didMarketOpenToday();
+      if (marketOpen) {
+        const delayTime = 1000;
+        let array1 = [];
+        let array2 = [];
 
+        while (true) {
+          try {
+            const results = await fetchStockPricesTwelveData();
+            if (results.status === 200 && results.data.code !== 429) {
+              logger.info(`Data fetched successfully from TwelveData`);
+              array2 = Object.values(results.data);
+              break; // Salir del bucle si la petición fue exitosa
+            } else if (results.data.code === 429) {
+              logger.info(`Rate limit reached, delaying for 1 minute`);
+              await delay(60000); // Esperar 1 minuto antes de volver a intentar
+            } else {
+              logger.error(
+                `Unexpected response from TwelveData: ${results.data}`
+              );
+              break; // Salir del bucle si hay otro tipo de error
+            }
+          } catch (err) {
+            logger.error(`Error fetching data from TwelveData: ${err}`);
+            break; // Salir del bucle si ocurre un error no relacionado con el rate limit
+          }
+        }
+
+        try {
+          const results = await fetchStockPricesRealTimeData();
+          if (results.data && results.data.status === "OK") {
+            array1 = results.data.data;
+            logger.info(`Data fetched successfully from RealTimeData`);
+          } else {
+            array1 = [];
+            logger.error(
+              `Unexpected response from RealTimeData: ${results.data}`
+            );
+          }
+        } catch (err) {
+          logger.error(`Error fetching data from RealTimeData: ${err}`);
+        }
+
+        try {
+          logger.info(`Merging arrays`);
+          const mergedArray = mergeArrays(array2, array1);
+          logger.info(`Merged array: ${JSON.stringify(mergedArray)}`);
+
+          logger.info(`Formatting market data`);
+          const formattedMarketData = formatMarketData(
+            mergedArray,
+            closeSymbols,
+            "close"
+          );
+          logger.info(`Formatted market data: ${formattedMarketData}`);
+
+          logger.info(`Sending market report to chat and topic`);
+          await sendMessageToChatAndTopic(
+            process.env.CHAT_ID,
+            process.env.TOPIC_INFORMES,
+            `*Informe de cierre de mercado ${date}*\n\n${formattedMarketData}`
+          );
+          logger.info(`Market report sent successfully.`);
+
+          logger.info(`Saving market data`);
+          await saveMarketData({ data: mergedArray, time: "close" });
+          logger.info("Datos de cierre de mercado guardados correctamente.");
+        } catch (err) {
+          logger.error(`Error: ${err}`);
+        }
+      } else {
+        logger.info("El mercado no opera el día de la fecha.");
+      }
+    } catch (err) {
+      logger.error(`Error en la tarea de cierre del mercado: ${err.message}`);
+      throw new Error(err);
+    }
   },
   {
     timezone: "America/New_York",
   }
 );
-
 
 module.exports = {
   openMarketCron,

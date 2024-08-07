@@ -1,7 +1,8 @@
 const {
   fetchEconomicCalendar,
   fetchStockPricesRealTimeData,
-  fetchDayWath
+  fetchDayWath,
+  marketOpen,
 } = require("../controllers/controllersAPIs");
 
 const calendarHandler = async (req, res) => {
@@ -23,12 +24,22 @@ const stockRealTimeHandler = async (req, res) => {
 };
 
 const dayWatchHandler = async (req, res) => {
-  try{
+  try {
     let result = await fetchDayWath();
-    res.json(result.data)
-  }catch(err){
+    res.json(result.data);
+  } catch (err) {
     throw new Error(err);
   }
-}
+};
 
-module.exports = { calendarHandler, stockRealTimeHandler,dayWatchHandler };
+const marketOpenHandler = async (req, res) => {
+  try {
+    let result = await marketOpen();
+    console.log(result);
+    res.json(result.data);
+  } catch (err) {
+    throw new Error(err);
+  }
+};
+
+module.exports = { calendarHandler, stockRealTimeHandler, dayWatchHandler,marketOpenHandler };

@@ -17,8 +17,7 @@ const {
   rapidApiFinvizHost,
 } = require("../config/configAPIs");
 const logger = require("../utils/logger");
-const rotateApiKey = require("../config/rotateAPI");
-
+const { rotateApiKey, updateApiUsageCount } = require("../config/rotateAPI");
 
 // Tradign View
 const fetchEconomicCalendar = async (
@@ -27,7 +26,7 @@ const fetchEconomicCalendar = async (
   from = getToday(),
   to = getTomorrow()
 ) => {
-  logger.info("economic calendar controller")
+  logger.info("economic calendar controller");
   const options = {
     method: "GET",
     url: "https://trading-view.p.rapidapi.com/calendars/get-economic-calendar",
@@ -138,6 +137,7 @@ const fetchMarketCapStocks = async (marketCap = "cap_mega") => {
 
 // Seeking Alpha
 const fetchMarketCap = async (marketCap = 100000000000) => {
+  const apiKey = rotateApiKey("API2", 500);
   const options = {
     method: "POST",
     url: "https://seeking-alpha.p.rapidapi.com/screeners/get-results",
@@ -148,7 +148,7 @@ const fetchMarketCap = async (marketCap = 100000000000) => {
       type: "stock",
     },
     headers: {
-      "x-rapidapi-key": "39e1a575femsh942d5e7c3d32c79p190977jsnc12056c7c582",
+      "x-rapidapi-key": apiKey,
       "x-rapidapi-host": "seeking-alpha.p.rapidapi.com",
       "Content-Type": "application/json",
     },
@@ -158,8 +158,14 @@ const fetchMarketCap = async (marketCap = 100000000000) => {
     },
   };
   try {
-    const { data } = await axios.request(options);
-
+    const response = await axios.request(options);
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API2_USAGE_COUNT", usageAPI);
+    }
+    const data = response.data;
     const getNames = (data) => {
       return data.data.map((item) => item.attributes.name);
     };
@@ -171,16 +177,23 @@ const fetchMarketCap = async (marketCap = 100000000000) => {
 };
 
 const fetchDayWath = async () => {
+  const apiKey = rotateApiKey("API2", 500);
   const options = {
     method: "GET",
     url: "https://seeking-alpha.p.rapidapi.com/market/get-day-watch",
     headers: {
-      "x-rapidapi-key": rapidApiKey,
+      "x-rapidapi-key": apiKey,
       "x-rapidapi-host": rapidApiSeekingAlphaHost,
     },
   };
   try {
     const response = await axios.request(options);
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API2_USAGE_COUNT", usageAPI);
+    }
     return response.data;
   } catch (error) {
     throw new Error(`Error fetching day watch data: ${error.message}`);
@@ -188,20 +201,51 @@ const fetchDayWath = async () => {
 };
 
 const marketOpen = async () => {
+  const apiKey = rotateApiKey("API2", 500);
   const options = {
     method: "GET",
     url: "https://seeking-alpha.p.rapidapi.com/market/get-market-open",
     headers: {
-      "x-rapidapi-key": rapidApiKey,
+      "x-rapidapi-key": apiKey,
       "x-rapidapi-host": rapidApiSeekingAlphaHost,
     },
   };
-
   try {
     const response = await axios.request(options);
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API2_USAGE_COUNT", usageAPI);
+    }
     return response.data;
   } catch (error) {
     throw new Error(`Error fetching market open data: ${error.message}`);
+  }
+};
+
+const fetchStockSeekingAlpha = async (symbols) => {
+  const apiKey = rotateApiKey("API2", 500);
+  const options = {
+    method: "GET",
+    url: "https://seeking-alpha.p.rapidapi.com/market/get-realtime-quotes",
+    params: { sa_ids: "612888" },
+    headers: {
+      "x-rapidapi-key": apiKey,
+      "x-rapidapi-host": "seeking-alpha.p.rapidapi.com",
+    },
+  };
+  try {
+    const response = await axios.request(options);
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API2_USAGE_COUNT", usageAPI);
+    }
+    return response.data;
+  } catch (err) {
+    throw new Error(err)
   }
 };
 
@@ -223,53 +267,63 @@ const fetchStockPrice = async (symbol) => {
 /* Twelve Data */
 const fetchStockPricesTwelveData = async (symbols) => {
   const options = {
-    method: 'GET',
-    url: 'https://twelve-data1.p.rapidapi.com/quote',
+    method: "GET",
+    url: "https://twelve-data1.p.rapidapi.com/quote",
     params: {
-      symbol: 'SPX,IXIC,DJI,RUT,TNX,DXY',
-      outputsize: '30',
-      format: 'json',
-      interval: '1day'
+      symbol: "SPX,IXIC,DJI,RUT,TNX,DXY",
+      outputsize: "30",
+      format: "json",
+      interval: "1day",
     },
     headers: {
-      'x-rapidapi-key': rapidApiKey,
-      'x-rapidapi-host': 'twelve-data1.p.rapidapi.com'
-    }
+      "x-rapidapi-key": rapidApiKey,
+      "x-rapidapi-host": "twelve-data1.p.rapidapi.com",
+    },
   };
-  
+
   try {
     const response = await axios.request(options);
-    logger.info(`twelve data stock, indices, request fetch controller`)
-    return response
+    logger.info(`twelve data stock, indices, request fetch controller`);
+    return response;
   } catch (err) {
     logger.error(err);
-    throw err
+    throw err;
   }
 };
 
 /* Real-Time Finance Data */
-const fetchStockPricesRealTimeData = async(symbols) => {
+const fetchStockPricesRealTimeData = async (symbols) => {
   const apiKey = rotateApiKey("API1");
   const options = {
-    method: 'GET',
-    url: 'https://real-time-finance-data.p.rapidapi.com/stock-quote-source-2',
+    method: "GET",
+    url: "https://real-time-finance-data.p.rapidapi.com/stock-quote-source-2",
     params: {
-      symbol: '^GDAXI,000001.SS,^N225,^BVSP,^MERV,ZS=F,GC=F,SI=F,CL=F,BTC-USD,ETH-USD'
+      symbol:
+        "^GDAXI,000001.SS,^N225,^BVSP,^MERV,ZS=F,GC=F,SI=F,CL=F,BTC-USD,ETH-USD",
     },
     headers: {
-      'x-rapidapi-key': apiKey,
-      'x-rapidapi-host': 'real-time-finance-data.p.rapidapi.com'
-    }
+      "x-rapidapi-key": apiKey,
+      "x-rapidapi-host": "real-time-finance-data.p.rapidapi.com",
+    },
   };
-  try{
+  try {
     const response = await axios.request(options);
-    logger.info(`real time finance data, futures, indices, request fetch controller`)
-    return response
-  }catch(err){
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API1_USAGE_COUNT", usageAPI);
+    }
+
+    logger.info(
+      `real time finance data, futures, indices, request fetch controller`
+    );
+    return response;
+  } catch (err) {
     logger.error(err);
-    throw err
+    throw err;
   }
-}
+};
 
 module.exports = {
   fetchEconomicCalendar,
@@ -279,6 +333,7 @@ module.exports = {
   fetchStockPrice,
   fetchStockPricesTwelveData,
   fetchStockPricesRealTimeData,
+  fetchStockSeekingAlpha,
   fetchMarketCapStocks,
   fetchMarketCap,
 };

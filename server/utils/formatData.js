@@ -47,4 +47,22 @@ const formatMarketData = (data, symbols, type) => {
   }).join('\n');
 };
 
-module.exports = { formatData, formatDataEarnings, formatMarketData };
+function formatDayWatch(data, itemsPerLine) {
+  let message = '';
+  const limitedData = data.slice(0, 5); // Take only the first 5 elements
+
+  for (let i = 0; i < limitedData.length; i++) {
+    if (i > 0 && i % itemsPerLine === 0) {
+      message += '\n'; // Add a newline after the specified number of elements
+    }
+    message += `${limitedData[i].name} (${limitedData[i].slug})\n`;
+  }
+
+  return message;
+};
+
+function getIdsString(dataArray) {
+  return dataArray.map(item => item.id).join(',');
+}
+
+module.exports = { formatData, formatDataEarnings, formatMarketData, formatDayWatch, getIdsString };

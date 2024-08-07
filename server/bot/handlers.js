@@ -8,14 +8,16 @@ const {
   fetchDayWath,
   fetchStockPrice,
   fetchMarketCapStocks,
+  fetchStockSeekingAlpha,
   fetchMarketCap,
-  fetchDayWath,
 } = require("../controllers/controllersAPIs");
 const bot = require("./commands");
 const {
   formatData,
   formatDataEarnings,
   formatMarketData,
+  formatDayWatch,
+  getIdsString,
 } = require("../utils/formatData");
 const {
   delay,
@@ -30,6 +32,7 @@ const { getClosestDate, readableDate } = require("../utils/dates");
 const {
   findEconomicEventsByDateRange,
 } = require("../controllers/economicEventController");
+
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
   { description: "Futuros Soja", symbol: "ZS=F" },
@@ -76,6 +79,14 @@ function sendMainMenu(chatId, messageId, topicId) {
         [{ text: "Informe Cierre", callback_data: "option2" }],
         [{ text: "Earnings Calendar", callback_data: "option3" }],
         [{ text: "Economic Calendar", callback_data: "option4" }],
+        [
+          { text: "Top Gainers", callback_data: "option5" },
+          { text: "Top Losers", callback_data: "option6" },
+        ],
+        [
+          { text: "S&P 500 Gainers ", callback_data: "option7" },
+          { text: "S&P 500 Losers", callback_data: "option8" },
+        ],
       ],
     },
     message_thread_id: topicId,
@@ -135,8 +146,14 @@ bot.onText(/\/informes/, (msg) => {
               [{ text: "Informe Cierre", callback_data: "option2" }],
               [{ text: "Earnings Calendar", callback_data: "option3" }],
               [{ text: "Economic Calendar", callback_data: "option4" }],
-              [{ text: "Top Gainers", callback_data: "option5" }],
-              [{ text: "Top Losers", callback_data: "option6" }],
+              [
+                { text: "Top Gainers", callback_data: "option5" },
+                { text: "Top Losers", callback_data: "option6" },
+              ],
+              [
+                { text: "S&P 500 Gainers ", callback_data: "option7" },
+                { text: "S&P 500 Losers", callback_data: "option8" },
+              ],
             ],
           },
           message_thread_id: topicId,
@@ -359,10 +376,16 @@ bot.on("callback_query", async (callbackQuery) => {
         );
         break;
       case "option5":
-        let textGainers = "Ganadores del día";
+        let textGainers = `*Ganadores del día ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
         let topGainers = await fetchDayWath();
-        let attributes = topGainers.attributes.top_gainers;
-        console.log(attributes);
+        let attributesGainers = topGainers.data.attributes.top_gainers;
+        if (attributesGainers && attributesGainers.length > 0) {
+          textGainers += formatDayWatch(attributesGainers, 5);
+        } else {
+          textGainers += "No se encontraron resultados.";
+        }
         sendSubMenu(
           message.chat.id,
           message.message_id,
@@ -372,14 +395,66 @@ bot.on("callback_query", async (callbackQuery) => {
         );
         break;
       case "option6":
-        let textLosers = "Perdedores del día";
+        let textLosers = `*Perdedores del día ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
         let topLosers = await fetchDayWath();
-        let attributesLosers = topLosers.attributes.top_gainers;
-        console.log(attributesLosers);
+        let attributesLosers = topLosers.data.attributes.top_losers;
+        const idsString = getIdsString(attributesLosers);
+        let percent_change = [];
+
+        let stockLosers = await fetchStockSeekingAlpha(idsString);
+        console.log(stockLosers);
+
+        if (attributesLosers && attributesLosers.length > 0) {
+          textLosers += formatDayWatch(attributesLosers, 5);
+        } else {
+          textLosers += "No se han encontrado resultados.";
+        }
+
         sendSubMenu(
           message.chat.id,
           message.message_id,
           textLosers,
+          [],
+          topicId
+        );
+        break;
+      case "option7":
+        let textSP500Gainers = `*Ganadores del día ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
+        let sp500Gainers = await fetchDayWath();
+        let attributesSP500Gainers = sp500Gainers.data.attributes.sp500_gainers;
+        if (attributesSP500Gainers && attributesSP500Gainers.length > 0) {
+          textSP500Gainers += formatDayWatch(attributesSP500Gainers, 5);
+        } else {
+          textSP500Gainers += "No se han encontrado resultados.";
+        }
+
+        sendSubMenu(
+          message.chat.id,
+          message.message_id,
+          textSP500Gainers,
+          [],
+          topicId
+        );
+        break;
+      case "option8":
+        let textSP500Losers = `*Perdedores del día ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
+        let sp500Losers = await fetchDayWath();
+        let attributesSP500Losers = sp500Losers.data.attributes.sp500_losers;
+        if (attributesSP500Losers && attributesSP500Losers.length > 0) {
+          textSP500Losers += formatDayWatch(attributesSP500Losers, 5);
+        } else {
+          textSP500Losers += "No se han encontrado resultados.";
+        }
+        sendSubMenu(
+          message.chat.id,
+          message.message_id,
+          textSP500Losers,
           [],
           topicId
         );
