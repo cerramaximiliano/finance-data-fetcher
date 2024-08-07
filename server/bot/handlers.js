@@ -1,7 +1,7 @@
 const moment = require("moment");
 const fs = require("fs");
 const path = require("path");
-const logger = require('../utils/logger');
+const logger = require("../utils/logger");
 const {
   fetchEconomicCalendar,
   fetchEarningCalendar,
@@ -9,6 +9,7 @@ const {
   fetchStockPrice,
   fetchMarketCapStocks,
   fetchMarketCap,
+  fetchDayWath,
 } = require("../controllers/controllersAPIs");
 const bot = require("./commands");
 const {
@@ -26,7 +27,9 @@ const {
   findStockDataByDateRange,
 } = require("../controllers/earningsDataController");
 const { getClosestDate, readableDate } = require("../utils/dates");
-const {findEconomicEventsByDateRange} = require("../controllers/economicEventController")
+const {
+  findEconomicEventsByDateRange,
+} = require("../controllers/economicEventController");
 const openSymbols = [
   { description: "Futuros Bonos US 10 años", symbol: "ZN=F" },
   { description: "Futuros Soja", symbol: "ZS=F" },
@@ -124,19 +127,25 @@ bot.onText(/\/informes/, (msg) => {
   if (topicId) {
     const topicName = msg.reply_to_message.forum_topic_created.name;
     if (topicName === "Informes") {
-      bot.sendMessage(chatId, "Menú Principal:", {
-        reply_markup: {
-          inline_keyboard: [
-            [{ text: "Informe Apertura", callback_data: "option1" }],
-            [{ text: "Informe Cierre", callback_data: "option2" }],
-            [{ text: "Earnings Calendar", callback_data: "option3" }],
-            [{ text: "Economic Calendar", callback_data: "option4" }],
-          ],
-        },
-        message_thread_id: topicId,
-      }).catch((error) => {
-        logger.error(`Error al enviar mensaje del menú principal: ${error.message}`);
-      });
+      bot
+        .sendMessage(chatId, "Menú Principal:", {
+          reply_markup: {
+            inline_keyboard: [
+              [{ text: "Informe Apertura", callback_data: "option1" }],
+              [{ text: "Informe Cierre", callback_data: "option2" }],
+              [{ text: "Earnings Calendar", callback_data: "option3" }],
+              [{ text: "Economic Calendar", callback_data: "option4" }],
+              [{ text: "Top Gainers", callback_data: "option5" }],
+              [{ text: "Top Losers", callback_data: "option6" }],
+            ],
+          },
+          message_thread_id: topicId,
+        })
+        .catch((error) => {
+          logger.error(
+            `Error al enviar mensaje del menú principal: ${error.message}`
+          );
+        });
     }
   }
 });
@@ -151,20 +160,33 @@ bot.onText(/\/config_hours (.+)/, (msg, match) => {
   // Verificar si el formato es correcto "hh,mm"
   const timeFormat = /^\d{2},\d{2}$/;
   if (timeFormat.test(hoursInput)) {
-    bot.sendMessage(chatId, "Formato correcto. Horas configuradas exitosamente.", {
-      ...(topicId && { message_thread_id: topicId })
-    }).catch((error) => {
-      console.error(`Error al enviar mensaje de confirmación: ${error.message}`);
-    });
+    bot
+      .sendMessage(
+        chatId,
+        "Formato correcto. Horas configuradas exitosamente.",
+        {
+          ...(topicId && { message_thread_id: topicId }),
+        }
+      )
+      .catch((error) => {
+        console.error(
+          `Error al enviar mensaje de confirmación: ${error.message}`
+        );
+      });
   } else {
-    bot.sendMessage(chatId, "Formato incorrecto. Por favor, usa el formato 'hh,mm'.", {
-      ...(topicId && { message_thread_id: topicId })
-    }).catch((error) => {
-      console.error(`Error al enviar mensaje de error: ${error.message}`);
-    });
+    bot
+      .sendMessage(
+        chatId,
+        "Formato incorrecto. Por favor, usa el formato 'hh,mm'.",
+        {
+          ...(topicId && { message_thread_id: topicId }),
+        }
+      )
+      .catch((error) => {
+        console.error(`Error al enviar mensaje de error: ${error.message}`);
+      });
   }
 });
-
 
 bot.on("callback_query", async (callbackQuery) => {
   const message = callbackQuery.message;
@@ -194,12 +216,20 @@ bot.on("callback_query", async (callbackQuery) => {
         let textOpen;
         let date;
         const openMarketData = await getLastMarketData("open");
-        if (openMarketData && openMarketData.symbols && openMarketData.symbols.length > 0) {
-          logger.info("bot request - open market data on database")
-          textOpen = formatMarketData(openMarketData.symbols, openSymbols, "open");
+        if (
+          openMarketData &&
+          openMarketData.symbols &&
+          openMarketData.symbols.length > 0
+        ) {
+          logger.info("bot request - open market data on database");
+          textOpen = formatMarketData(
+            openMarketData.symbols,
+            openSymbols,
+            "open"
+          );
           date = moment(openMarketData.date).format("DD/MM/YYYY");
         } else {
-          logger.info("bot request - open market data no available")
+          logger.info("bot request - open market data no available");
           textOpen = "No se han encontrado resultados.";
           date = moment().format("DD/MM/YYYY");
         }
@@ -216,12 +246,20 @@ bot.on("callback_query", async (callbackQuery) => {
         let textClose;
         let dateClose;
         const closeMarketData = await getLastMarketData("close");
-        if (closeMarketData && closeMarketData.symbols && closeMarketData.symbols.length > 0) {
-          logger.info("bot request - close market data on database")
-          textClose = formatMarketData(closeMarketData.symbols, closeSymbols, "close");
+        if (
+          closeMarketData &&
+          closeMarketData.symbols &&
+          closeMarketData.symbols.length > 0
+        ) {
+          logger.info("bot request - close market data on database");
+          textClose = formatMarketData(
+            closeMarketData.symbols,
+            closeSymbols,
+            "close"
+          );
           dateClose = moment(closeMarketData.date).format("DD/MM/YYYY");
         } else {
-          logger.info("bot request - close market data no available")
+          logger.info("bot request - close market data no available");
           textClose = "No se han encontrado resultados.";
           dateClose = moment().format("DD/MM/YYYY");
         }
@@ -283,14 +321,14 @@ bot.on("callback_query", async (callbackQuery) => {
         break;
       case "option4":
         logger.info("bot request - economic Calendar");
-        let results = await findEconomicEventsByDateRange()
+        let results = await findEconomicEventsByDateRange();
         let economicCalendarText = `*Economic Calendar ${moment().format(
           "DD/MM/YYYY"
         )}*\n\n`;
-        if (results && results.length > 0){
-          logger.info("economic Calendar ddbb results")
-          false
-        }else{
+        if (results && results.length > 0) {
+          logger.info("economic Calendar ddbb results");
+          false;
+        } else {
           const economicCalendar = await fetchEconomicCalendar(
             ["Interest Rate", "Inflation Rate"],
             1
@@ -299,15 +337,15 @@ bot.on("callback_query", async (callbackQuery) => {
             economicCalendar &&
             economicCalendar.status === 200 &&
             economicCalendar.data.length > 0
-          ){
-            logger.info("economic Calendar API results")
-            results = economicCalendar.data
+          ) {
+            logger.info("economic Calendar API results");
+            results = economicCalendar.data;
           }
         }
-        if (results.length > 0){
+        if (results.length > 0) {
           let formattedData = formatData(results);
           economicCalendarText = economicCalendarText + formattedData;
-        }else{
+        } else {
           economicCalendarText =
             economicCalendarText + "No hay eventos para la fecha";
         }
@@ -316,6 +354,32 @@ bot.on("callback_query", async (callbackQuery) => {
           message.chat.id,
           message.message_id,
           economicCalendarText,
+          [],
+          topicId
+        );
+        break;
+      case "option5":
+        let textGainers = "Ganadores del día";
+        let topGainers = await fetchDayWath();
+        let attributes = topGainers.attributes.top_gainers;
+        console.log(attributes);
+        sendSubMenu(
+          message.chat.id,
+          message.message_id,
+          textGainers,
+          [],
+          topicId
+        );
+        break;
+      case "option6":
+        let textLosers = "Perdedores del día";
+        let topLosers = await fetchDayWath();
+        let attributesLosers = topLosers.attributes.top_gainers;
+        console.log(attributesLosers);
+        sendSubMenu(
+          message.chat.id,
+          message.message_id,
+          textLosers,
           [],
           topicId
         );

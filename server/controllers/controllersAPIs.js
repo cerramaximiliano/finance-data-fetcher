@@ -17,6 +17,8 @@ const {
   rapidApiFinvizHost,
 } = require("../config/configAPIs");
 const logger = require("../utils/logger");
+const rotateApiKey = require("../config/rotateAPI");
+
 
 // Tradign View
 const fetchEconomicCalendar = async (
@@ -247,6 +249,7 @@ const fetchStockPricesTwelveData = async (symbols) => {
 
 /* Real-Time Finance Data */
 const fetchStockPricesRealTimeData = async(symbols) => {
+  const apiKey = rotateApiKey("API1");
   const options = {
     method: 'GET',
     url: 'https://real-time-finance-data.p.rapidapi.com/stock-quote-source-2',
@@ -254,7 +257,7 @@ const fetchStockPricesRealTimeData = async(symbols) => {
       symbol: '^GDAXI,000001.SS,^N225,^BVSP,^MERV,ZS=F,GC=F,SI=F,CL=F,BTC-USD,ETH-USD'
     },
     headers: {
-      'x-rapidapi-key': rapidApiKey,
+      'x-rapidapi-key': apiKey,
       'x-rapidapi-host': 'real-time-finance-data.p.rapidapi.com'
     }
   };
