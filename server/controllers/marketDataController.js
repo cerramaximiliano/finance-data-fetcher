@@ -1,6 +1,7 @@
 const logger = require("../utils/logger");
 const MarketData = require("../models/marketData");
 const MarketOpen = require("../models/maketStatus");
+const moment = require("moment");
 
 const saveMarketData = async ({ data, time }) => {
   try {
@@ -40,41 +41,46 @@ const getLastMarketData = async (time) => {
   }
 };
 
-const saveMarketOpen = async (data) =>  {
+const saveMarketOpen = async (data) => {
   const marketOpenEntry = new MarketOpen({
     marketOpen: data.attributes.marketOpen,
     nextMarketOpen: data.attributes.nextMarketOpen,
-    nextMarketClose: data.attributes.nextMarketClose
+    nextMarketClose: data.attributes.nextMarketClose,
   });
   try {
-    console.log('Registro de apertura de mercado guardado correctamente');
+    console.log("Registro de apertura de mercado guardado correctamente");
     return await marketOpenEntry.save();
   } catch (err) {
-    console.error('Error al guardar el registro de apertura de mercado:', err);
+    console.error("Error al guardar el registro de apertura de mercado:", err);
     throw error;
   }
 };
 
-const didMarketOpenToday = async  () => {
-  const startOfToday = moment().startOf('day').toDate();
-  const endOfToday = moment().endOf('day').toDate();
+const didMarketOpenToday = async () => {
+  const startOfToday = moment().startOf("day").toDate();
+  const endOfToday = moment().endOf("day").toDate();
   try {
     const record = await MarketOpen.findOne({
       date: {
         $gte: startOfToday,
-        $lt: endOfToday
-      }
+        $lt: endOfToday,
+      },
     });
     if (record) {
       return record.marketOpen;
     } else {
-      console.log('No se encontró un registro para el día de hoy');
+      console.log("No se encontró un registro para el día de hoy");
       return false;
     }
   } catch (err) {
-    console.error('Error al consultar si el mercado abrió hoy:', err);
+    console.error("Error al consultar si el mercado abrió hoy:", err);
     return false;
   }
-}
+};
 
-module.exports = { saveMarketData, getLastMarketData, saveMarketOpen, didMarketOpenToday  };
+module.exports = {
+  saveMarketData,
+  getLastMarketData,
+  saveMarketOpen,
+  didMarketOpenToday,
+};

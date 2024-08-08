@@ -18,6 +18,7 @@ const {
 } = require("../config/configAPIs");
 const logger = require("../utils/logger");
 const { rotateApiKey, updateApiUsageCount } = require("../config/rotateAPI");
+const { transformData } = require("../utils/formatData");
 
 // Tradign View
 const fetchEconomicCalendar = async (
@@ -102,6 +103,7 @@ const fetchEarningCalendar = async (
 
 // Finviz
 const fetchMarketCapStocks = async (marketCap = "cap_mega") => {
+  const apiKey = rotateApiKey("API3", 10);
   const options = {
     method: "GET",
     url: "https://finviz-screener.p.rapidapi.com/table",
@@ -111,28 +113,64 @@ const fetchMarketCapStocks = async (marketCap = "cap_mega") => {
       filters: marketCap,
     },
     headers: {
-      "x-rapidapi-key": rapidApiKey,
+      "x-rapidapi-key": apiKey,
       "x-rapidapi-host": rapidApiFinvizHost,
     },
   };
   try {
-    const { data } = await axios.request(options);
-    const transformData = (data) => {
-      const { headers, rows } = data;
-      return rows.map((row) => {
-        let obj = {};
-        headers.forEach((header, index) => {
-          obj[header] = row[index];
-        });
-        return obj;
-      });
-    };
+    const response = await axios.request(options);
+    const { data } = response;
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API3_USAGE_COUNT", usageAPI);
+    }
+
     const transformedData = transformData(data);
 
     return transformedData;
   } catch (error) {
     throw new Error(`Error fetching marketcap data: ${error.message}`);
   }
+};
+
+const fecthGainersOrLosers = async (
+  gainersOrLosers = "ta_topgainers",
+  order = "change"
+) => {
+  const apiKey = rotateApiKey("API3", 10);
+  const options = {
+    method: "GET",
+    url: "https://finviz-screener.p.rapidapi.com/table",
+    params: {
+      order: order,
+      desc: "true",
+      signal: gainersOrLosers,
+      filters: "geo_usa",
+    },
+    headers: {
+      "x-rapidapi-key": apiKey,
+      "x-rapidapi-host": rapidApiFinvizHost,
+    },
+  };
+
+  try {
+    const response = await axios.request(options);
+    const usageAPI =
+      response.headers["x-ratelimit-requests-limit"] -
+      response.headers["x-ratelimit-requests-remaining"];
+    if (typeof usageAPI === "number") {
+      updateApiUsageCount("API3_USAGE_COUNT", usageAPI);
+    }
+    return response;
+  } catch (err) {
+    console.log(err);
+    logger.error(`Error fetching top gainers or losers data: ${err.message}`);
+    throw new Error(
+      `Error fetching top gainers or losers data: ${err.message}`
+    );
+  } 
 };
 
 // Seeking Alpha
@@ -245,7 +283,7 @@ const fetchStockSeekingAlpha = async (symbols) => {
     }
     return response.data;
   } catch (err) {
-    throw new Error(err)
+    throw new Error(err);
   }
 };
 
@@ -336,4 +374,5 @@ module.exports = {
   fetchStockSeekingAlpha,
   fetchMarketCapStocks,
   fetchMarketCap,
+  fecthGainersOrLosers,
 };

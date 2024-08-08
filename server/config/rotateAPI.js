@@ -12,7 +12,7 @@ function rotateApiKey(apiPrefix, maxUsage = 100) {
   const usageCountEnv = `${apiPrefix}_USAGE_COUNT`;
   let currentKey = process.env[currentKeyEnv];
   let usageCount = parseInt(process.env[usageCountEnv], 10);
-  //console.log("Current key and usage count:", currentKey, usageCount);
+  console.log("Current key and usage count:", currentKey, usageCount);
   if (usageCount >= maxUsage) {
     let currentIndex = keys.indexOf(currentKeyEnv);
     // Find the index of the current key in the keys array
