@@ -4,15 +4,18 @@ const bot = require("./server/bot/handlers");
 const mongoose = require("mongoose");
 const URL_DB = process.env.MONGO_URI;
 const cron = require("node-cron");
+const app = require('./server/server');
+const PORT = process.env.PORT || 3001;
+
 bot.on("polling_error", console.log);
 mongoose
   .connect(URL_DB)
-  .then(() => console.log("Conectado a MongoDB"))
+  .then(() => logger.info("Conectado a MongoDB"))
   .catch((err) => console.error("Error al conectar a MongoDB", err));
 
-const {
-  openMarketCron,
-  closeMarketCron,
-  sendMessageToChatAndTopic,
-  earningsDataCron,
-} = require("./server/schedule/cronJobs");
+require("./server/tasks/cronJobs");
+const logger = require("./server/utils/logger");
+
+app.listen(PORT, () => {
+  logger.info(`Servidor ejecutándose en el puerto ${PORT}`);
+});

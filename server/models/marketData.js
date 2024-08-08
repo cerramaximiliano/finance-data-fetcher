@@ -12,6 +12,8 @@ const marketSymbolSchema = new mongoose.Schema(
     close: Number,
     bid: Number,
     ask: Number,
+    previousClose: Number,
+    currentPrice: Number,
   },
   { _id: false }
 );

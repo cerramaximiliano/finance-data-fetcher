@@ -1,0 +1,214 @@
+    
+{
+    "date": {
+      "$date": "2024-08-05T23:08:27.266Z"
+    },
+    "time": "close",
+    "symbols": [
+      {
+        "symbol": "^GDAXI",
+        "underlyingSymbol": "^GDAXI",
+        "currency": "EUR",
+        "description": null,
+        "open": 17525.59,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 17661.22,
+        "currentPrice": null
+      },
+      {
+        "symbol": "000001.SS",
+        "underlyingSymbol": "000001.SS",
+        "currency": "CNY",
+        "description": null,
+        "open": 2889.3633,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 2905.3374,
+        "currentPrice": null
+      },
+      {
+        "symbol": "^N225",
+        "underlyingSymbol": "^N225",
+        "currency": "JPY",
+        "description": null,
+        "open": 35249.36,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 35909.7,
+        "currentPrice": null
+      },
+      {
+        "symbol": "^BVSP",
+        "underlyingSymbol": "^BVSP",
+        "currency": "BRL",
+        "description": null,
+        "open": 125850.51,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 125854.09,
+        "currentPrice": null
+      },
+      {
+        "symbol": "^MERV",
+        "underlyingSymbol": "^MERV",
+        "currency": null,
+        "description": null,
+        "open": 1433349.9,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 1433349.9,
+        "currentPrice": null
+      },
+      {
+        "symbol": "ZSX24.CBT",
+        "underlyingSymbol": "ZS=F",
+        "currency": "USX",
+        "description": null,
+        "open": 1029,
+        "close": null,
+        "bid": 1040.5,
+        "ask": 1040.5,
+        "previousClose": 1040.75,
+        "currentPrice": null
+      },
+      {
+        "symbol": "GCZ24.CMX",
+        "underlyingSymbol": "GC=F",
+        "currency": "USD",
+        "description": null,
+        "open": 2451.7,
+        "close": null,
+        "bid": 2407.7,
+        "ask": 2450.4,
+        "previousClose": 2401.7,
+        "currentPrice": null
+      },
+      {
+        "symbol": "SIU24.CMX",
+        "underlyingSymbol": "SI=F",
+        "currency": "USD",
+        "description": null,
+        "open": 27.365,
+        "close": null,
+        "bid": 27.34,
+        "ask": 27.35,
+        "previousClose": 27.207,
+        "currentPrice": null
+      },
+      {
+        "symbol": "CLU24.NYM",
+        "underlyingSymbol": "CL=F",
+        "currency": "USD",
+        "description": null,
+        "open": 73.86,
+        "close": null,
+        "bid": 74.09,
+        "ask": 74.11,
+        "previousClose": 72.94,
+        "currentPrice": null
+      },
+      {
+        "symbol": "BTC-USD",
+        "underlyingSymbol": "BTC-USD",
+        "currency": "USD",
+        "description": "Bitcoin (BTC) is a cryptocurrency launched in 2010. Users are able to generate BTC through the process of mining. Bitcoin has a current supply of 19,735,865. The last known price of Bitcoin is 51,842.86726623 USD and is down -14.55 over the last 24 hours. It is currently trading on 11623 active market(s) with $77,244,727,885.76 traded over the last 24 hours. More information can be found at https://bitcoin.org/.",
+        "open": 58143.098,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 58143.098,
+        "currentPrice": null
+      },
+      {
+        "symbol": "ETH-USD",
+        "underlyingSymbol": "ETH-USD",
+        "currency": "USD",
+        "description": "Ethereum (ETH) is a cryptocurrency . Ethereum has a current supply of 120,259,614.6194113. The last known price of Ethereum is 2,280.21342809 USD and is down -21.69 over the last 24 hours. It is currently trading on 9188 active market(s) with $54,641,793,654.44 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.",
+        "open": 2688.0364,
+        "close": null,
+        "bid": null,
+        "ask": null,
+        "previousClose": 2688.0364,
+        "currentPrice": null
+      },
+      {
+        "symbol": "SPX",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 5151.14014,
+        "close": 5186.33008,
+        "bid": null,
+        "ask": null,
+        "previousClose": 5346.56006,
+        "currentPrice": null
+      },
+      {
+        "symbol": "IXIC",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 15712.5,
+        "close": 16200.08203,
+        "bid": null,
+        "ask": null,
+        "previousClose": 16776.16016,
+        "currentPrice": null
+      },
+      {
+        "symbol": "DJI",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 39056.19922,
+        "close": 38703.26953,
+        "bid": null,
+        "ask": null,
+        "previousClose": 39737.26172,
+        "currentPrice": null
+      },
+      {
+        "symbol": "RUT",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 2021.85693,
+        "close": 2039.16113,
+        "bid": null,
+        "ask": null,
+        "previousClose": 2109.31006,
+        "currentPrice": null
+      },
+      {
+        "symbol": "TNX",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 3.697,
+        "close": 3.785,
+        "bid": null,
+        "ask": null,
+        "previousClose": 3.792,
+        "currentPrice": null
+      },
+      {
+        "symbol": "DXY",
+        "underlyingSymbol": null,
+        "currency": "USD",
+        "description": null,
+        "open": 103.221,
+        "close": 102.747,
+        "bid": null,
+        "ask": null,
+        "previousClose": 103.062,
+        "currentPrice": null
+      }
+    ],
+    "__v": 0
+  }
