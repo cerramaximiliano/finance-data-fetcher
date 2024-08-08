@@ -10,29 +10,37 @@ const formatDataEarnings = (data) => {
     return `Symbol: ${item.symbol}\nDate: ${item.date}\n`;
   }).join('\n');
 };
+
 const formatMarketData = (data, symbols, type) => {
   return data.map(item => {
-    const matchingSymbol = symbols.find(sym => sym.symbol === item.underlyingSymbol || sym.symbol === item.symbol );
+    const matchingSymbol = symbols.find(sym => sym.symbol === item.underlyingSymbol || sym.symbol === item.symbol);
     const description = matchingSymbol ? matchingSymbol.description : 'N/A';
 
     let price;
     if (type === "close") {
-      if ( item.close  ){
+      if (item.close !== undefined && item.close !== null) {
         price = item.close.toFixed(2);
-      }else if ( item.currentPrice ){
-        price = item.currentPrice.toFixed(2)
-      }else{
-        price = "N/A"
+      } else if (item.currentPrice !== undefined && item.currentPrice !== null) {
+        price = item.currentPrice.toFixed(2);
+      } else {
+        price = "N/A";
       }
-    }else{
-      price = item.open != null ? item.open.toFixed(2) : 'N/A';
+    } else {
+      price = item.open !== undefined && item.open !== null ? item.open.toFixed(2) : 'N/A';
+    }
+
+    // Omitir si description o price es 'N/A', undefined o null
+    if (description === 'N/A' || description === undefined || description === null || 
+        price === 'N/A' || price === undefined || price === null) {
+      return null;
     }
 
     let percent_change;
-    if ((item.close != null && item.previousClose != null) || (item.currentPrice && item.previousClose)) {
-      if (item.close) {
+    if ((item.close !== undefined && item.close !== null && item.previousClose !== undefined && item.previousClose !== null) ||
+        (item.currentPrice !== undefined && item.currentPrice !== null && item.previousClose !== undefined && item.previousClose !== null)) {
+      if (item.close !== undefined && item.close !== null) {
         percent_change = (((item.close - item.previousClose) / item.previousClose) * 100).toFixed(2);
-      } else if (item.currentPrice) {
+      } else if (item.currentPrice !== undefined && item.currentPrice !== null) {
         percent_change = (((item.currentPrice - item.previousClose) / item.previousClose) * 100).toFixed(2);
       }
 
@@ -44,8 +52,11 @@ const formatMarketData = (data, symbols, type) => {
     }
 
     return `${description}\n${item.currency || ""} ${price} ${percent_change ? "(" + percent_change + "%)" : ""}\n`;
-  }).join('\n');
+  }).filter(item => item !== null).join('\n');
 };
+
+
+
 
 function formatDayWatch(data, itemsPerLine) {
   let message = '';

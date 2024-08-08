@@ -404,7 +404,7 @@ bot.on("callback_query", async (callbackQuery) => {
         let percent_change = [];
 
         let stockLosers = await fetchStockSeekingAlpha(idsString);
-        console.log(stockLosers);
+        console.log(stockLosers.real_time_quotes);
 
         if (attributesLosers && attributesLosers.length > 0) {
           textLosers += formatDayWatch(attributesLosers, 5);

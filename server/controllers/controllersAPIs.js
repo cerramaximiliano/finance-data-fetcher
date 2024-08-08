@@ -229,7 +229,7 @@ const fetchStockSeekingAlpha = async (symbols) => {
   const options = {
     method: "GET",
     url: "https://seeking-alpha.p.rapidapi.com/market/get-realtime-quotes",
-    params: { sa_ids: "612888" },
+    params: { sa_ids: symbols },
     headers: {
       "x-rapidapi-key": apiKey,
       "x-rapidapi-host": "seeking-alpha.p.rapidapi.com",

@@ -181,7 +181,7 @@ const calendarDataCron = cron.schedule(
 
 const openHours = "30 9 * * 1-5";
 const openMarketCron = cron.schedule(
-  openHours,
+  "50 9 * * 1-5",
   async () => {
     try {
       logger.info("Tarea de envío de mensaje programado ejecutada.");
@@ -197,6 +197,7 @@ const openMarketCron = cron.schedule(
           openSymbols,
           delayTime
         );
+        console.log(openMarketData)
         const formattedMarketData = formatMarketData(
           openMarketData,
           openSymbols,

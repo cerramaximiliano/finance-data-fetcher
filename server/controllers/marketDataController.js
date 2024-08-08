@@ -1,5 +1,6 @@
 const logger = require("../utils/logger");
 const MarketData = require("../models/marketData");
+const MarketOpen = require("../models/maketStatus");
 
 const saveMarketData = async ({ data, time }) => {
   try {

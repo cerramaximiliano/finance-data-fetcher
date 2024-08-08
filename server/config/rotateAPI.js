@@ -8,12 +8,11 @@ function rotateApiKey(apiPrefix, maxUsage = 100) {
   const keys = Object.keys(process.env).filter(
     (key) => key.startsWith(apiPrefix) && key.includes("KEY_")
   );
-  console.log("Available keys:", keys);
   const currentKeyEnv = `${apiPrefix}_CURRENT_KEY`;
   const usageCountEnv = `${apiPrefix}_USAGE_COUNT`;
   let currentKey = process.env[currentKeyEnv];
   let usageCount = parseInt(process.env[usageCountEnv], 10);
-  console.log("Current key and usage count:", currentKey, usageCount);
+  //console.log("Current key and usage count:", currentKey, usageCount);
   if (usageCount >= maxUsage) {
     let currentIndex = keys.indexOf(currentKeyEnv);
     // Find the index of the current key in the keys array
@@ -32,7 +31,6 @@ function rotateApiKey(apiPrefix, maxUsage = 100) {
 }
 
 function updateEnvFile(currentKeyEnv, currentKey, usageCountEnv, usageCount) {
-  console.log(currentKeyEnv, currentKey, usageCountEnv, usageCount);
   const envConfig = fs.readFileSync(envFilePath, "utf-8");
   const newEnvConfig = envConfig
     .replace(
