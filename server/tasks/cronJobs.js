@@ -142,7 +142,7 @@ const earningsDataCron = cron.schedule(
   "10 8 * * 1-5",
   async () => {
     try {
-      logger.info("Tarea de actualización de base de datos ejecutada.");
+      logger.info("Earnings Calendar. Tarea de actualización de base de datos ejecutada.");
       const earningsCalendar = await fetchEarningCalendar();
       const saveData = await saveOrUpdateData(earningsCalendar);
       return saveData;
@@ -160,7 +160,7 @@ const calendarDataCron = cron.schedule(
   "00 8 * * 1-5",
   async () => {
     try {
-      logger.info("Tarea de actualización de base de datos ejecutada.");
+      logger.info("Economic Calendar. Tarea de actualización de base de datos ejecutada.");
       const economicCalendar = await fetchEconomicCalendar();
       if (
         economicCalendar &&
@@ -405,6 +405,7 @@ module.exports = {
   closeMarketCron,
   sendMessageToChatAndTopic,
   earningsDataCron,
+  calendarDataCron,
   losersCron,
   gainersCron,
 };
