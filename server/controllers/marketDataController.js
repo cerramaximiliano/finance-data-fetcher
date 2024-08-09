@@ -52,7 +52,7 @@ const saveMarketOpen = async (data) => {
     return await marketOpenEntry.save();
   } catch (err) {
     console.error("Error al guardar el registro de apertura de mercado:", err);
-    throw error;
+    throw err;
   }
 };
 

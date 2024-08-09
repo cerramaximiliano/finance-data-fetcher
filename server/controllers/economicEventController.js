@@ -40,7 +40,7 @@ const findEconomicEventsByDateRange = async (
   } catch (err) {
     logger.error(
       "Error al buscar eventos económicos por rango de fechas:",
-      error
+      err
     );
     throw err;
   }
