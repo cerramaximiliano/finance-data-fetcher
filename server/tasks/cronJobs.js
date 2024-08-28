@@ -15,6 +15,8 @@ const {
   fetchStockPricesTwelveData,
   fetchStockPricesRealTimeData,
   fecthGainersOrLosers,
+  fetchMarketCap,
+  fetchMarketCapStocks,
 } = require("../controllers/controllersAPIs");
 const MarketData = require("../models/marketData");
 const {
@@ -22,13 +24,21 @@ const {
   saveMarketOpen,
   didMarketOpenToday,
 } = require("../controllers/marketDataController");
-const { saveOrUpdateData } = require("../controllers/earningsDataController");
+const {
+  saveOrUpdateData,
+  findStockDataByDateRange,
+} = require("../controllers/earningsDataController");
 const {
   saveOrUpdateEconomicEvents,
+  findEconomicEventsByDateRange,
 } = require("../controllers/economicEventController");
 const logger = require("../utils/logger");
 const { delay } = require("../utils/delay");
-const { isMarketOpenToday } = require("../utils/dates");
+const {
+  isMarketOpenToday,
+  getClosestDate,
+  readableDate,
+} = require("../utils/dates");
 const {
   saveGainersOrLosersData,
 } = require("../controllers/gainersLosersDataController");
@@ -137,6 +147,92 @@ const sendMessageToChatAndTopic = async (chatId, topicId, message) => {
     );
   }
 };
+
+const earningsNotificationCron = cron.schedule(
+  "30 8 * * 1-5",
+  async () => {
+    try {
+      let text = [];
+      const dataBaseFound = await findStockDataByDateRange();
+      const marketCapData = await fetchMarketCap();
+      if (dataBaseFound && dataBaseFound.length > 0) {
+        logger.info("bot request - earnings Calendar DDBB");
+        text = dataBaseFound.map((element) => {
+          const closestTimestamp = getClosestDate(
+            element.earnings_release_date,
+            element.earnings_release_next_date
+          );
+          return {
+            symbol: element.symbol,
+            name: element.name,
+            date: readableDate(closestTimestamp),
+          };
+        });
+
+        const filteredSymbols = text.filter((item) =>
+          marketCapData.includes(item.symbol)
+        );
+        let earningsCalendarText = `*Earnings Calendar ${moment().format(
+          "DD/MM/YYYY"
+        )}*\n\n`;
+        if (filteredSymbols && filteredSymbols.length > 0) {
+          earningsCalendarText += formatDataEarnings(filteredSymbols);
+        } else {
+          earningsCalendarText += `No hay eventos para la fecha`;
+        }
+
+        if (earningsCalendarText) {
+          sendMessageToChatAndTopic(
+            process.env.CHAT_ID,
+            process.env.TOPIC_INFORMES,
+            earningsCalendarText
+          );
+        }
+      }
+    } catch (err) {
+      logger.error(`error on notification earnings task: ${err}`);
+    }
+  },
+  {
+    timezone: "America/New_York",
+  }
+);
+
+const economicCalendarNotificationCron = cron.schedule(
+  "31 8 * * 1-5",
+  async () => {
+    try {
+      let results = await findEconomicEventsByDateRange();
+      let economicCalendarText = `*Economic Calendar ${moment().format(
+        "DD/MM/YYYY"
+      )}*\n\n`;
+      if (results && results.length > 0) {
+        logger.info("economic Calendar ddbb results");
+        false;
+      }
+      if (results.length > 0) {
+        let formattedData = formatData(results);
+        economicCalendarText = economicCalendarText + formattedData;
+      } else {
+        economicCalendarText =
+          economicCalendarText + "No hay eventos para la fecha";
+      }
+      logger.info(economicCalendarText);
+      if (economicCalendarText) {
+        sendMessageToChatAndTopic(
+          process.env.CHAT_ID,
+          process.env.TOPIC_INFORMES,
+          economicCalendarText
+        );
+      }
+    } catch (err) {
+      logger.err(err);
+    }
+  },
+  {
+    timezone: "America/New_York",
+  }
+);
 
 const earningsDataCron = cron.schedule(
   "10 8 * * 1-5",
@@ -310,7 +406,7 @@ const closeMarketCron = cron.schedule(
         logger.info("El mercado no opera el día de la fecha.");
       }
     } catch (err) {
-      console.log(err)
+      console.log(err);
       logger.error(`Error en la tarea de cierre del mercado: ${err.message}`);
       throw new Error(err);
     }
@@ -319,13 +415,13 @@ const closeMarketCron = cron.schedule(
     timezone: "America/New_York",
   }
 );
-const losersHour = "33 16 * * 1-5"
+const losersHour = "33 16 * * 1-5";
 const losersCron = cron.schedule(
   losersHour,
   async () => {
     try {
       const marketOpen = await didMarketOpenToday();
-      if ( marketOpen ){
+      if (marketOpen) {
         const topLosers = await fecthGainersOrLosers("ta_toplosers");
         if (topLosers && topLosers.data) {
           const { headers, rows } = topLosers.data;
@@ -333,7 +429,7 @@ const losersCron = cron.schedule(
           const saveData = await saveGainersOrLosersData("losers", result);
           if (saveData && saveData.data) {
             const formattedText = formatGainersLosersData(saveData.data, 5);
-            if (formattedText){
+            if (formattedText) {
               const date = moment().format("DD/MM/YYYY");
               await sendMessageToChatAndTopic(
                 process.env.CHAT_ID,
@@ -346,10 +442,11 @@ const losersCron = cron.schedule(
             logger.error(`Error guardando registro de Losers`);
           }
         }
-      }else{
-        logger.info("No hay update de top losers. El mercado no opera el día de la fecha.");
+      } else {
+        logger.info(
+          "No hay update de top losers. El mercado no opera el día de la fecha."
+        );
       }
-
     } catch (err) {
       logger.error(`Error en la tarea de perdedores del día: ${err.message}`);
       throw new Error(err);
@@ -359,21 +456,21 @@ const losersCron = cron.schedule(
     timezone: "America/New_York",
   }
 );
-const gainersHour = "35 16 * * 1-5"
+const gainersHour = "35 16 * * 1-5";
 const gainersCron = cron.schedule(
   gainersHour,
   async () => {
     try {
       const marketOpen = await didMarketOpenToday();
-      if (marketOpen){
+      if (marketOpen) {
         const topGainers = await fecthGainersOrLosers();
         if (topGainers && topGainers.data) {
           const { headers, rows } = topGainers.data;
           const result = transformData(headers, rows);
           const saveData = await saveGainersOrLosersData("gainers", result);
-          if ( saveData && saveData.data && saveData.data.length > 0){
+          if (saveData && saveData.data && saveData.data.length > 0) {
             const formattedText = formatGainersLosersData(saveData.data, 5);
-            if (formattedText){
+            if (formattedText) {
               const date = moment().format("DD/MM/YYYY");
               await sendMessageToChatAndTopic(
                 process.env.CHAT_ID,
@@ -382,14 +479,15 @@ const gainersCron = cron.schedule(
               );
               logger.info(`Market Gainers report sent successfully.`);
             }
-          }else{
+          } else {
             logger.error(`Error guardando registro de Gainers`);
           }
         }
-      }else {
-        logger.info("No hay update de top gainers. El mercado no opera el día de la fecha.");
+      } else {
+        logger.info(
+          "No hay update de top gainers. El mercado no opera el día de la fecha."
+        );
       }
-
     } catch (err) {
       logger.error(`Error en la tarea de ganadores del día: ${err.message}`);
       throw new Error(err);
@@ -407,4 +505,6 @@ module.exports = {
   earningsDataCron,
   losersCron,
   gainersCron,
+  earningsNotificationCron,
+  economicCalendarNotificationCron,
 };

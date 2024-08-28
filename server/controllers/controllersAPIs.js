@@ -126,8 +126,7 @@ const fetchMarketCapStocks = async (marketCap = "cap_mega") => {
     if (typeof usageAPI === "number") {
       updateApiUsageCount("API3_USAGE_COUNT", usageAPI);
     }
-
-    const transformedData = transformData(data);
+    const transformedData = transformData(data.headers, data.rows);
 
     return transformedData;
   } catch (error) {
@@ -210,6 +209,7 @@ const fetchMarketCap = async (marketCap = 100000000000) => {
     const names = getNames(data);
     return names;
   } catch (error) {
+    console.log(error)
     throw new Error(`Error fetching marketcap data: ${error.message}`);
   }
 };
